@@ -2,54 +2,65 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atharva Chourey — Research</title>
 <style>
-:root{--bg:#0b0e14;--panel:#121826;--text:#e8ecf3;--muted:#9aa7bd;--gold:#e8b84b;--teal:#3ec6b8;--line:#26304a}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,'Times New Roman',serif}
-.wrap{max-width:860px;margin:0 auto;padding:48px 22px 64px}
-h1{font-size:2rem;margin:0 0 6px}h2{font-size:1.25rem;margin:38px 0 10px;color:var(--gold);font-family:Helvetica,Arial,sans-serif;letter-spacing:.02em}
-.tag{color:var(--teal);font-style:italic;margin:0 0 18px}
-p{margin:0 0 14px}.muted{color:var(--muted)}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:0 0 16px}
-.card h3{margin:0 0 8px;font-size:1.08rem;font-family:Helvetica,Arial,sans-serif}
-.card p{margin:0 0 8px}.card p:last-child{margin:0}
-a{color:var(--teal)}footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem}
-ul{margin:0 0 14px;padding-left:20px}li{margin-bottom:6px}
+:root{--bg:#ffffff;--text:#111;--muted:#6e6e73;--line:#e5e5e5;--accent:#111}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:56px 22px 72px}
+.meta{text-align:center;color:var(--muted);font-size:.85rem;font-weight:600;letter-spacing:.04em;margin-bottom:14px}
+.meta .dot{margin:0 8px;color:#c7c7cc}
+h1{text-align:center;font-size:2.6rem;line-height:1.15;font-weight:700;margin:0 0 18px;letter-spacing:-.02em}
+.dek{text-align:center;font-size:1.13rem;color:#333;max-width:620px;margin:0 auto 8px}
+.byline{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:10px}
+hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+.row{display:flex;gap:26px;padding:22px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:none}
+.side{flex:0 0 128px;color:var(--muted);font-size:.85rem;line-height:1.5;padding-top:5px}
+.side b{display:block;color:#333;font-weight:600}
+.main h3{margin:0 0 6px;font-size:1.32rem;line-height:1.3;font-weight:650;letter-spacing:-.01em}
+.main p{margin:0;color:#444}
+h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:40px 0 4px;font-weight:600}
+.note{color:#444}.note b{color:#111}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
+a{color:var(--accent)}
+@media(max-width:560px){.row{flex-direction:column;gap:6px}.side{flex:none}h1{font-size:2rem}}
 </style></head><body><div class="wrap">
-<h1>Atharva Chourey</h1>
-<p class="tag">I build audit machinery for measurements a field forgot to check.</p>
-<p>My research programme takes published scientific and historical measurements that everyone cites and nobody re-verifies, and subjects them to independent re-measurement, archival recovery, and pre-registered blind benchmarks. The work sits at the intersection of comparative neuroanatomy, historical statistics, and the history of science.</p>
 
-<h2>Research</h2>
+<div class="meta">RESEARCH<span class="dot">·</span>NOVEMBER 2026</div>
+<h1>Auditing the measurements science stopped checking</h1>
+<p class="dek">Five results from one programme: take the published measurements everyone cites and nobody re-verifies — in neuroanatomy, astronomy, and historical statistics — and check them against the archives they came from.</p>
+<p class="byline">Atharva Chourey · Independent research</p>
 
-<div class="card"><h3>The Lost Atlas — recovering a comparative brain archive</h3>
-<p>Public brain-atlas archives carry labels that have never been audited. Auditing one major archive end to end, I recovered the usable measurements label by label (53 of 71 labels contained real data; the rest were empty placeholders), produced the first MRI-based hippocampus measurement for the lion (<i>Panthera leo</i>, 2.02&nbsp;cm³) — 2.2× below the histological value the literature has cited since 2007 — and showed that the discrepancy localises to the histology side: across 343 species, histological volumes run systematically ~1.6× above MRI volumes, an offset any mixed-method comparison must correct for.</p>
-<p class="muted">Manuscript and recovered dataset in preparation.</p></div>
+<hr>
 
-<div class="card"><h3>Gazetteers and the famine of 1900</h3>
-<p>The Imperial Gazetteer of India holds district- and state-level statistics that were never extracted as data. I built the first machine-readable panel from the 1908 Gazetteers (34 units) and used it to test what drove population loss in the 1899–1900 famine. The result: political boundaries, not weather. Princely states lost 16.2% of population against 7.5% in directly-ruled British districts, while the correlation with rainfall was effectively zero (r&nbsp;=&nbsp;−0.05).</p>
-<p class="muted">Dataset and manuscript in preparation.</p></div>
+<div class="row"><div class="side"><b>Neuroanatomy</b>2026</div><div class="main">
+<h3>Histological brain volumes run 1.6× above MRI volumes</h3>
+<p>An end-to-end audit of a public comparative-brain archive recovered 53 usable labels of 71 — the rest were empty placeholders — and produced the first MRI hippocampus measurement for the lion: 2.02 cm³, against the 4.50 cm³ histological value cited since 2007. The gap is systematic, not local: across 343 species, histology runs ~1.6× above MRI, an offset every mixed-method comparison inherits.</p>
+</div></div>
 
-<div class="card"><h3>The eclipse-radius archive</h3>
-<p>Solar-radius estimates from historical eclipse observations underpin claims that the Sun has shrunk over centuries. Re-reducing the archived observations with modern lunar topography (a +0.100″ Watts-to-LOLA correction, applied asymmetrically by limb) yields a radius of 959.494&nbsp;±&nbsp;0.044″ — inconsistent with both the classical Auwers value and the modern IAU standard — and a cross-archive check shows the two canonical reductions disagree on 7 of 9 overlapping eclipses, with one probable sign error that inverts the famous shrinkage claim.</p>
-<p class="muted">Manuscript in preparation.</p></div>
+<div class="row"><div class="side"><b>Historical statistics</b>2026</div><div class="main">
+<h3>Rainfall did not drive the famine of 1900</h3>
+<p>The first statistical extraction from the 1908 Imperial Gazetteers (34 units) separates what the famine literature conflates. Princely states lost 16.2% of their population; directly-ruled British districts lost 7.5%. The correlation with rainfall is −0.05. Political boundaries, not weather, carry the signal.</p>
+</div></div>
 
-<div class="card"><h3>Auditing received numbers in Indian history</h3>
-<p>Widely repeated figures often trace to a single misread source. A bearer-by-bearer audit of two dozen cases — including Nalanda's enrolment, where the famous figure of 10,000 belongs to a seventh-century biography rather than to Xuanzang, against a physical capacity ceiling below 2,000 and a defensible peak of roughly 3,000–3,500 — separates figures that survive checking from those that dissolve.</p>
-<p class="muted">Working paper in preparation.</p></div>
+<div class="row"><div class="side"><b>Astronomy</b>2026</div><div class="main">
+<h3>The shrinking-Sun claim rests on a probable sign error</h3>
+<p>Re-reducing historical eclipse observations with modern lunar topography gives a solar radius of 959.494 ± 0.044″ — consistent with neither the classical Auwers value nor the IAU standard. The two canonical reductions of the same archive disagree on 7 of 9 overlapping eclipses, with five sign flips; the most famous of them inverts the centuries-old shrinkage claim.</p>
+</div></div>
 
-<div class="card"><h3>The Testability Atlas — what Indian historical statistics can actually decide</h3>
-<p>Before testing a claim, ask whether the surviving data could decide it at all. Grading 23 standard questions in Indian historical statistics against the data that actually survives: only 4 are testable at adequate power, 11 are underpowered, and 8 are untestable in principle. The Atlas is a map of where argument can end and where it cannot.</p>
-<p class="muted">Working paper in preparation.</p></div>
+<div class="row"><div class="side"><b>History of science</b>2026</div><div class="main">
+<h3>Nalanda's ten thousand students are a misattribution</h3>
+<p>The celebrated enrolment figure belongs to a seventh-century biography, not to Xuanzang. A bearer-by-bearer audit of two dozen received numbers — with a physical capacity ceiling below 2,000 for Nalanda and a defensible peak near 3,000–3,500 — separates the figures that survive checking from those that dissolve.</p>
+</div></div>
+
+<div class="row"><div class="side"><b>Methodology</b>2026</div><div class="main">
+<h3>Most questions in Indian historical statistics cannot be answered</h3>
+<p>Of 23 standard questions graded against the data that actually survives, 4 are testable at adequate power, 11 are underpowered, and 8 are untestable in principle. The Testability Atlas maps where argument can end — and where it cannot.</p>
+</div></div>
 
 <h2>Method</h2>
-<ul>
-<li><b>Pre-registration before extraction</b> — hypotheses and decision rules are committed before the data is touched.</li>
-<li><b>Novelty scrub</b> — prior art is searched before any result is presented as new.</li>
-<li><b>Blind benchmarks</b> — measurement pipelines are tested against known values, blind, before they are trusted on unknown ones.</li>
-<li><b>Self-correction on the record</b> — when a check revises an earlier number, the correction is published with the result, not buried.</li>
-</ul>
+<p class="note">Every result above was produced under the same discipline: <b>pre-registration before extraction</b>, so hypotheses are committed before data is touched; a <b>novelty scrub</b> against prior art before anything is claimed as new; <b>blind benchmarks</b>, so a measurement pipeline must recover known values before it is trusted with unknown ones; and <b>self-correction on the record</b> — when a later check revised an earlier number, the correction is part of the result.</p>
 
 <h2>Status</h2>
-<p>These programmes are complete as research; manuscripts and public datasets are in preparation and will appear here as they are released. Code and data repositories will be linked from this page on publication.</p>
+<p class="note">Manuscripts and public datasets for all five results are in preparation and will be linked here on release, with code and data in this account's repositories. Claims are scoped to the archives and samples named in each summary; nothing here has yet passed peer review, and the summaries say so by omission of any venue.</p>
 
 <footer>Atharva Chourey · <a href="https://github.com/atharva-chourey-lab">github.com/atharva-chourey-lab</a></footer>
 </div></body></html>
