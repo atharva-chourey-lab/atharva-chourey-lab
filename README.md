@@ -8,7 +8,7 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 
 ## The lab in numbers
 
-- **5 manuscripts published openly** in a single programme — neuroanatomy, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
+- **6 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
 - **343 species** compared across the two great brain archives; **53 of 71** archive labels recovered (the other 18 were empty placeholders).
 - **First MRI hippocampus measurement for the lion** — 2.02 cm³, against the 4.50 cm³ value the field had cited since 2007.
 - **34 historical units** re-quantified for the 1899–1900 famine; **24 received numbers** audited bearer by bearer; **23 standard research questions** graded for whether they can be answered at all.
@@ -41,6 +41,11 @@ The Testability Atlas: of 23 standard questions graded against surviving data, 4
 
 Manuscript: [github.com/atharva-chourey-lab/testability-atlas](https://github.com/atharva-chourey-lab/testability-atlas)
 
+**The forearm splits the rhinos** — *Morphology, 2026*
+A within-specimen size-allocation profile computed from Mallet et al. (2019)'s open landmark data — a comparison the source study never made — separates all five living rhino species: all 10 pairwise permutation tests significant, the largest split between the black and greater one-horned rhinos (0.0566 log₁₀, p = 0.0014), carried by the relative size of the forearm bones. The dataset was located by the lab's Goldmine Hunter tool.
+
+Manuscript: [github.com/atharva-chourey-lab/rhino-forearm](https://github.com/atharva-chourey-lab/rhino-forearm)
+
 **Explore the lion brain interactively:** the [project site](https://atharva-chourey-lab.github.io/atharva-chourey-lab/#brain-atlas) includes a browser viewer for the lion MRI with the hippocampus label overlaid (2.02 cm³, against the 4.50 cm³ value cited since 2007), plus rotatable hippocampus and whole-brain surface meshes. Source atlas: Brain Catalogue — Santin, Herbin & Toro (2016), CC BY-NC 4.0.
 
 ## Code & tools
@@ -66,6 +71,6 @@ Pre-registration before extraction · novelty scrub before claiming · blind ben
 
 ## Status
 
-All five manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
+All six manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
 
 Site: https://atharva-chourey-lab.github.io/atharva-chourey-lab/
