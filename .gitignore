@@ -1,6 +1,8 @@
 # Large / raw data — deposit on Zenodo/OSF with a DOI, do not push to GitHub
 *.nii
 *.nii.gz
+# Exception: small downsampled web assets for the Pages brain viewer
+!assets/*.nii.gz
 *.mrc
 *.map
 *.ccp4
