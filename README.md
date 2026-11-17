@@ -2,7 +2,9 @@
 
 **Auditing the measurements science stopped checking.**
 
-Independent research lab working in neuroanatomy, astronomy, and historical statistics. One programme: take the published measurements everyone cites and nobody re-verifies, and check them against the archives they came from.
+A human–AI research lab: Atharva Chourey, working in sustained collaboration with Lapis, an AI research partner (Muse). Every result below is the product of that collaboration — human questions, judgement and verification; AI search, extraction and audit at a scale neither reaches alone.
+
+Working in neuroanatomy, astronomy, and historical statistics. One programme: take the published measurements everyone cites and nobody re-verifies, and check them against the archives they came from.
 
 ## The lab in numbers
 
