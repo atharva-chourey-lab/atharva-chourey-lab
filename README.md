@@ -1,8 +1,8 @@
-# Atharva Chourey
+# Atharva Chourey Lab
 
 **Auditing the measurements science stopped checking.**
 
-Independent research in neuroanatomy, astronomy, and historical statistics. One programme: take the published measurements everyone cites and nobody re-verifies, and check them against the archives they came from.
+Independent research lab working in neuroanatomy, astronomy, and historical statistics. One programme: take the published measurements everyone cites and nobody re-verifies, and check them against the archives they came from.
 
 ## Research
 
