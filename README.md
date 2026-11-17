@@ -4,6 +4,14 @@
 
 Independent research lab working in neuroanatomy, astronomy, and historical statistics. One programme: take the published measurements everyone cites and nobody re-verifies, and check them against the archives they came from.
 
+## The lab in numbers
+
+- **5 manuscripts published openly** in a single programme — neuroanatomy, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
+- **343 species** compared across the two great brain archives; **53 of 71** archive labels recovered (the other 18 were empty placeholders).
+- **First MRI hippocampus measurement for the lion** — 2.02 cm³, against the 4.50 cm³ value the field had cited since 2007.
+- **34 historical units** re-quantified for the 1899–1900 famine; **24 received numbers** audited bearer by bearer; **23 standard research questions** graded for whether they can be answered at all.
+- **11 headline claims precedent-checked before publication** — 4 held, 4 narrowed, 3 withdrawn. The withdrawals are part of the record, not an embarrassment: the audit applies to the lab first.
+
 ## Research
 
 **Two brain archives disagree by a factor of 1.6** — *Neuroanatomy, 2026*
