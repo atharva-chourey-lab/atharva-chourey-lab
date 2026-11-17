@@ -41,6 +41,25 @@ The Testability Atlas: of 23 standard questions graded against surviving data, 4
 
 Manuscript: [github.com/atharva-chourey-lab/testability-atlas](https://github.com/atharva-chourey-lab/testability-atlas)
 
+**Explore the lion brain interactively:** the [project site](https://atharva-chourey-lab.github.io/atharva-chourey-lab/#brain-atlas) includes a browser viewer for the lion MRI with the hippocampus label overlaid (2.02 cm³, against the 4.50 cm³ value cited since 2007), plus rotatable hippocampus and whole-brain surface meshes. Source atlas: Brain Catalogue — Santin, Herbin & Toro (2016), CC BY-NC 4.0.
+
+## Code & tools
+
+Code behind the papers:
+
+- [brain-archive-audit-code](https://github.com/atharva-chourey-lab/brain-archive-audit-code) — code behind the Lost Atlas brain audit
+- [eclipse-reduction-code](https://github.com/atharva-chourey-lab/eclipse-reduction-code) — eclipse solar-radius reduction
+- [gazetteers-extraction-code](https://github.com/atharva-chourey-lab/gazetteers-extraction-code) — Gazetteers famine panel extraction
+- [testability-atlas-code](https://github.com/atharva-chourey-lab/testability-atlas-code) — Testability Atlas
+- [chinese-correlation-spine](https://github.com/atharva-chourey-lab/chinese-correlation-spine) — correlation-spine instrument behind Received Numbers
+
+Discovery tooling:
+
+- [goldmine-hunter](https://github.com/atharva-chourey-lab/goldmine-hunter) — dataset-discovery tooling
+- [mound-hunter](https://github.com/atharva-chourey-lab/mound-hunter) — DEM mound-detection tooling
+
+Licences: code is MIT-licensed; the manuscripts are CC BY 4.0.
+
 ## Method
 
 Pre-registration before extraction · novelty scrub before claiming · blind benchmarks before trusting a pipeline · self-correction on the record.

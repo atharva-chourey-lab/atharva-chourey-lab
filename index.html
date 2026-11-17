@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atharva Chourey Lab — Research</title>
+<meta name="description" content="Atharva Chourey Lab — a human–AI research lab auditing the measurements science stopped checking. Interactive lion brain atlas, five open manuscripts, and the code behind them.">
 <style>
-:root{--bg:#ffffff;--text:#111;--muted:#6e6e73;--line:#e5e5e5;--accent:#111}
+:root{--bg:#ffffff;--text:#111;--muted:#6e6e73;--line:#e5e5e5;--accent:#111;--soft:#f5f5f7;--red:#c1272d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding:56px 22px 72px}
+.wrap{max-width:820px;margin:0 auto;padding:56px 22px 72px}
 .meta{text-align:center;color:var(--muted);font-size:.85rem;font-weight:600;letter-spacing:.04em;margin-bottom:14px}
 .meta .dot{margin:0 8px;color:#c7c7cc}
 h1{text-align:center;font-size:2.6rem;line-height:1.15;font-weight:700;margin:0 0 18px;letter-spacing:-.02em}
 .dek{text-align:center;font-size:1.13rem;color:#333;max-width:620px;margin:0 auto 8px}
-.byline{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:10px}
+.byline{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:10px;max-width:680px;margin-left:auto;margin-right:auto}
 hr{border:none;border-top:1px solid var(--line);margin:34px 0}
 .row{display:flex;gap:26px;padding:22px 0;border-top:1px solid var(--line)}
 .row:first-of-type{border-top:none}
@@ -17,11 +18,37 @@ hr{border:none;border-top:1px solid var(--line);margin:34px 0}
 .side b{display:block;color:#333;font-weight:600}
 .main h3{margin:0 0 6px;font-size:1.32rem;line-height:1.3;font-weight:650;letter-spacing:-.01em}
 .main p{margin:0;color:#444}
-h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:40px 0 4px;font-weight:600}
+.main p+p{margin-top:8px}
+h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:48px 0 10px;font-weight:600}
+h2:first-of-type{margin-top:0}
 .note{color:#444}.note b{color:#111}
 footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
 a{color:var(--accent)}
-@media(max-width:560px){.row{flex-direction:column;gap:6px}.side{flex:none}h1{font-size:2rem}}
+figure{margin:18px 0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+figcaption,.caption{color:var(--muted);font-size:.88rem;line-height:1.55;margin-top:8px}
+.caption b{color:#333}
+.viewer{background:#000;border-radius:12px;overflow:hidden;position:relative;min-height:340px}
+.viewer canvas{width:100%;height:440px;display:block}
+.viewer-status{position:absolute;inset:auto 12px 12px 12px;color:#d6d6da;font-size:.85rem;background:rgba(20,20,22,.72);padding:8px 10px;border-radius:8px}
+.mesh-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.mesh-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.mesh-card h4{margin:12px 14px 2px;font-size:1rem}
+.mesh-card p{margin:0 14px 12px;color:var(--muted);font-size:.88rem;line-height:1.5}
+model-viewer{width:100%;height:300px;background:var(--soft);display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 4px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:1.45rem;line-height:1.1;letter-spacing:-.02em}
+.stat span{color:var(--muted);font-size:.85rem;line-height:1.45;display:block;margin-top:4px}
+.code-group{margin:14px 0 4px;font-weight:650;color:#111}
+ul.code{list-style:none;padding:0;margin:6px 0 0}
+ul.code li{padding:13px 0;border-top:1px solid var(--line)}
+ul.code li:first-child{border-top:none}
+ul.code a{font-weight:600;text-decoration:none}
+ul.code a:hover{text-decoration:underline}
+ul.code span{display:block;color:#444;font-size:.94rem;margin-top:2px}
+.licence{color:var(--muted);font-size:.88rem;margin-top:14px}
+@media(max-width:640px){.row{flex-direction:column;gap:6px}.side{flex:none}h1{font-size:2rem}.mesh-grid,.stats{grid-template-columns:1fr}.viewer canvas{height:340px}model-viewer{height:260px}}
 </style></head><body><div class="wrap">
 
 <div class="meta">RESEARCH<span class="dot">·</span>NOVEMBER 2026</div>
@@ -31,8 +58,52 @@ a{color:var(--accent)}
 
 <hr>
 
-<h2 style="margin-top:0">The lab in numbers</h2>
+<h2>The lab in numbers</h2>
 <p class="note"><b>5 manuscripts</b> published openly in a single programme — neuroanatomy, astronomy, history of science, historical statistics — each CC BY 4.0, each with a complete map from every number to its source. <b>343 species</b> compared across the two great brain archives, and <b>53 of 71</b> archive labels recovered — the other 18 were empty placeholders. The <b>first MRI hippocampus measurement for the lion</b>: 2.02 cm³, against the 4.50 cm³ value cited since 2007. <b>34 historical units</b> re-quantified for the famine of 1900; <b>24 received numbers</b> audited bearer by bearer; <b>23 standard questions</b> graded for whether they can be answered at all. And before any of it was published, <b>11 headline claims were precedent-checked</b> — 4 held, 4 narrowed, 3 withdrawn. The withdrawals are part of the record: the audit applies to the lab first.</p>
+
+<h2 id="brain-atlas">Inside the lion brain — an interactive atlas</h2>
+<p class="note">The headline specimen from <i>The Lost Atlas</i>, explorable in the browser. The volume viewer below loads the lion structural MRI with the catalogue hippocampus label overlaid in red. Drag to move through the slices; scroll to change slice. The two surface meshes underneath are separate, rotatable viewers — they are presented side by side, not overlaid on each other.</p>
+
+<div class="stats" aria-label="Lion hippocampus measurement">
+  <div class="stat"><b>2.02 cm³</b><span>Lion hippocampus, MRI — 2.022 cm³, 74,899 voxels at full resolution. The first MRI measurement for the lion.</span></div>
+  <div class="stat"><b>4.50 cm³</b><span>The histological value cited since 2007 (Reep et al.) — the number this measurement is checked against.</span></div>
+  <div class="stat"><b>~1.6×</b><span>The systematic offset between the histological compilation and the MRI atlas across 343 paired species.</span></div>
+</div>
+
+<figure>
+  <div class="viewer" id="niivue-wrap">
+    <canvas id="niivue-canvas" width="800" height="440" aria-label="Interactive lion brain MRI viewer with hippocampus overlay"></canvas>
+    <div class="viewer-status" id="niivue-status">Loading the interactive volume viewer… If it does not load, the slice montage below shows the same slices and label.</div>
+  </div>
+  <figcaption><b>Lion structural MRI with hippocampus overlay.</b> Source atlas: Brain Catalogue, MRI by Santin, Herbin &amp; Toro (2016), CC BY-NC 4.0 — non-commercial use with attribution. The viewer uses a downsampled copy for the web; the quoted 2.02 cm³ volume comes from the full-resolution label (2.022 cm³, 74,899 voxels), not from the downsampled overlay.</figcaption>
+</figure>
+
+<div class="mesh-grid">
+  <div class="mesh-card">
+    <model-viewer src="assets/lion_hippocampus_surface.glb" alt="Rotatable surface mesh of the lion hippocampus" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer>
+    <h4>Hippocampus surface</h4>
+    <p>Surface mesh built from the full-resolution catalogue hippocampus label — the label behind the 2.02 cm³ measurement. Drag to rotate.</p>
+  </div>
+  <div class="mesh-card">
+    <model-viewer src="assets/lion_brain_surface.glb" alt="Rotatable surface mesh of the whole lion brain" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer>
+    <h4>Whole-brain surface</h4>
+    <p>Surface mesh derived from the lab's own Otsu whole-brain mask. Shown as a standalone viewer; it is not co-registered as an overlay for the hippocampus mesh. Drag to rotate.</p>
+  </div>
+</div>
+
+<figure>
+  <img src="assets/lion_hippocampus_slices.png" alt="Sagittal, coronal and axial MRI slices through the lion hippocampus, with the hippocampus label in red" loading="lazy">
+  <figcaption><b>Slice montage (static fallback).</b> Sagittal, coronal and axial MRI slices through the hippocampus-label centroid, with the label in red. If the interactive viewers above fail to load, this montage and the caption above still show the specimen, the label, and the measurement.</figcaption>
+</figure>
+
+<figure>
+  <img src="assets/lion_hippocampus_qc_overlay.png" alt="Project quality-control overlay figure for the lion hippocampus label" loading="lazy">
+  <figcaption><b>Quality control.</b> The project's own QC overlay figure from the original analysis, shown as published in the lab's working record.</figcaption>
+</figure>
+
+<p class="caption">Attribution: Brain Catalogue — Santin, Herbin &amp; Toro (2016), Zenodo record 44855, CC BY-NC 4.0. Non-commercial use with attribution. The whole-brain surface is the lab's own derived product from its Otsu brain mask; the hippocampus surface is derived from the full-resolution catalogue label.</p>
+
+<h2>Research</h2>
 
 <div class="row"><div class="side"><b>Neuroanatomy</b>2026</div><div class="main">
 <h3>Two brain archives disagree by a factor of 1.6</h3>
@@ -64,6 +135,25 @@ a{color:var(--accent)}
 <p><a href="https://github.com/atharva-chourey-lab/testability-atlas">Manuscript →</a></p>
 </div></div>
 
+<h2>Code &amp; tools</h2>
+<p class="note">The code behind the papers, and the discovery tooling the lab built along the way — all open.</p>
+
+<p class="code-group">Code behind the papers</p>
+<ul class="code">
+<li><a href="https://github.com/atharva-chourey-lab/brain-archive-audit-code">brain-archive-audit-code</a><span>Code behind the Lost Atlas brain-archive audit — label recovery, volumes, and the cross-archive comparison.</span></li>
+<li><a href="https://github.com/atharva-chourey-lab/eclipse-reduction-code">eclipse-reduction-code</a><span>Eclipse solar-radius reduction — re-reducing historical eclipse observations with modern lunar topography.</span></li>
+<li><a href="https://github.com/atharva-chourey-lab/gazetteers-extraction-code">gazetteers-extraction-code</a><span>Gazetteers famine-panel extraction — building the 34-unit panel from the 1908 Imperial Gazetteers.</span></li>
+<li><a href="https://github.com/atharva-chourey-lab/testability-atlas-code">testability-atlas-code</a><span>Code behind the Testability Atlas — grading standard questions against the data that survives.</span></li>
+<li><a href="https://github.com/atharva-chourey-lab/chinese-correlation-spine">chinese-correlation-spine</a><span>The correlation-spine instrument behind <i>Received Numbers</i>.</span></li>
+</ul>
+
+<p class="code-group">Discovery tooling</p>
+<ul class="code">
+<li><a href="https://github.com/atharva-chourey-lab/goldmine-hunter">goldmine-hunter</a><span>Dataset-discovery tooling — finding stranded, unintegrated data that can still yield high-value findings.</span></li>
+<li><a href="https://github.com/atharva-chourey-lab/mound-hunter">mound-hunter</a><span>DEM mound-detection tooling — searching elevation data for candidate archaeological mounds.</span></li>
+</ul>
+<p class="licence">Licences: code is MIT-licensed; the manuscripts are CC BY 4.0. The lion MRI assets in the atlas section above are Brain Catalogue data under CC BY-NC 4.0, as attributed there.</p>
+
 <h2>Method</h2>
 <p class="note">Every result above was produced under the same discipline: <b>pre-registration before extraction</b>, so hypotheses are committed before data is touched; a <b>novelty scrub</b> against prior art before anything is claimed as new; <b>blind benchmarks</b>, so a measurement pipeline must recover known values before it is trusted with unknown ones; and <b>self-correction on the record</b> — when a later check revised an earlier number, the correction is part of the result.</p>
 
@@ -71,4 +161,34 @@ a{color:var(--accent)}
 <p class="note">All five manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed — and every claim is scoped to the archives and samples named in its summary. Public datasets and code will follow in the same repositories.</p>
 
 <footer>Atharva Chourey Lab · <a href="https://github.com/atharva-chourey-lab">github.com/atharva-chourey-lab</a></footer>
-</div></body></html>
+</div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@niivue/niivue@0.44.0/dist/niivue.umd.js"></script>
+<script>
+(function(){
+  var status=document.getElementById('niivue-status');
+  var started=false;
+  function fail(msg){ if(status){status.textContent=msg;} }
+  function init(){
+    if(started) return; started=true;
+    try{
+      if(typeof niivue==='undefined' || !niivue.Niivue){ fail('The interactive volume viewer could not load. The slice montage below shows the same slices and label.'); return; }
+      var nv=new niivue.Niivue({backColor:[0,0,0,1], show3Dcrosshair:true, isColorbar:false});
+      nv.attachTo('niivue-canvas');
+      nv.setSliceType(nv.sliceTypeMultiplanar);
+      nv.loadVolumes([
+        {url:'assets/lion_brain_mri.nii.gz', colorMap:'gray', opacity:1},
+        {url:'assets/lion_hippocampus.nii.gz', colorMap:'red', opacity:0.85}
+      ]).then(function(){ if(status){status.style.display='none';} }).catch(function(){ fail('The interactive volume failed to load. The slice montage below shows the same slices and label.'); });
+    }catch(e){ fail('The interactive volume viewer could not load. The slice montage below shows the same slices and label.'); }
+  }
+  if('IntersectionObserver' in window){
+    var el=document.getElementById('niivue-wrap');
+    var io=new IntersectionObserver(function(entries){ if(entries[0].isIntersecting){ init(); io.disconnect(); } },{rootMargin:'300px'});
+    io.observe(el);
+    setTimeout(init, 6000);
+  } else { init(); }
+})();
+</script>
+</body></html>
