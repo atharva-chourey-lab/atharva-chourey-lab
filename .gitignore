@@ -1,0 +1,34 @@
+# Large / raw data — deposit on Zenodo/OSF with a DOI, do not push to GitHub
+*.nii
+*.nii.gz
+*.mrc
+*.map
+*.ccp4
+*.fits
+*.h5
+*.h5ad
+data/raw/
+downloads/
+*.mp3
+*.mp4
+*.wav
+*.zip
+*.tar
+*.tar.gz
+
+# Private / credentials — never commit
+.env
+*.env*
+credentials*
+*secret*
+*.pem
+*.key
+id_rsa*
+.netrc
+.DS_Store
+
+# Caches / build artefacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.cache/

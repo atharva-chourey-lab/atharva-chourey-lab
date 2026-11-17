@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atharva Chourey — Research</title>
+<style>
+:root{--bg:#0b0e14;--panel:#121826;--text:#e8ecf3;--muted:#9aa7bd;--gold:#e8b84b;--teal:#3ec6b8;--line:#26304a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,'Times New Roman',serif}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 64px}
+h1{font-size:2rem;margin:0 0 6px}h2{font-size:1.25rem;margin:38px 0 10px;color:var(--gold);font-family:Helvetica,Arial,sans-serif;letter-spacing:.02em}
+.tag{color:var(--teal);font-style:italic;margin:0 0 18px}
+p{margin:0 0 14px}.muted{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:0 0 16px}
+.card h3{margin:0 0 8px;font-size:1.08rem;font-family:Helvetica,Arial,sans-serif}
+.card p{margin:0 0 8px}.card p:last-child{margin:0}
+a{color:var(--teal)}footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem}
+ul{margin:0 0 14px;padding-left:20px}li{margin-bottom:6px}
+</style></head><body><div class="wrap">
+<h1>Atharva Chourey</h1>
+<p class="tag">I build audit machinery for measurements a field forgot to check.</p>
+<p>My research programme takes published scientific and historical measurements that everyone cites and nobody re-verifies, and subjects them to independent re-measurement, archival recovery, and pre-registered blind benchmarks. The work sits at the intersection of comparative neuroanatomy, historical statistics, and the history of science.</p>
+
+<h2>Research</h2>
+
+<div class="card"><h3>The Lost Atlas — recovering a comparative brain archive</h3>
+<p>Public brain-atlas archives carry labels that have never been audited. Auditing one major archive end to end, I recovered the usable measurements label by label (53 of 71 labels contained real data; the rest were empty placeholders), produced the first MRI-based hippocampus measurement for the lion (<i>Panthera leo</i>, 2.02&nbsp;cm³) — 2.2× below the histological value the literature has cited since 2007 — and showed that the discrepancy localises to the histology side: across 343 species, histological volumes run systematically ~1.6× above MRI volumes, an offset any mixed-method comparison must correct for.</p>
+<p class="muted">Manuscript and recovered dataset in preparation.</p></div>
+
+<div class="card"><h3>Gazetteers and the famine of 1900</h3>
+<p>The Imperial Gazetteer of India holds district- and state-level statistics that were never extracted as data. I built the first machine-readable panel from the 1908 Gazetteers (34 units) and used it to test what drove population loss in the 1899–1900 famine. The result: political boundaries, not weather. Princely states lost 16.2% of population against 7.5% in directly-ruled British districts, while the correlation with rainfall was effectively zero (r&nbsp;=&nbsp;−0.05).</p>
+<p class="muted">Dataset and manuscript in preparation.</p></div>
+
+<div class="card"><h3>The eclipse-radius archive</h3>
+<p>Solar-radius estimates from historical eclipse observations underpin claims that the Sun has shrunk over centuries. Re-reducing the archived observations with modern lunar topography (a +0.100″ Watts-to-LOLA correction, applied asymmetrically by limb) yields a radius of 959.494&nbsp;±&nbsp;0.044″ — inconsistent with both the classical Auwers value and the modern IAU standard — and a cross-archive check shows the two canonical reductions disagree on 7 of 9 overlapping eclipses, with one probable sign error that inverts the famous shrinkage claim.</p>
+<p class="muted">Manuscript in preparation.</p></div>
+
+<div class="card"><h3>Auditing received numbers in Indian history</h3>
+<p>Widely repeated figures often trace to a single misread source. A bearer-by-bearer audit of two dozen cases — including Nalanda's enrolment, where the famous figure of 10,000 belongs to a seventh-century biography rather than to Xuanzang, against a physical capacity ceiling below 2,000 and a defensible peak of roughly 3,000–3,500 — separates figures that survive checking from those that dissolve.</p>
+<p class="muted">Working paper in preparation.</p></div>
+
+<div class="card"><h3>The Testability Atlas — what Indian historical statistics can actually decide</h3>
+<p>Before testing a claim, ask whether the surviving data could decide it at all. Grading 23 standard questions in Indian historical statistics against the data that actually survives: only 4 are testable at adequate power, 11 are underpowered, and 8 are untestable in principle. The Atlas is a map of where argument can end and where it cannot.</p>
+<p class="muted">Working paper in preparation.</p></div>
+
+<h2>Method</h2>
+<ul>
+<li><b>Pre-registration before extraction</b> — hypotheses and decision rules are committed before the data is touched.</li>
+<li><b>Novelty scrub</b> — prior art is searched before any result is presented as new.</li>
+<li><b>Blind benchmarks</b> — measurement pipelines are tested against known values, blind, before they are trusted on unknown ones.</li>
+<li><b>Self-correction on the record</b> — when a check revises an earlier number, the correction is published with the result, not buried.</li>
+</ul>
+
+<h2>Status</h2>
+<p>These programmes are complete as research; manuscripts and public datasets are in preparation and will appear here as they are released. Code and data repositories will be linked from this page on publication.</p>
+
+<footer>Atharva Chourey · <a href="https://github.com/atharva-chourey-lab">github.com/atharva-chourey-lab</a></footer>
+</div></body></html>
