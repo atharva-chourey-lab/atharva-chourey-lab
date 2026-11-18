@@ -8,8 +8,9 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 
 ## The lab in numbers
 
-- **6 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
+- **8 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
 - **343 species** compared across the two great brain archives; **53 of 71** archive labels recovered (the other 18 were empty placeholders).
+- **30 marmoset brains measured twice** — alive and after perfusion fixation — disagree by 21% in the hippocampal formation; across **42 species** with both a skull and a brain measurement, the brain fills a median 92% of the skull, not the assumed 100%.
 - **First MRI hippocampus measurement for the lion** — 2.02 cm³, against the 4.50 cm³ value the field had cited since 2007.
 - **34 historical units** re-quantified for the 1899–1900 famine; **24 received numbers** audited bearer by bearer; **23 standard research questions** graded for whether they can be answered at all.
 - **11 headline claims precedent-checked before publication** — 4 held, 4 narrowed, 3 withdrawn. The withdrawals are part of the record, not an embarrassment: the audit applies to the lab first.
@@ -20,6 +21,16 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 An end-to-end audit of a public comparative-brain archive recovered 53 usable labels of 71 (the rest were empty placeholders) and produced the first MRI hippocampus measurement for the lion: 2.02 cm³, against the 4.50 cm³ histological value cited since 2007. Across 343 paired species, the shrinkage-corrected histological compilation runs ~1.6× above the MRI atlas — a property of the two archives.
 
 Manuscript: [github.com/atharva-chourey-lab/lost-atlas](https://github.com/atharva-chourey-lab/lost-atlas)
+
+**The same brain measures 21% smaller after fixation** — *Neuroanatomy, 2026*
+Thirty marmosets in the Brain/MINDS dataset were scanned in vivo and again ex vivo after perfusion fixation — the same brains, the same atlas, the same pipeline — under a test pre-registered before any download. The hippocampal formation reads a median 21.0% smaller in the fixed brain (all 30 pairs negative); total labelled gray matter reads 10.4% smaller (the shipped atlas labels gray matter only — a declared scope). The shift is structure-dependent, not a uniform scale factor.
+
+Manuscript: [github.com/atharva-chourey-lab/marmoset-two-rulers](https://github.com/atharva-chourey-lab/marmoset-two-rulers)
+
+**The brain does not fill the skull** — *Neuroanatomy, 2026*
+Joining endocast volumes to brain volumes for 42 mammal species under a pre-registered protocol: median occupancy 0.919, only 40.5% of species inside the 90–100% band fossil quotients assume, and 19.0% above a physically impossible 100% — the field's two brain rulers disagree by more than the shortfall itself. The largest modern endocast dataset back-calculates skull volume from brain volume for 149 of its species, silently assuming the ~90% occupancy it appears to measure.
+
+Manuscript: [github.com/atharva-chourey-lab/occupancy-audit](https://github.com/atharva-chourey-lab/occupancy-audit)
 
 **Rainfall did not drive the famine of 1900** — *Historical statistics, 2026*
 A famine panel from the 1908 Imperial Gazetteers (34 units; first extracted as an economic panel by Roy, 2014) re-quantifies a contrast the 1901 Census itself reported — princely states −16.2%, British districts −7.5% — and adds the null: correlation with mean rainfall is −0.05. Political boundaries, not weather, carry the signal.
@@ -71,6 +82,6 @@ Pre-registration before extraction · novelty scrub before claiming · blind ben
 
 ## Status
 
-All six manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
+All eight manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
 
 Site: https://atharva-chourey-lab.github.io/atharva-chourey-lab/

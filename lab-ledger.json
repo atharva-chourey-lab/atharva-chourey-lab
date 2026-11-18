@@ -1,0 +1,364 @@
+{
+ "also_published": [
+  {
+   "location": "Muse Library artifact, slug: the-correlation-web",
+   "name": "The Correlation Web (compendium page)",
+   "note": "A single-page compendium of the 2026-11-17 programme: instrument, results in strength order, and the gate failure as the closing piece. A presentation artifact, not a manuscript and not a journal submission."
+  }
+ ],
+ "assets_3d": {
+  "assets": [
+   "lion_brain_mri.nii.gz — lion structural MRI volume, 138×167×104, 0.6 mm iso (downsampled from Zenodo 44855, CC BY-NC 4.0)",
+   "lion_hippocampus.nii.gz — hippocampus label overlay (the 2.02 cm³ measurement)",
+   "lion_telencephalon.nii.gz — telencephalon label overlay (145.6 cm³ at full resolution)",
+   "lion_brain_surface.glb — whole-brain surface mesh, 28,417 verts / 56,326 faces (lab-derived Otsu mask)",
+   "lion_hippocampus_surface.glb — hippocampus surface mesh, 45,393 verts / 90,834 faces",
+   "OBJ interchange copies of both meshes; slice montage and QC overlay PNGs as 2D fallbacks"
+  ],
+  "licence_note": "Source MRI and labels are CC BY-NC 4.0 (Brain Catalogue, Zenodo 44855) — non-commercial use with attribution; see ASSETS.md for the full verdict.",
+  "location": "~/workspace/github-dashboard/assets/ (documented in ASSETS.md)",
+  "viewer_subject": "Interactive lion-brain viewer on the lab dashboard (NiiVue volume + three.js surfaces)",
+  "viewers": 1
+ },
+ "datasets": [
+  {
+   "location": "chinese-correlation-spine repo, data/anchors.json (+ anchors.csv, eras.json)",
+   "name": "Correlation Web anchor database",
+   "note": "53 TAQ / 54 floruit / 25 synchronism / 1 TPQ; 47 firm / 74 probable / 12 contested. The exports/panel.csv export predates the Medicine merge and carries 117 rows; anchors.json is authoritative.",
+   "records": 133
+  },
+  {
+   "location": "~/workspace/chinese-correlation-spine/nalanda/numbers.csv (dataset behind received-numbers §3)",
+   "name": "Nalanda graded quantities",
+   "note": "14 firm / 22 probable / 12 rhetoric / 1 not-Nalanda-specific in the source grading; every quantity carries its bearer and date.",
+   "records": 49
+  },
+  {
+   "location": "received-numbers (Campaigns 1–2); source files in the chinese-correlation-spine repo (campaign/, campaign2/)",
+   "name": "Campaign verdict set",
+   "note": "Campaign 1: 5 corrected / 3 corroborated / 5 bounded / 2 no bite. Campaign 2: 2 / 4 / 8 / 8. One further case (D8) skipped under its pre-registered rule and reported as skipped.",
+   "records": 37
+  },
+  {
+   "location": "gazetteers-famine-1900 repo",
+   "name": "Gazetteers famine panel",
+   "note": "34 units of central India (11 princely states, 23 British districts), re-extracted from the 1908 Imperial Gazetteers.",
+   "records": 34
+  },
+  {
+   "location": "testability-atlas repo",
+   "name": "Testability Atlas grading grid",
+   "note": "23 questions across 10 official series and 8 tests: 4 testable / 11 underpowered / 8 untestable.",
+   "records": 23
+  },
+  {
+   "location": "~/workspace/dog-genomics/ (local build; site + dashboard entry only — no manuscript repo this pass)",
+   "name": "Dog breed-size GWAS replication and lifespan join",
+   "note": "Pre-registered replication on Hayward et al. 2016 Dryad data (1,873-dog breed set, GEMMA kinship LMM): Hayward 17 QTLs 14/17 recovered, 0 direction errors, λ 0.958 vs paper 0.96–1.05; Plassais markers 6/13 — the WGS marker set does not transfer into a kinship LMM. Lifespan join vs McMillan 2024 (125 breeds): r = −0.627, p = 5.5×10⁻¹⁵; size-conditioned model kills all size-locus lifespan signals.",
+   "records": 1873
+  }
+ ],
+ "framing": "Independent research lab. A human–AI collaboration: Atharva Chourey works with Lapis (Muse), an AI research partner; all results are framed as the collaboration's.",
+ "generated": "2026-11-17",
+ "generated_by": "Consolidation build, 2026-11-17; updated 2026-11-17 (evening) by the site-update build: marmoset-two-rulers and occupancy-audit manuscripts published, dog-genomics added as a dashboard dataset entry; all counts computed from the live GitHub org and the source files, not estimated.",
+ "lab": "Atharva Chourey Lab",
+ "org": "atharva-chourey-lab",
+ "org_url": "https://github.com/atharva-chourey-lab",
+ "papers": [
+  {
+   "category": "Neuroanatomy",
+   "headline": "Histological compilation values average ~1.6× MRI-atlas values across the audited archive; the lion hippocampus measures 2.02 cm³ on MRI against a 4.50 cm³ histological compilation value.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "lost-atlas",
+   "status": "public",
+   "submission_package": {
+    "location": "~/workspace/papers/submissions/p1-bbe/",
+    "status": "Package prepared 2026-11-17 — PREP ONLY, not submitted",
+    "venue": "Brain, Behavior and Evolution (Oxford Academic)"
+   },
+   "title": "Shrinkage-corrected histological compilation values average ~1.6× MRI-atlas values: an audit of a comparative neuroanatomy archive",
+   "url": "https://github.com/atharva-chourey-lab/lost-atlas",
+   "venue_submitted": false
+  },
+  {
+   "category": "Historical statistics",
+   "headline": "34 units (11 princely states, 23 British districts): gazetteer mean rainfall is uncorrelated with 1891–1901 population change (r = −0.05); princely states lost −16.2% against −7.5% for British districts.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "gazetteers-famine-1900",
+   "status": "public",
+   "submission_package": null,
+   "title": "Not rainfall: mean rainfall and population loss in the 1899–1900 famine — a famine-focused re-extraction of the Imperial Gazetteers for central India",
+   "url": "https://github.com/atharva-chourey-lab/gazetteers-famine-1900",
+   "venue_submitted": false
+  },
+  {
+   "category": "Astronomy",
+   "headline": "Re-reduced solar radius 959.494 ± 0.044″, inconsistent with the canonical value; the canonical archive's 1715 entry is a probable sign error.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "eclipse-radius",
+   "status": "public",
+   "submission_package": {
+    "location": "~/workspace/papers/submissions/p3-solar-physics/",
+    "status": "Package prepared 2026-11-17 — PREP ONLY, not submitted",
+    "venue": "Solar Physics (Springer)"
+   },
+   "title": "A re-reduction of historical eclipse observations: solar radius 959.494 ± 0.044″ and a probable sign error in the canonical archive",
+   "url": "https://github.com/atharva-chourey-lab/eclipse-radius",
+   "venue_submitted": false
+  },
+  {
+   "category": "History of science",
+   "contains": [
+    "Nalanda statistical audit (source build: ~/workspace/chinese-correlation-spine/nalanda/)",
+    "Correction Campaign 1, 15 cases (source build: ~/workspace/chinese-correlation-spine/campaign/)",
+    "Correction Campaign 2, 22 cases: Buddha chronology, Krishna control, Vikramaditya, major kings, Mahavira addendum (source build: ~/workspace/chinese-correlation-spine/campaign2/)"
+   ],
+   "headline": "The Correlation Web's consolidated paper: the Nalanda flagship case (49 graded quantities; the 10,000 is Huili's, not Xuanzang's; excavated capacity 450–650 residents, ceiling below 2,000; defensible peak c. 2,500–4,500) plus two pre-registered campaigns grading 37 cases (Campaign 1: 5 corrected / 3 corroborated / 5 bounded / 2 no bite; Campaign 2: 2 / 4 / 8 / 8; one further case skipped under its pre-registered rule).",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "reconciliation_note": "The Nalanda build and both correction campaigns are NOT separate repos: they were already consolidated into this paper before the 2026-11-17 consolidation build. Creating nalanda-capacity or correction-campaign repos would duplicate it.",
+   "repo": "received-numbers",
+   "status": "public",
+   "submission_package": null,
+   "title": "Received numbers: a bearer-by-bearer audit of famous figures in Indian history",
+   "url": "https://github.com/atharva-chourey-lab/received-numbers",
+   "venue_submitted": false
+  },
+  {
+   "category": "Methodology",
+   "headline": "Of 23 graded questions on clean Indian official data: 4 testable, 11 underpowered, 8 untestable — graded under a pre-registered rubric.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "testability-atlas",
+   "status": "public",
+   "submission_package": {
+    "location": "~/workspace/papers/submissions/p5-historical-methods/",
+    "status": "Package prepared 2026-11-17 — PREP ONLY, not submitted",
+    "venue": "Historical Methods: A Journal of Quantitative and Interdisciplinary History (Taylor & Francis)"
+   },
+   "title": "The Testability Atlas: Which Questions in Indian Historical Statistics Can Surviving Data Decide?",
+   "url": "https://github.com/atharva-chourey-lab/testability-atlas",
+   "venue_submitted": false
+  },
+  {
+   "category": "Morphology",
+   "headline": "Within-specimen centroid-size profiles of the six long bones separate all five living rhinoceros species.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "rhino-forearm",
+   "status": "public",
+   "submission_package": null,
+   "title": "The Forearm Splits the Rhinos: Within-Specimen Centroid-Size Profiles of the Six Long Bones Separate All Five Living Rhinoceros Species",
+   "url": "https://github.com/atharva-chourey-lab/rhino-forearm",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (consolidation build)",
+   "category": "History",
+   "headline": "Floruit c. 480–530 (Luoyang 516–526, dead before 534); the famous 527 arrival fails three independent tests; his teacher Prajñātāra is first attested in 801, a lineage seam insertion; no Indian source attests the name Bodhidharma at all.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "bodhidharma-dossier",
+   "source_build": "~/workspace/chinese-correlation-spine/bodhidharma/BODHIDHARMA.md",
+   "status": "public",
+   "submission_package": null,
+   "title": "Who was Bodhidharma? A dated-witness stratigraphy and lineage-chart forensics",
+   "url": "https://github.com/atharva-chourey-lab/bodhidharma-dossier",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (consolidation build)",
+   "category": "History of medicine",
+   "headline": "Caraka and Suśruta were translated in Baghdad (Suśruta 786–803; Caraka quoted by c. 850) and never in China; Vāgbhaṭa corroborated at c. 550–650 by Yijing's 691 report; the '5,000-year-old Ayurveda' claim conflates three layers and overshoots the canon by ~2,800 years.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "medicine-file",
+   "source_build": "~/workspace/chinese-correlation-spine/medicine/MEDICINE.md",
+   "status": "public",
+   "submission_package": null,
+   "title": "The canon travelled west: dating the Ayurvedic saṃhitās against the Baghdad, Chinese and Tibetan records",
+   "url": "https://github.com/atharva-chourey-lab/medicine-file",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (consolidation build)",
+   "category": "History",
+   "headline": "The 629 CE foundation date is the youngest layer of the tradition, contradicted by its own earliest texts (which land in the 9th century); the attestation ladder runs 782/783 (tombstone, AH 166) → 849 (Quilon plates, firm) → 1124 (first dated mosque foundation in Kerala).",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "malabar-mosque",
+   "source_build": "~/workspace/chinese-correlation-spine/malabar-mosque/MOSQUE.md",
+   "status": "public",
+   "submission_package": null,
+   "title": "An attestation ladder for India's first mosque: the Cheraman tradition against the dated record",
+   "url": "https://github.com/atharva-chourey-lab/malabar-mosque",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (consolidation build)",
+   "category": "History",
+   "headline": "Gospel of Thomas composed c. 70–140 (forced by the papyri); the Northwest/Gondophares strand is plausible–unproven (the Acts names the king and his brother, attested nowhere in Greek or Roman literature); the Malabar itinerary is first written in the 16th century; the Chinese record attests the carrier (635/638/781) and never names Thomas — no bite on the man.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "thomas-file",
+   "source_build": "~/workspace/chinese-correlation-spine/thomas/THOMAS.md",
+   "status": "public",
+   "submission_package": null,
+   "title": "Thomas in the East: the Gospel of Thomas, the Gondophares strand, and the limits of the Chinese record",
+   "url": "https://github.com/atharva-chourey-lab/thomas-file",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (consolidation build)",
+   "category": "Methodology",
+   "headline": "REGISTERED NEGATIVE: the pre-registered blind gates failed — absolute gate 0/17 against a bar of ≥15, ordering gate Kendall τ = 0.000 with 15 inversions. No date for the Bṛhadāraṇyaka was produced; the sampler was exonerated and the single-branch model class falsified (register impersonates date). A successor requires a background/register branch under a NEW registration.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "upanishad-gates",
+   "source_build": "~/workspace/brihadaranyaka-dating/ (PREREGISTRATION.md, research/AMENDMENTS.md, model/MODEL.md, model/BENCHMARK-SCORECARD.md)",
+   "status": "registered-negative",
+   "submission_package": null,
+   "title": "Dating the Bṛhadāraṇyaka Upaniṣad by a linguistic clock: a pre-registered blind-gate failure",
+   "url": "https://github.com/atharva-chourey-lab/upanishad-gates",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (site update build)",
+   "category": "Neuroanatomy",
+   "headline": "Same brains scanned in vivo and ex vivo (Brain/MINDS, n = 30 pairs): hippocampal formation −21.0% after perfusion fixation (30/30 pairs negative); total labelled gray matter −10.4%; both pre-registered thresholds crossed.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "marmoset-two-rulers",
+   "source_build": "~/workspace/brain-scan-comparison/projects/marmoset-pairs/ (PREREGISTRATION.md, RESULTS.md, outputs/)",
+   "status": "public",
+   "submission_package": null,
+   "title": "One Brain, Two Rulers: The Hippocampal Formation Measures 21% Smaller After Perfusion Fixation in the Same Marmoset Brains",
+   "url": "https://github.com/atharva-chourey-lab/marmoset-two-rulers",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-17 (site update build)",
+   "category": "Neuroanatomy",
+   "headline": "Endocast occupancy joined for 42 species: median 0.919; only 40.5% within the 90–100% band fossil EQ assumes; 19.0% above 100% (ruler mismatch); Artiodactyla 0.79, Cetacea 0.79, Perissodactyla 0.84; Dembitzer supplement back-calculates ECV = brain × 1.108 for 149 species.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "occupancy-audit",
+   "source_build": "~/workspace/brain-scan-comparison/projects/occupancy-audit/ (PREREGISTRATION.md as amended, RESULTS.md, outputs/occupancy_joined.csv)",
+   "status": "public",
+   "submission_package": null,
+   "title": "The Brain Does Not Fill the Skull: A 42-Species Occupancy Audit Finds Ruler Chaos, Not a Constant",
+   "url": "https://github.com/atharva-chourey-lab/occupancy-audit",
+   "venue_submitted": false
+  }
+ ],
+ "pre_registrations": [
+  {
+   "location": "~/workspace/brihadaranyaka-dating/PREREGISTRATION.md (+ research/AMENDMENTS.md, Amendments 1–5)",
+   "name": "Bṛhadāraṇyaka dating pre-registration",
+   "note": "Committed before any extraction. Its blind gates failed; the outcome is published as upanishad-gates."
+  },
+  {
+   "location": "chinese-correlation-spine repo, campaign/CAMPAIGN-PREREG.md",
+   "name": "Correction Campaign 1 pre-registration",
+   "note": "15 cases + Bodhidharma addendum (Case 16, dedicated build, excluded from tallies); verdict classes fixed in advance."
+  },
+  {
+   "location": "chinese-correlation-spine repo, campaign2/CAMPAIGN2-PREREG.md",
+   "name": "Correction Campaign 2 pre-registration",
+   "note": "Scopes A–D declared before grading; scope E (Mahāvīra) added by addendum, registered before any E case was graded."
+  },
+  {
+   "location": "testability-atlas repo (paper.md, Methods)",
+   "name": "Testability Atlas rubric",
+   "note": "Rubric, machinery and anchors registered before grading the 23 questions."
+  },
+  {
+   "location": "~/workspace/brain-scan-comparison/projects/marmoset-pairs/PREREGISTRATION.md",
+   "name": "Marmoset paired fixation test pre-registration",
+   "note": "Decide-test thresholds (>5% total labelled gray matter, >10% hippocampal formation) and kill conditions K1–K3 committed before any download. Both thresholds crossed; published as marmoset-two-rulers."
+  },
+  {
+   "location": "~/workspace/brain-scan-comparison/projects/occupancy-audit/PREREGISTRATION.md (as amended 2026-11-17, before any join)",
+   "name": "Occupancy audit pre-registration",
+   "note": "Kill conditions K1/K2 and source-priority rules registered; neither kill fired (join n = 42 vs K2 floor of 40). Published as occupancy-audit."
+  },
+  {
+   "location": "~/workspace/dog-genomics/PREREGISTRATION.md",
+   "name": "Dog genomics pre-registration",
+   "note": "Grading sets and verdict rules committed before any association ran (Hayward 17 QTLs; Plassais 14 markers / 13 loci; McMillan 2024 lifespan join, never pooled with Teng)."
+  }
+ ],
+ "stats": {
+  "campaign_cases_graded": 37,
+  "campaign_cases_skipped_under_preregistered_rule": 1,
+  "correlation_web_anchors": 133,
+  "correlation_web_anchors_constraint_types": {
+   "TAQ": 53,
+   "TPQ": 1,
+   "floruit": 54,
+   "synchronism": 25
+  },
+  "correlation_web_anchors_firmness": {
+   "contested": 12,
+   "firm": 47,
+   "probable": 74
+  },
+  "manuscripts_awaiting_peer_review": 13,
+  "manuscripts_in_preparation": 0,
+  "manuscripts_public": 13,
+  "manuscripts_registered_negative": 1,
+  "preprints_note": "All 13 manuscripts are public preprints in the lab's GitHub format. None has been submitted to a journal; none is peer-reviewed. Three submission packages are prepared (lost-atlas, eclipse-radius, testability-atlas), each explicitly PREP ONLY.",
+  "profile_repo": 1,
+  "submission_packages_prepared": 3,
+  "tools_public": 7,
+  "total_repos": 21,
+  "venue_submitted_count": 0
+ },
+ "status_vocabulary": {
+  "manuscript-in-preparation": "A completed or near-completed manuscript not yet public. Count today: 0 — every completed manuscript is public.",
+  "public": "Live on GitHub in the lab's publication format (README publication page, paper.md, SOURCES.md, paper.pdf, CC BY 4.0). Self-publication is NOT peer review.",
+  "registered-negative": "A pre-registered study whose registered success criterion failed, published in full as a negative result.",
+  "venue_submitted": "True only if the manuscript has actually been submitted to a journal. False for every paper in this ledger: three submission packages have been prepared (see submission_package), and every one of them is marked PREP ONLY — nothing has been submitted, no account created, nothing uploaded."
+ },
+ "tools": [
+  {
+   "added_note": "Already public before the consolidation build (snapshot publish commit c5bff11); tool files verified identical to the local working repo's HEAD on 2026-11-17. The local repo's 13-commit working history was deliberately NOT force-pushed over the published snapshot.",
+   "description": "The Correlation Web's instrument: a queryable database of foreign dated records (Chinese colophons, catalogues, pilgrim records, annals; Arabic and epigraphic records) constraining Indian dates, with a reign-era→CE converter (106 era entries), a measured composition-to-translation lag model (n=5 solid cases, median 186 years, stamped PROVISIONAL), and a circularity guard. 133 anchors. MIT (code).",
+   "repo": "chinese-correlation-spine",
+   "url": "https://github.com/atharva-chourey-lab/chinese-correlation-spine"
+  },
+  {
+   "description": "Finds datasets stranded on project websites that never reached the formal archives, and grades them for research use.",
+   "repo": "goldmine-hunter",
+   "url": "https://github.com/atharva-chourey-lab/goldmine-hunter"
+  },
+  {
+   "description": "DEM-based hunt for vanished archaeological mounds in the Narmada corridor, with field-verification grading.",
+   "repo": "mound-hunter",
+   "url": "https://github.com/atharva-chourey-lab/mound-hunter"
+  },
+  {
+   "description": "Label-audit, segmentation and volumetry code for the Lost Atlas brain-scan comparison.",
+   "repo": "brain-archive-audit-code",
+   "url": "https://github.com/atharva-chourey-lab/brain-archive-audit-code"
+  },
+  {
+   "description": "Re-reduction of the historical eclipse archive against LOLA topography — solar radius pipeline.",
+   "repo": "eclipse-reduction-code",
+   "url": "https://github.com/atharva-chourey-lab/eclipse-reduction-code"
+  },
+  {
+   "description": "Imperial Gazetteers re-extraction and famine-1900 / princely-vs-British panel analysis code.",
+   "repo": "gazetteers-extraction-code",
+   "url": "https://github.com/atharva-chourey-lab/gazetteers-extraction-code"
+  },
+  {
+   "description": "Question-level testability grading of Indian historical statistics — spectral/power machinery for the Testability Atlas.",
+   "repo": "testability-atlas-code",
+   "url": "https://github.com/atharva-chourey-lab/testability-atlas-code"
+  }
+ ]
+}
