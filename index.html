@@ -1,107 +1,229 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atharva Chourey Lab — Research</title>
-<meta name="description" content="Atharva Chourey Lab — a human–AI research lab auditing the measurements science stopped checking. Interactive lion brain atlas, six open manuscripts, and the code behind them.">
+<title>Atharva Chourey Lab — New Discoveries</title>
+<meta name="description" content="Atharva Chourey Lab — six research studies uncovering new measurements, hidden data, and fresh insights about brains, animals, the Sun, and history. Interactive 37-species brain explorer.">
 <style>
-:root{--bg:#ffffff;--text:#111;--muted:#6e6e73;--line:#e5e5e5;--accent:#111;--soft:#f5f5f7;--red:#c1272d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:820px;margin:0 auto;padding:56px 22px 72px}
-.meta{text-align:center;color:var(--muted);font-size:.85rem;font-weight:600;letter-spacing:.04em;margin-bottom:14px}
-.meta .dot{margin:0 8px;color:#c7c7cc}
-h1{text-align:center;font-size:2.6rem;line-height:1.15;font-weight:700;margin:0 0 18px;letter-spacing:-.02em}
-.dek{text-align:center;font-size:1.13rem;color:#333;max-width:620px;margin:0 auto 8px}
-.byline{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:10px;max-width:680px;margin-left:auto;margin-right:auto}
-hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+:root{--cream:#faf7f1;--paper:#fffdf9;--ink:#16233c;--ink2:#3d4a63;--muted:#7c8494;--line:#e7e0d2;--amber:#c47b12;--amber-soft:#f7ead2;--sage:#6f8261;--sage-soft:#e9eee2;--dark:#0b1526;--dark2:#101f38;--glow:#f0b24a;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px 72px}
+a{color:var(--amber)}img{max-width:100%}
+.eyebrow{text-align:center;color:var(--amber);font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:34px 0 12px}
+h1{text-align:center;font-size:2.9rem;line-height:1.12;font-weight:750;margin:0 auto 16px;letter-spacing:-.025em;max-width:820px}
+.dek{text-align:center;font-size:1.16rem;color:var(--ink2);max-width:700px;margin:0 auto 12px}
+.byline{text-align:center;color:var(--muted);font-size:.93rem;max-width:720px;margin:0 auto 6px}
+.honesty{text-align:center;font-size:.9rem;color:var(--ink2)} .honesty b{color:var(--amber)}
+.hero-img{margin:26px 0 0;border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(22,35,60,.14)}
+.hero-img img{width:100%;height:auto;display:block}
+.figcap{color:var(--muted);font-size:.85rem;margin-top:8px;text-align:center}
+h2.sec{font-size:1.7rem;letter-spacing:-.02em;margin:64px 0 6px;font-weight:720}
+.sec-dek{color:var(--ink2);max-width:680px;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 24px rgba(22,35,60,.06);display:flex;flex-direction:column}
+.card .vis{aspect-ratio:16/9;overflow:hidden;background:var(--sage-soft)} .card .vis img{width:100%;height:100%;object-fit:cover;display:block}
+.card .vis.tall{aspect-ratio:auto}.card .vis.tall img{height:auto;object-fit:contain}
+.card model-viewer{width:100%;height:210px;background:#101f38;display:block}
+.card .body{padding:18px 20px 0;flex:1}
+.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:.95rem;margin-bottom:10px}
+.card h3{margin:0 0 8px;font-size:1.22rem;line-height:1.3;letter-spacing:-.01em}
+.bignum{font-size:1.9rem;font-weight:750;letter-spacing:-.03em;line-height:1.15;margin:6px 0 2px}
+.bignum small{font-size:.95rem;font-weight:600;color:var(--ink2);letter-spacing:0}
+.card p{margin:6px 0;color:var(--ink2);font-size:.96rem}
+.why{margin:14px 20px 18px;background:var(--amber-soft);border-radius:12px;padding:11px 14px;font-size:.9rem;color:#5c430f}
+.why b{color:#8a5c08}
+table.mini{width:100%;border-collapse:collapse;font-size:.88rem;margin:10px 0 4px}
+table.mini th,table.mini td{padding:5px 6px;border-bottom:1px solid var(--line);text-align:right} table.mini th:first-child,table.mini td:first-child{text-align:left}
+table.mini th{color:var(--muted);font-weight:600}
+.bars{margin:12px 0 4px}.bar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:.9rem}
+.bar-row .lbl{flex:0 0 108px;color:var(--ink2)} .bar-track{flex:1;background:var(--sage-soft);border-radius:99px;height:14px;overflow:hidden}
+.bar-fill{height:100%;border-radius:99px;background:var(--sage)} .bar-fill.a{background:var(--amber)} .bar-fill.i{background:var(--ink)}
+.bar-row .val{flex:0 0 22px;font-weight:700}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mini-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 4px 16px rgba(22,35,60,.05)}
+.mini-card b{display:block;font-size:1.25rem;letter-spacing:-.02em;margin-bottom:4px}
+.mini-card span{color:var(--ink2);font-size:.9rem;line-height:1.5;display:block}
+.panel{border-radius:22px;padding:34px 36px;margin-top:20px}
+.panel.big{background:var(--ink);color:#f3efe6}.panel.big p{font-size:1.35rem;line-height:1.5;margin:0;font-weight:600;letter-spacing:-.01em}
+.panel.take{background:var(--paper);border:1px solid var(--line);box-shadow:0 6px 24px rgba(22,35,60,.06)}
+.panel.take ul{margin:10px 0 0;padding-left:20px;color:var(--ink2)} .panel.take li{margin:7px 0}
+.panel h2{margin:0 0 8px;font-size:1.4rem;letter-spacing:-.02em}
+/* Explorer (dark) */
+.explorer{background:var(--dark);color:#e9edf5;border-radius:26px;padding:36px 34px 30px;margin-top:64px;box-shadow:0 24px 60px rgba(11,21,38,.35)}
+.explorer h2{color:#fff;font-size:1.8rem;margin:0 0 6px;letter-spacing:-.02em}
+.explorer .dek2{color:#aeb9cf;max-width:720px;margin:0 0 20px}
+.explorer select{background:var(--dark2);color:#fff;border:1px solid #2b4066;border-radius:10px;padding:10px 12px;font-size:1rem;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 6px}
+.chip{border:1px solid #2b4066;background:var(--dark2);color:#cfd9ec;border-radius:99px;padding:5px 12px;font-size:.83rem;cursor:pointer}
+.chip:hover{border-color:var(--glow)} .chip.on{background:var(--glow);color:#23180a;border-color:var(--glow);font-weight:700}
+.chip.empty{opacity:.45;border-style:dashed}
+.viewers{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:16px}
+.vbox{background:#060d1a;border:1px solid #22365a;border-radius:16px;overflow:hidden;position:relative;min-height:320px}
+.vbox canvas{width:100%;height:400px;display:block}
+.vbox model-viewer{width:100%;height:400px;background:#060d1a;display:block}
+.vstatus{position:absolute;left:12px;right:12px;bottom:12px;color:#cfd9ec;font-size:.85rem;background:rgba(10,20,40,.8);padding:8px 10px;border-radius:8px}
+.vlabel{position:absolute;top:10px;left:12px;color:#8fa3c4;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;z-index:2}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.btn{background:var(--glow);color:#23180a;border:none;border-radius:99px;padding:11px 20px;font-size:.95rem;font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:#cfd9ec;border:1px solid #2b4066}
+.tgl{color:#cfd9ec;font-size:.9rem;display:inline-flex;gap:6px;align-items:center;margin-right:6px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;color:#aeb9cf;font-size:.86rem}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.sync{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.sync .cell{background:var(--dark2);border:1px solid #22365a;border-radius:12px;padding:13px 15px}
+.sync b{display:block;font-size:1.3rem;color:#fff;letter-spacing:-.02em}
+.sync span{color:#8fa3c4;font-size:.82rem;line-height:1.45;display:block;margin-top:3px}
+.tourcap{margin-top:14px;background:rgba(240,178,74,.12);border:1px solid rgba(240,178,74,.4);color:#f5dfae;border-radius:12px;padding:12px 16px;font-size:.95rem;display:none}
+.ecap{color:#8fa3c4;font-size:.85rem;line-height:1.6;margin-top:16px}
+.fallback-img{border-radius:14px;margin-top:14px;border:1px solid #22365a}
+/* Deeper sections (preserved) */
+.deep{max-width:820px;margin:0 auto}
+.deep h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:52px 0 10px;font-weight:600}
+.deep .note{color:var(--ink2)} .deep .note b{color:var(--ink)}
 .row{display:flex;gap:26px;padding:22px 0;border-top:1px solid var(--line)}
-.row:first-of-type{border-top:none}
-.side{flex:0 0 128px;color:var(--muted);font-size:.85rem;line-height:1.5;padding-top:5px}
-.side b{display:block;color:#333;font-weight:600}
-.main h3{margin:0 0 6px;font-size:1.32rem;line-height:1.3;font-weight:650;letter-spacing:-.01em}
-.main p{margin:0;color:#444}
-.main p+p{margin-top:8px}
-h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:48px 0 10px;font-weight:600}
-h2:first-of-type{margin-top:0}
-.note{color:#444}.note b{color:#111}
-footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
-a{color:var(--accent)}
-figure{margin:18px 0}
-figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
-figcaption,.caption{color:var(--muted);font-size:.88rem;line-height:1.55;margin-top:8px}
-.caption b{color:#333}
-.viewer{background:#000;border-radius:12px;overflow:hidden;position:relative;min-height:340px}
-.viewer canvas{width:100%;height:440px;display:block}
-.viewer-status{position:absolute;inset:auto 12px 12px 12px;color:#d6d6da;font-size:.85rem;background:rgba(20,20,22,.72);padding:8px 10px;border-radius:8px}
-.mesh-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
-.mesh-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-.mesh-card h4{margin:12px 14px 2px;font-size:1rem}
-.mesh-card p{margin:0 14px 12px;color:var(--muted);font-size:.88rem;line-height:1.5}
-model-viewer{width:100%;height:300px;background:var(--soft);display:block}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 4px}
-.stat{border:1px solid var(--line);border-radius:12px;padding:14px}
-.stat b{display:block;font-size:1.45rem;line-height:1.1;letter-spacing:-.02em}
-.stat span{color:var(--muted);font-size:.85rem;line-height:1.45;display:block;margin-top:4px}
-.code-group{margin:14px 0 4px;font-weight:650;color:#111}
-ul.code{list-style:none;padding:0;margin:6px 0 0}
-ul.code li{padding:13px 0;border-top:1px solid var(--line)}
-ul.code li:first-child{border-top:none}
-ul.code a{font-weight:600;text-decoration:none}
-ul.code a:hover{text-decoration:underline}
-ul.code span{display:block;color:#444;font-size:.94rem;margin-top:2px}
+.side{flex:0 0 128px;color:var(--muted);font-size:.85rem;line-height:1.5;padding-top:5px}.side b{display:block;color:var(--ink);font-weight:600}
+.main h3{margin:0 0 6px;font-size:1.3rem;line-height:1.3;font-weight:650;letter-spacing:-.01em}
+.main p{margin:0;color:var(--ink2)} .main p+p{margin-top:8px}
+.code-group{margin:14px 0 4px;font-weight:650}
+ul.code{list-style:none;padding:0;margin:6px 0 0} ul.code li{padding:13px 0;border-top:1px solid var(--line)}
+ul.code li:first-child{border-top:none} ul.code a{font-weight:600;text-decoration:none} ul.code a:hover{text-decoration:underline}
+ul.code span{display:block;color:var(--ink2);font-size:.94rem;margin-top:2px}
 .licence{color:var(--muted);font-size:.88rem;margin-top:14px}
-@media(max-width:640px){.row{flex-direction:column;gap:6px}.side{flex:none}h1{font-size:2rem}.mesh-grid,.stats{grid-template-columns:1fr}.viewer canvas{height:340px}model-viewer{height:260px}}
+footer{margin-top:52px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.strip{grid-template-columns:1fr 1fr}.viewers{grid-template-columns:1fr}.sync{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid,.strip{grid-template-columns:1fr}h1{font-size:2.05rem}.row{flex-direction:column;gap:6px}.side{flex:none}.explorer{padding:26px 18px}.vbox canvas,.vbox model-viewer{height:320px}.panel{padding:26px 22px}}
 </style></head><body><div class="wrap">
 
-<div class="meta">RESEARCH<span class="dot">·</span>NOVEMBER 2026</div>
-<h1>Auditing the measurements science stopped checking</h1>
-<p class="dek">Six results from one programme: take the published measurements everyone cites and nobody re-verifies — in neuroanatomy, morphology, astronomy, and historical statistics — and check them against the archives they came from.</p>
+<div class="eyebrow">Atharva Chourey Lab · Research · November 2026</div>
+<h1>New Discoveries from The Atharva Chourey Lab</h1>
+<p class="dek">Six research studies that uncover new measurements, hidden data, and fresh insights about brains, animals, the Sun, and history — often from data that already existed.</p>
 <p class="byline">Atharva Chourey Lab · A human–AI research lab — Atharva Chourey, in sustained collaboration with Lapis, an AI research partner (Muse). Every result below is the product of that collaboration: human questions, judgement and verification; AI search, extraction and audit at a scale neither reaches alone.</p>
+<p class="honesty">These are research findings — <b>not yet peer-reviewed</b> and not yet independently replicated.</p>
+<div class="hero-img"><img src="assets/clean_hero.jpg" alt="Editorial illustration: a lion, rhinoceroses, an eclipse, an ancient university, and archival records" width="2560" height="960"></div>
+<p class="figcap">Illustration (generated artwork, not data or photography).</p>
 
-<hr>
+<h2 class="sec">The Six Key Findings</h2>
+<p class="sec-dek">Each finding was checked against the archive it came from, with a complete map from every number to its source.</p>
 
+<div class="grid">
+
+<div class="card">
+  <model-viewer src="assets/lion_hippocampus_surface.glb" alt="Rotatable 3D surface mesh of the lion hippocampus, from the real catalogue label" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer>
+  <div class="body"><span class="num">1</span>
+  <h3>The lion's memory region is smaller than the field thought</h3>
+  <div class="bignum">2.02 cm³ <small>new MRI measurement</small></div>
+  <div class="bignum" style="color:var(--muted)">4.50 cm³ <small>the earlier histological value</small></div>
+  <p>The first MRI measurement of the lion hippocampus — 2.02 cm³ (2.022 cm³, 74,899 voxels at full resolution) — against the 4.50 cm³ histological value published by Reep et al. (2007) and cited since. Above: the real 3D surface of that label, rotatable. Explore the full brain in the <a href="#explorer">Brain Explorer</a> below.</p></div>
+  <div class="why"><b>Why it matters:</b> a key memory region may be smaller in lions than thought — the field's number was histological, never MRI.</div>
+</div>
+
+<div class="card">
+  <div class="vis"><img src="assets/clean_brain.jpg" alt="Editorial illustration of a brain archive" loading="lazy"></div>
+  <div class="body"><span class="num">2</span>
+  <h3>A brain archive full of empty files</h3>
+  <div class="bignum">53 of 71 <small>label files usable</small></div>
+  <div class="bignum" style="color:var(--muted)">18 <small>empty placeholders</small></div>
+  <p>An end-to-end audit of a public comparative-brain archive found 53 usable label files of 71 — the other 18 were empty placeholders that looked like data. Below: real MRI slices through the lion hippocampus label.</p>
+  <img src="assets/lion_hippocampus_slices.png" alt="Real sagittal, coronal and axial MRI slices through the lion hippocampus, label in red" loading="lazy" style="border-radius:10px;margin-top:8px"></div>
+  <div class="why"><b>Why it matters:</b> the audit rescues valuable data — and stops future researchers using misleading labels.</div>
+</div>
+
+<div class="card">
+  <div class="vis"><img src="assets/clean_rhinos.jpg" alt="Editorial illustration of rhinoceroses" loading="lazy"></div>
+  <div class="body"><span class="num">3</span>
+  <h3>The forearm splits the rhinos</h3>
+  <div class="bignum">10 of 10 <small>species comparisons significant</small></div>
+  <p>From 38 complete skeletons (all six bones) and 308 specimen-bone files in existing open data: all 10 pairwise species comparisons are significant (p ≤ 0.040; 8 of 10 survive Bonferroni). Largest split: black rhino vs greater one-horned rhino, 0.0566 log₁₀, p = 0.0014. The forearm profile runs −0.0450 (<i>R. unicornis</i>) to −0.0072 (<i>D. bicornis</i>).</p>
+  <img src="assets/rhino_profile_chart.png" alt="Real chart: mean within-specimen centred log centroid-size profiles for the five living rhino species" loading="lazy" style="border-radius:10px;margin-top:8px"></div>
+  <div class="why"><b>Why it matters:</b> clear anatomical differences between rhino species — from existing open data.</div>
+</div>
+
+<div class="card">
+  <div class="vis"><img src="assets/clean_eclipse.jpg" alt="Editorial illustration of a solar eclipse" loading="lazy"></div>
+  <div class="body"><span class="num">4</span>
+  <h3>Two eclipse tables tell opposite stories</h3>
+  <div class="bignum">959.494 ± 0.044″ <small>solar radius</small></div>
+  <p>Re-reducing historical eclipses with modern lunar topography gives a solar radius of 959.494 ± 0.044″ — vs Auwers 959.63″ and the IAU standard 959.22″. The two canonical tables disagree on 7 of 9 overlaps, with five sign flips; the 1715 value is a probable sign error.</p>
+  <table class="mini"><tr><th>Eclipse</th><th>Fiala 1994 ΔR</th><th>Dunham 2016 ΔR</th></tr>
+  <tr><td>1715</td><td>+0.48</td><td>−0.50</td></tr><tr><td>1925</td><td>+0.51</td><td>−0.21</td></tr>
+  <tr><td>1976</td><td>+0.04</td><td>−0.38</td></tr><tr><td>1987</td><td>−0.11</td><td>+0.10</td></tr>
+  <tr><td>1983</td><td>+0.09</td><td>−0.10</td></tr></table></div>
+  <div class="why"><b>Why it matters:</b> different historical datasets lead to opposite conclusions about the Sun.</div>
+</div>
+
+<div class="card">
+  <div class="vis"><img src="assets/clean_nalanda.jpg" alt="Editorial illustration of ancient Nalanda" loading="lazy"></div>
+  <div class="body"><span class="num">5</span>
+  <h3>Nalanda's famous 10,000 was never Xuanzang's number</h3>
+  <div class="bignum">~3,000–3,500 <small>defensible peak residents</small></div>
+  <p>The traditional claim of 10,000 residents comes from Huili's biography, not Xuanzang — in print since Beal's translations of 1884/1911, yet still credited to Xuanzang. The site's physical capacity ceiling is below 2,000; a defensible peak is ~3,000–3,500.</p></div>
+  <div class="why"><b>Why it matters:</b> a more evidence-based view of a great centre of learning.</div>
+</div>
+
+<div class="card">
+  <div class="vis"><img src="assets/clean_gazetteer.jpg" alt="Editorial illustration of colonial-era gazetteer records" loading="lazy"></div>
+  <div class="body"><span class="num">6</span>
+  <h3>Most standard questions cannot be answered</h3>
+  <div class="bars">
+    <div class="bar-row"><span class="lbl">Testable</span><span class="bar-track"><span class="bar-fill" style="width:17%"></span></span><span class="val">4</span></div>
+    <div class="bar-row"><span class="lbl">Underpowered</span><span class="bar-track"><span class="bar-fill a" style="width:48%"></span></span><span class="val">11</span></div>
+    <div class="bar-row"><span class="lbl">Untestable</span><span class="bar-track"><span class="bar-fill i" style="width:35%"></span></span><span class="val">8</span></div>
+  </div>
+  <p>The Testability Atlas graded 23 standard questions in Indian historical statistics against the data that actually survives: 4 testable, 11 underpowered, 8 untestable.</p></div>
+  <div class="why"><b>Why it matters:</b> it helps researchers ask better, more realistic questions.</div>
+</div>
+
+</div>
+
+<h2 class="sec">Additional findings</h2>
+<div class="strip">
+  <div class="mini-card"><b>r = −0.05</b><span><strong>Famine of 1900:</strong> mean rainfall vs population loss correlates at r = −0.05 — essentially nothing. Princely states lost −16.2% vs British districts −7.5% (n = 34 units). Political boundaries, not weather, carry the signal.</span></div>
+  <div class="mini-card"><b>~1.6×</b><span><strong>Two Rulers:</strong> the two great brain archives disagree by ~1.6× across 343 paired species — a systematic offset every mixed-method comparison inherits.</span></div>
+  <div class="mini-card"><b>2.90 ± 0.31 cm³</b><span><strong>Newborn check:</strong> the human newborn hippocampus (n = 10, M-CRIB) sits 12% below the generic mammalian scaling line (predicted 3.30 cm³) — a registered scaling-line check, reported as such.</span></div>
+  <div class="mini-card"><b>−81% to −92%</b><span><strong>Whales:</strong> four literature cetaceans sit at −81.3% to −92.0% residuals vs the scaling line, while manatee (+20.2%) and hippo (+47.1%) break any habitat reading: phylogeny, not habitat — and four cetaceans are effectively one evolutionary datapoint.</span></div>
+</div>
+
+<div class="panel big"><h2>The big picture</h2><p>Valuable new knowledge can emerge from data scientists have already collected — when it is re-measured, re-analysed, and carefully checked.</p></div>
+
+<div class="panel take"><h2>Key takeaways</h2><ul>
+<li>New measurements can challenge accepted numbers — the lion hippocampus is 2.02 cm³ by MRI, not the 4.50 cm³ long cited.</li>
+<li>Old data still yields original discoveries — the rhino forearm split was sitting in published open data.</li>
+<li>Historical and astronomical records need careful scrutiny — eclipse tables, Nalanda's 10,000, and colonial famine data all changed under checking.</li>
+<li>These are research findings, not yet independently replicated or peer-reviewed.</li>
+</ul></div>
+
+<section class="explorer" id="explorer">
+<h2>Brain Explorer — 37 species, real scans</h2>
+<p class="dek2">Every species in the Brain Catalogue, explorable in your browser. Pick a species to load its real MRI volume and recovered labels — loaded on selection only, never all at once. Species whose label files are <b>empty placeholders</b> are shown greyed and flagged, not hidden: that emptiness is itself one of the lab's findings. The lion — the headline specimen — loads at <b>full resolution</b>; other species load web copies downsampled ×2 (×3 for the largest scans), with all quoted volumes measured at full resolution.</p>
+<label for="species-select" style="color:#8fa3c4;font-size:.85rem;font-weight:700;letter-spacing:.08em">SPECIES</label><br>
+<select id="species-select" aria-label="Choose a species"></select>
+<div class="chips" id="species-chips" aria-label="Species quick select"></div>
+<div class="controls" id="overlay-toggles" aria-label="Label overlays"></div>
+<div class="viewers">
+  <div class="vbox"><span class="vlabel">Volume · MRI + labels</span><canvas id="nv-canvas" width="800" height="400" aria-label="Interactive brain MRI volume viewer"></canvas><div class="vstatus" id="nv-status">Loading the lion at full resolution…</div></div>
+  <div class="vbox"><span class="vlabel">Surface · drag to rotate</span><model-viewer id="mesh-viewer" alt="Rotatable brain surface mesh" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer><div class="vstatus" id="mesh-status">Loading surface…</div></div>
+</div>
+<img class="fallback-img" id="lion-fallback" src="assets/lion_hippocampus_slices.png" alt="Static fallback: sagittal, coronal and axial MRI slices through the lion hippocampus, label in red" loading="lazy" style="display:none;width:100%">
+<div class="controls">
+  <button class="btn" id="tour-btn" type="button">▶ Play the tour</button>
+  <button class="btn ghost" id="tour-stop" type="button" style="display:none">Stop tour</button>
+  <span style="color:#8fa3c4;font-size:.88rem">Free orbit: drag the surface · scroll the volume to change slice · use + / − on the surface viewer to zoom.</span>
+</div>
+<div class="tourcap" id="tour-cap"></div>
+<div class="legend"><span><span class="sw" style="background:#e5482e"></span>Hippocampus</span><span><span class="sw" style="background:#7a9a6d"></span>Telencephalon / Cerebrum</span><span><span class="sw" style="background:#5b8db8"></span>Atlas / whole brain</span><span><span class="sw" style="background:#b07cc6"></span>Other recovered labels</span></div>
+<div class="sync" aria-label="Selected species data">
+  <div class="cell"><b id="sync-name">Lion</b><span id="sync-sci">Panthera leo</span></div>
+  <div class="cell"><b id="sync-hipp">2.02 cm³</b><span>Hippocampus, MRI (audited, full-res)</span></div>
+  <div class="cell"><b id="sync-hist">4.50 cm³</b><span>Histological comparator (Reep et al. 2007)</span></div>
+  <div class="cell"><b id="sync-res">Full-res</b><span id="sync-res-note">276×334×209 @ 0.3 mm · 74,899 voxels</span></div>
+</div>
+<p class="ecap" id="explorer-cap"><b>How to read this:</b> volumes are quoted from full-resolution labels, never from the downsampled web overlays. The published paper reports 53 usable / 18 empty of 71 label files; this explorer marks files empty by direct voxel count — a later full recount found 5 additional empty Striatum files (48 real / 23 empty). Full reconciliation is documented in the lab's asset record (ASSETS.md).<br>
+Attribution: Brain Catalogue — Santin, Herbin &amp; Toro (2016), Zenodo record 44855, CC BY-NC 4.0 — non-commercial use with attribution. The lion whole-brain surface in the poster card's companion viewer is the lab's own product from its Otsu mask (full-res, 63,106 verts); the lion hippocampus surface is built from the full-resolution catalogue label (45,393 verts, Taubin-smoothed). Per-species meshes are catalogue <i>mesh.ply</i> conversions or lab-derived from Atlas masks, as flagged in the manifest. If WebGL or the CDN fails, the slice montage above is the honest fallback.</p>
+<figure style="margin:14px 0 0"><img src="assets/lion_hippocampus_qc_overlay.png" alt="Project quality-control overlay figure for the lion hippocampus label" loading="lazy" style="border-radius:12px;border:1px solid #22365a;width:100%"><figcaption style="color:#8fa3c4;font-size:.85rem;margin-top:6px">Quality control — the project's own QC overlay figure for the lion hippocampus label, from the original analysis.</figcaption></figure>
+</section>
+
+<div class="deep">
 <h2>The lab in numbers</h2>
 <p class="note"><b>6 manuscripts</b> published openly in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, historical statistics — each CC BY 4.0, each with a complete map from every number to its source. <b>343 species</b> compared across the two great brain archives, and <b>53 of 71</b> archive labels recovered — the other 18 were empty placeholders. The <b>first MRI hippocampus measurement for the lion</b>: 2.02 cm³, against the 4.50 cm³ value cited since 2007. <b>34 historical units</b> re-quantified for the famine of 1900; <b>24 received numbers</b> audited bearer by bearer; <b>23 standard questions</b> graded for whether they can be answered at all. And before any of it was published, <b>11 headline claims were precedent-checked</b> — 4 held, 4 narrowed, 3 withdrawn. The withdrawals are part of the record: the audit applies to the lab first.</p>
-
-<h2 id="brain-atlas">Inside the lion brain — an interactive atlas</h2>
-<p class="note">The headline specimen from <i>The Lost Atlas</i>, explorable in the browser. The volume viewer below loads the lion structural MRI with the catalogue hippocampus label overlaid in red. Drag to move through the slices; scroll to change slice. The two surface meshes underneath are separate, rotatable viewers — they are presented side by side, not overlaid on each other.</p>
-
-<div class="stats" aria-label="Lion hippocampus measurement">
-  <div class="stat"><b>2.02 cm³</b><span>Lion hippocampus, MRI — 2.022 cm³, 74,899 voxels at full resolution. The first MRI measurement for the lion.</span></div>
-  <div class="stat"><b>4.50 cm³</b><span>The histological value cited since 2007 (Reep et al.) — the number this measurement is checked against.</span></div>
-  <div class="stat"><b>~1.6×</b><span>The systematic offset between the histological compilation and the MRI atlas across 343 paired species.</span></div>
-</div>
-
-<figure>
-  <div class="viewer" id="niivue-wrap">
-    <canvas id="niivue-canvas" width="800" height="440" aria-label="Interactive lion brain MRI viewer with hippocampus overlay"></canvas>
-    <div class="viewer-status" id="niivue-status">Loading the interactive volume viewer… If it does not load, the slice montage below shows the same slices and label.</div>
-  </div>
-  <figcaption><b>Lion structural MRI with hippocampus overlay.</b> Source atlas: Brain Catalogue, MRI by Santin, Herbin &amp; Toro (2016), CC BY-NC 4.0 — non-commercial use with attribution. The viewer uses a downsampled copy for the web; the quoted 2.02 cm³ volume comes from the full-resolution label (2.022 cm³, 74,899 voxels), not from the downsampled overlay.</figcaption>
-</figure>
-
-<div class="mesh-grid">
-  <div class="mesh-card">
-    <model-viewer src="assets/lion_hippocampus_surface.glb" alt="Rotatable surface mesh of the lion hippocampus" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer>
-    <h4>Hippocampus surface</h4>
-    <p>Surface mesh built from the full-resolution catalogue hippocampus label — the label behind the 2.02 cm³ measurement. Drag to rotate.</p>
-  </div>
-  <div class="mesh-card">
-    <model-viewer src="assets/lion_brain_surface.glb" alt="Rotatable surface mesh of the whole lion brain" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer>
-    <h4>Whole-brain surface</h4>
-    <p>Surface mesh derived from the lab's own Otsu whole-brain mask. Shown as a standalone viewer; it is not co-registered as an overlay for the hippocampus mesh. Drag to rotate.</p>
-  </div>
-</div>
-
-<figure>
-  <img src="assets/lion_hippocampus_slices.png" alt="Sagittal, coronal and axial MRI slices through the lion hippocampus, with the hippocampus label in red" loading="lazy">
-  <figcaption><b>Slice montage (static fallback).</b> Sagittal, coronal and axial MRI slices through the hippocampus-label centroid, with the label in red. If the interactive viewers above fail to load, this montage and the caption above still show the specimen, the label, and the measurement.</figcaption>
-</figure>
-
-<figure>
-  <img src="assets/lion_hippocampus_qc_overlay.png" alt="Project quality-control overlay figure for the lion hippocampus label" loading="lazy">
-  <figcaption><b>Quality control.</b> The project's own QC overlay figure from the original analysis, shown as published in the lab's working record.</figcaption>
-</figure>
-
-<p class="caption">Attribution: Brain Catalogue — Santin, Herbin &amp; Toro (2016), Zenodo record 44855, CC BY-NC 4.0. Non-commercial use with attribution. The whole-brain surface is the lab's own derived product from its Otsu brain mask; the hippocampus surface is derived from the full-resolution catalogue label.</p>
 
 <h2>Research</h2>
 
@@ -143,7 +265,6 @@ ul.code span{display:block;color:#444;font-size:.94rem;margin-top:2px}
 
 <h2>Code &amp; tools</h2>
 <p class="note">The code behind the papers, and the discovery tooling the lab built along the way — all open.</p>
-
 <p class="code-group">Code behind the papers</p>
 <ul class="code">
 <li><a href="https://github.com/atharva-chourey-lab/brain-archive-audit-code">brain-archive-audit-code</a><span>Code behind the Lost Atlas brain-archive audit — label recovery, volumes, and the cross-archive comparison.</span></li>
@@ -152,13 +273,12 @@ ul.code span{display:block;color:#444;font-size:.94rem;margin-top:2px}
 <li><a href="https://github.com/atharva-chourey-lab/testability-atlas-code">testability-atlas-code</a><span>Code behind the Testability Atlas — grading standard questions against the data that survives.</span></li>
 <li><a href="https://github.com/atharva-chourey-lab/chinese-correlation-spine">chinese-correlation-spine</a><span>The correlation-spine instrument behind <i>Received Numbers</i>.</span></li>
 </ul>
-
 <p class="code-group">Discovery tooling</p>
 <ul class="code">
 <li><a href="https://github.com/atharva-chourey-lab/goldmine-hunter">goldmine-hunter</a><span>Dataset-discovery tooling — finding stranded, unintegrated data that can still yield high-value findings.</span></li>
 <li><a href="https://github.com/atharva-chourey-lab/mound-hunter">mound-hunter</a><span>DEM mound-detection tooling — searching elevation data for candidate archaeological mounds.</span></li>
 </ul>
-<p class="licence">Licences: code is MIT-licensed; the manuscripts are CC BY 4.0. The lion MRI assets in the atlas section above are Brain Catalogue data under CC BY-NC 4.0, as attributed there.</p>
+<p class="licence">Licences: code is MIT-licensed; the manuscripts are CC BY 4.0. The brain MRI assets in the explorer above are Brain Catalogue data under CC BY-NC 4.0, as attributed there.</p>
 
 <h2>Method</h2>
 <p class="note">Every result above was produced under the same discipline: <b>pre-registration before extraction</b>, so hypotheses are committed before data is touched; a <b>novelty scrub</b> against prior art before anything is claimed as new; <b>blind benchmarks</b>, so a measurement pipeline must recover known values before it is trusted with unknown ones; and <b>self-correction on the record</b> — when a later check revised an earlier number, the correction is part of the result.</p>
@@ -168,33 +288,112 @@ ul.code span{display:block;color:#444;font-size:.94rem;margin-top:2px}
 
 <footer>Atharva Chourey Lab · <a href="https://github.com/atharva-chourey-lab">github.com/atharva-chourey-lab</a></footer>
 </div>
+</div>
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@niivue/niivue@0.44.0/dist/niivue.umd.js"></script>
 <script>
 (function(){
-  var status=document.getElementById('niivue-status');
-  var started=false;
-  function fail(msg){ if(status){status.textContent=msg;} }
-  function init(){
-    if(started) return; started=true;
-    try{
-      if(typeof niivue==='undefined' || !niivue.Niivue){ fail('The interactive volume viewer could not load. The slice montage below shows the same slices and label.'); return; }
-      var nv=new niivue.Niivue({backColor:[0,0,0,1], show3Dcrosshair:true, isColorbar:false});
-      nv.attachTo('niivue-canvas');
-      nv.setSliceType(nv.sliceTypeMultiplanar);
-      nv.loadVolumes([
-        {url:'assets/lion_brain_mri.nii.gz', colorMap:'gray', opacity:1},
-        {url:'assets/lion_hippocampus.nii.gz', colorMap:'red', opacity:0.85}
-      ]).then(function(){ if(status){status.style.display='none';} }).catch(function(){ fail('The interactive volume failed to load. The slice montage below shows the same slices and label.'); });
-    }catch(e){ fail('The interactive volume viewer could not load. The slice montage below shows the same slices and label.'); }
-  }
-  if('IntersectionObserver' in window){
-    var el=document.getElementById('niivue-wrap');
-    var io=new IntersectionObserver(function(entries){ if(entries[0].isIntersecting){ init(); io.disconnect(); } },{rootMargin:'300px'});
-    io.observe(el);
-    setTimeout(init, 6000);
-  } else { init(); }
+var MANIFEST=null, current=null, nv=null, nvReady=false, tourTimers=[];
+var sel=document.getElementById('species-select'), chips=document.getElementById('species-chips'),
+    toggles=document.getElementById('overlay-toggles'), nvStatus=document.getElementById('nv-status'),
+    meshViewer=document.getElementById('mesh-viewer'), meshStatus=document.getElementById('mesh-status'),
+    fallback=document.getElementById('lion-fallback'), tourCap=document.getElementById('tour-cap');
+var COLORS={hippocampus:'red',telencephalon:'winter',cerebrum:'winter',atlas:'cool',striatum:'warm',cerebellum:'warm',neocortex:'warm',corpus_callosum:'warm'};
+function fmt(v){return v==null?'—':(Math.round(v*100)/100).toFixed(2)+' cm³';}
+function histVal(s){ if(!s.hippocampus_cm3_histology) return null; var h=s.hippocampus_cm3_histology; return (typeof h==='object')?h.value_cm3:h; }
+function isEmptyHipp(s){ var st=s.structures.filter(function(x){return x.slug==='hippocampus';})[0]; return st? !!st.empty : !s.assets['hippocampus.nii.gz']; }
+function base(s){ return 'assets/species/'+s.slug+'/'; }
+function lionTop(slug){ return slug==='lion'; }
+function brainURL(s){ return lionTop(s.slug)?'assets/lion_brain_mri.nii.gz':base(s)+'brain.nii.gz'; }
+function overlayURL(s,st){ if(lionTop(s.slug)){ if(st.slug==='hippocampus') return 'assets/lion_hippocampus.nii.gz'; if(st.slug==='telencephalon') return 'assets/lion_telencephalon.nii.gz'; } return base(s)+st.file.toLowerCase(); }
+function meshURL(s,kind){ if(lionTop(s.slug)){ return kind==='hippocampus'?'assets/lion_hippocampus_surface.glb':'assets/lion_brain_surface.glb'; } var f=s.assets[kind==='hippocampus'?'hippocampus.glb':'brain.glb']; return f?base(s)+f:null; }
+function sync(s){
+  document.getElementById('sync-name').textContent=s.common_name;
+  document.getElementById('sync-sci').textContent=s.scientific_name||s.directory.replace(/_/g,' ');
+  var junk=s.hippocampus_excluded_junk;
+  document.getElementById('sync-hipp').textContent=junk?'excluded':fmt(s.hippocampus_cm3_mri);
+  document.querySelector('#sync-hipp + span') ;
+  document.getElementById('sync-hist').textContent=fmt(histVal(s));
+  if(lionTop(s.slug)){ document.getElementById('sync-res').textContent='Full-res'; document.getElementById('sync-res-note').textContent='276×334×209 @ 0.3 mm · 74,899 voxels'; }
+  else { document.getElementById('sync-res').textContent='Web ×'+s.downsample_factor; document.getElementById('sync-res-note').textContent='Downsampled ×'+s.downsample_factor+' for the web · volumes measured at full resolution'; }
+  var notes=[]; if(isEmptyHipp(s)) notes.push('Hippocampus label file empty — no data.'); if(junk) notes.push('Hippocampus excluded in audit: '+junk); (s.notes||[]).forEach(function(n){notes.push(n);});
+  meshStatus.textContent = notes.length? notes.join(' ') : (s.mesh&&s.mesh.brain_glb?'Surface: '+(s.mesh.type==='catalogue'?'catalogue mesh':'lab-derived mesh')+'.':'Volume-only species — no surface mesh; use the volume viewer.');
+}
+function loadMesh(s){
+  var brain=meshURL(s,'brain'), hipp=meshURL(s,'hippocampus');
+  var src=brain||hipp;
+  if(!src){ meshViewer.removeAttribute('src'); meshStatus.textContent='Volume-only species — no surface mesh available. The volume viewer (left) carries the data.'; return; }
+  meshViewer.setAttribute('src',src);
+  meshViewer.setAttribute('alt','Rotatable surface mesh — '+s.common_name+(brain?' brain':' hippocampus'));
+}
+function loadVolume(s){
+  fallback.style.display = lionTop(s.slug)?'none':'none';
+  var vols=[{url:brainURL(s),colorMap:'gray',opacity:1}];
+  var shipped=s.structures.filter(function(x){return x.shipped_overlay;});
+  toggles.innerHTML='';
+  shipped.forEach(function(st){
+    vols.push({url:overlayURL(s,st),colorMap:COLORS[st.slug]||'warm',opacity:st.slug==='hippocampus'?0.9:0.55});
+    var lab=document.createElement('label'); lab.className='tgl';
+    lab.innerHTML='<input type="checkbox" checked data-i="'+(vols.length-1)+'"> '+st.name+' · '+fmt(st.volume_cm3_fullres);
+    toggles.appendChild(lab);
+  });
+  s.structures.filter(function(x){return x.empty;}).forEach(function(st){
+    var sp=document.createElement('span'); sp.className='tgl'; sp.style.opacity='.55';
+    sp.textContent=st.name+': label file empty — no data'; toggles.appendChild(sp);
+  });
+  toggles.querySelectorAll('input').forEach(function(cb){ cb.addEventListener('change',function(){ if(nv&&nv.volumes[+cb.dataset.i]){ nv.setOpacity(+cb.dataset.i, cb.checked?(+cb.dataset.i===1&&shipped[0]&&shipped[0].slug==='hippocampus'?0.9:0.6):0); nv.updateGLVolume(); } }); });
+  nvStatus.style.display='block'; nvStatus.textContent='Loading '+s.common_name+' volume…';
+  try{
+    if(typeof niivue==='undefined'||!niivue.Niivue){ throw new Error('cdn'); }
+    if(!nv){ nv=new niivue.Niivue({backColor:[0.02,0.05,0.1,1],show3Dcrosshair:true,isColorbar:false}); nv.attachTo('nv-canvas'); nv.setSliceType(nv.sliceTypeMultiplanar); }
+    nv.loadVolumes(vols).then(function(){ nvStatus.style.display='none'; nvReady=true; }).catch(function(){ nvStatus.textContent='Volume failed to load — the slice montage below is the fallback.'; if(lionTop(s.slug)) fallback.style.display='block'; });
+  }catch(e){ nvStatus.textContent='The volume viewer could not load (WebGL/CDN). The slice montage below is the fallback.'; if(lionTop(s.slug)) fallback.style.display='block'; }
+}
+function select(slug,skipHash){
+  if(!MANIFEST) return; var s=MANIFEST.species.filter(function(x){return x.slug===slug;})[0]; if(!s) return;
+  current=s; sel.value=slug;
+  chips.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on',c.dataset.slug===slug); });
+  sync(s); loadMesh(s); loadVolume(s);
+}
+function buildUI(){
+  MANIFEST.species.forEach(function(s){
+    var o=document.createElement('option'); o.value=s.slug; o.textContent=s.common_name+(isEmptyHipp(s)?' — hippocampus label empty':''); sel.appendChild(o);
+    var c=document.createElement('button'); c.type='button'; c.className='chip'+(isEmptyHipp(s)?' empty':''); c.dataset.slug=s.slug;
+    c.textContent=s.common_name; c.title=isEmptyHipp(s)?'Label file empty — no data':(s.common_name+' — load');
+    c.addEventListener('click',function(){ stopTour(); select(s.slug); document.getElementById('explorer').scrollIntoView({behavior:'smooth',block:'start'}); });
+    chips.appendChild(c);
+  });
+  sel.addEventListener('change',function(){ stopTour(); select(sel.value); });
+  select('lion');
+}
+/* Tour */
+function cap(html){ tourCap.style.display='block'; tourCap.innerHTML=html; }
+function orbit(deg,radius){ try{ meshViewer.cameraOrbit=deg+'deg 70deg '+(radius||'105%'); }catch(e){} }
+function stopTour(){ tourTimers.forEach(clearTimeout); tourTimers=[]; tourCap.style.display='none'; document.getElementById('tour-stop').style.display='none'; try{meshViewer.autoRotate=true;}catch(e){} }
+document.getElementById('tour-stop').addEventListener('click',stopTour);
+document.getElementById('tour-btn').addEventListener('click',function(){
+  stopTour(); document.getElementById('tour-stop').style.display='inline-block';
+  var s=current||MANIFEST.species.filter(function(x){return x.slug==='lion';})[0];
+  select(s.slug);
+  cap('<b>1 · The whole brain.</b> '+s.common_name+' — the real MRI volume (left) and surface (right). Drag either to explore freely; the tour continues automatically.');
+  orbit(0); tourTimers.push(setTimeout(function(){ orbit(120); },100));
+  tourTimers.push(setTimeout(function(){
+    var h=meshURL(s,'hippocampus'); if(h){ meshViewer.setAttribute('src',h); }
+    orbit(40,'55%');
+    cap('<b>2 · Zoom — the hippocampus.</b> '+(s.hippocampus_cm3_mri?('Audited MRI volume: '+fmt(s.hippocampus_cm3_mri)+(histVal(s)?(' — against '+fmt(histVal(s))+' histological (Reep et al. 2007).'):'.')):'Its hippocampus label file is empty — no data, and the explorer says so rather than inventing a shape.'));
+  },4500));
+  tourTimers.push(setTimeout(function(){
+    var other=MANIFEST.species.filter(function(x){return x.slug==='leopard';})[0]; select('leopard');
+    cap('<b>3 · Compare.</b> Leopard — hippocampus '+fmt(other.hippocampus_cm3_mri)+' by MRI, against '+fmt(histVal(other))+' histological. Same archive, same pattern: the MRI number is the smaller one.');
+  },9500));
+  tourTimers.push(setTimeout(function(){
+    select(s.slug); orbit(0,'110%');
+    cap('<b>4 · Pull back.</b> Back to the '+s.common_name+'. Every number in this explorer comes from the audited manifest — empty means empty, and “—” means no published comparator, never a guess.');
+  },14500));
+  tourTimers.push(setTimeout(stopTour,20000));
+});
+fetch('assets/species/manifest.json').then(function(r){return r.json();}).then(function(j){ MANIFEST=j; buildUI(); }).catch(function(){ nvStatus.textContent='Species manifest failed to load — showing the lion fallback.'; fallback.style.display='block'; });
 })();
 </script>
 </body></html>

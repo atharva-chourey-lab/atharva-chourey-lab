@@ -1,0 +1,181 @@
+{
+ "legacy_backup": {
+  "lion_brain_mri.nii.gz": "already in legacy/, left as-is",
+  "lion_hippocampus.nii.gz": "already in legacy/, left as-is",
+  "lion_telencephalon.nii.gz": "already in legacy/, left as-is"
+ },
+ "lion_brain_mri.nii.gz": {
+  "source": "/home/hatch/workspace/brain-scan-comparison/data/lion/MRI-n4.nii.gz",
+  "bytes": 13264819,
+  "source_bytes": 13264819
+ },
+ "lion_hippocampus.nii.gz": {
+  "source": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Lion/Hippocampus.nii.gz",
+  "bytes": 42043,
+  "source_bytes": 42043
+ },
+ "lion_telencephalon.nii.gz": {
+  "source": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Lion/Telencephalon.nii.gz",
+  "bytes": 272280,
+  "source_bytes": 272280
+ },
+ "niivue_verification": {
+  "shapes": {
+   "mri": [
+    276,
+    334,
+    209
+   ],
+   "hippocampus": [
+    276,
+    334,
+    209
+   ],
+   "telencephalon": [
+    276,
+    334,
+    209
+   ]
+  },
+  "zooms": [
+   0.30000001192092896,
+   0.30000001192092896,
+   0.30000001192092896
+  ],
+  "affine_mri_eq_hippocampus": true,
+  "affine_mri_eq_telencephalon": true,
+  "hippocampus_voxels": 74899,
+  "hippocampus_volume_cm3": 2.0223,
+  "telencephalon_voxels": 5392604,
+  "telencephalon_volume_cm3": 145.6
+ },
+ "lion_hippocampus_surface.glb": {
+  "bytes": 2362232,
+  "mc_step_size": 1,
+  "smoothing": "Taubin lamb=0.5 nu=-0.53, 5 iterations",
+  "vertices": 45393,
+  "faces": 90834,
+  "watertight": true,
+  "volume_mm3": 1973.0,
+  "reload_ok": true
+ },
+ "lion_brain_surface.glb": {
+  "bytes": 3291232,
+  "mc_step_size": 3,
+  "smoothing": "Taubin lamb=0.5 nu=-0.53, 5 iterations",
+  "mask_voxels": 6965911,
+  "mask_volume_cm3": 188.08,
+  "vertices": 63106,
+  "faces": 126920,
+  "watertight": false,
+  "volume_mm3": null,
+  "reload_ok": true
+ },
+ "rhino_crosscheck": {
+  "Ceratotherium_simum": {
+   "computed": [
+    0.119,
+    0.0127,
+    -0.0457,
+    0.1681,
+    -0.0298,
+    -0.2243
+   ],
+   "table2": [
+    0.119,
+    0.0127,
+    -0.0457,
+    0.1681,
+    -0.0298,
+    -0.2243
+   ],
+   "max_abs_diff": 2.8487104434926636e-05,
+   "n": 10
+  },
+  "Dicerorhinus_sumatrensis": {
+   "computed": [
+    0.1353,
+    0.0053,
+    -0.0538,
+    0.1723,
+    -0.0259,
+    -0.2332
+   ],
+   "table2": [
+    0.1353,
+    0.0053,
+    -0.0538,
+    0.1723,
+    -0.0259,
+    -0.2332
+   ],
+   "max_abs_diff": 1.80732807443032e-05,
+   "n": 9
+  },
+  "Diceros_bicornis": {
+   "computed": [
+    0.118,
+    0.0257,
+    -0.0361,
+    0.1531,
+    -0.0293,
+    -0.2315
+   ],
+   "table2": [
+    0.118,
+    0.0257,
+    -0.0361,
+    0.1531,
+    -0.0293,
+    -0.2315
+   ],
+   "max_abs_diff": 4.698928605423314e-05,
+   "n": 5
+  },
+  "Rhinoceros_sondaicus": {
+   "computed": [
+    0.1586,
+    0.0017,
+    -0.0533,
+    0.1724,
+    -0.0347,
+    -0.2447
+   ],
+   "table2": [
+    0.1586,
+    0.0017,
+    -0.0533,
+    0.1724,
+    -0.0347,
+    -0.2447
+   ],
+   "max_abs_diff": 4.124338764252555e-05,
+   "n": 7
+  },
+  "Rhinoceros_unicornis": {
+   "computed": [
+    0.1296,
+    -0.0085,
+    -0.0651,
+    0.1811,
+    -0.0185,
+    -0.2187
+   ],
+   "table2": [
+    0.1296,
+    -0.0085,
+    -0.0651,
+    0.1811,
+    -0.0185,
+    -0.2187
+   ],
+   "max_abs_diff": 3.675429744361136e-05,
+   "n": 7
+  }
+ },
+ "rhino_profile_chart.png": {
+  "bytes": 146383,
+  "width_px": 1600,
+  "height_px": 600
+ }
+}

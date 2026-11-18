@@ -1,0 +1,2251 @@
+{
+ "generated": "2026-11-17",
+ "source": "Brain Catalogue (Santin, Herbin & Toro 2016), CC BY-NC 4.0 - data/brain_catalogue_full/ plus documented fallbacks",
+ "census": {
+  "total_label_files_excl_atlas": 71,
+  "real_label_files_excl_atlas": 48,
+  "empty_label_files_excl_atlas": 23,
+  "atlas_mask_files": 13,
+  "atlas_mask_real": 13,
+  "atlas_mask_empty": 0,
+  "note": "The paper's 71-file census counts structure labels only; Atlas.nii.gz whole-brain mask files (13) are counted separately here.",
+  "paper_census": {
+   "real": 53,
+   "empty": 18,
+   "reconciliation": "This recount voxel-checked all 71 files: 48 real / 23 empty. The sealed 53/18 (processing_log 2026-11-16, from the Goldmine Hunter sweep, species-sweep-20261116-230812.json) voxel-checked only 56 of the 71 files - every checked file agrees with this recount (39 real / 17 empty, zero disagreements) - plus the Galago hippocampus called out empty in the same log (= 18 empty); the remaining 15 unchecked files were carried as real by subtraction (71 - 18 = 53). Five of those 15 are in fact zero-voxel Striatum files the sweep never checked (Baboon, Crab-eating macaque, Gorilla, Human, Rhesus macaque), which accounts exactly for the 53->48 and 18->23 differences."
+  }
+ },
+ "definitions": {
+  "audited": "Species is in paper p1's verified catalogue hippocampus set (10 species, paper.md section 3.1) before forensic exclusions",
+  "in_paper_qc_fit_set": "Species is in paper p1's quality-controlled fit set (8 species, paper.md section 2.3)",
+  "hippocampus_cm3_histology": "Published histological comparator from paper p1 / its sources only; null where the record gives none"
+ },
+ "flags": [
+  "Census discrepancy vs paper p1: paper reports 53 real / 18 empty of 71 label files; full voxel recount gives 48 real / 23 empty - reconciled in census.paper_census (5 unchecked zero-voxel Striatum files carried as real in the sealed census)."
+ ],
+ "verification": {
+  "nifti_checked": 88,
+  "nifti_failures": [],
+  "glb_checked": 28,
+  "glb_failures": []
+ },
+ "species": [
+  {
+   "slug": "baboon",
+   "directory": "Baboon",
+   "common_name": "Baboon",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Baboon/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 7185497,
+     "volume_cm3_fullres": 90.7836,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 2207733,
+    "telencephalon.nii.gz": 131133
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "black-rhinoceros",
+   "directory": "Black_rhinoceros",
+   "common_name": "Black rhinoceros",
+   "scientific_name": "Diceros bicornis",
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Black_rhinoceros/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 4857630,
+     "volume_cm3_fullres": 442.6515,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 75219,
+     "volume_cm3_fullres": 6.8543,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 6.8543,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 6.854,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1121681,
+    "atlas.nii.gz": 78528,
+    "hippocampus.nii.gz": 16851,
+    "hippocampus.glb": 3392236,
+    "brain.glb": 2643596
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 2643596,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 73036,
+     "faces": 147196
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 3392236,
+     "mc_step_size": 1,
+     "vertices": 63785,
+     "faces": 133758
+    }
+   }
+  },
+  {
+   "slug": "blackbuck",
+   "directory": "Blackbuck",
+   "common_name": "Blackbuck",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Blackbuck/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 1511799,
+     "volume_cm3_fullres": 31.4407,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 478751,
+    "atlas.nii.gz": 27391,
+    "brain.glb": 1768252
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 1768252,
+     "mc_step_size": 2,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 34042,
+     "faces": 67826
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "bottlenose-dolphin",
+   "directory": "Bottlenose_dolphin",
+   "common_name": "Bottlenose dolphin",
+   "scientific_name": null,
+   "notes": [
+    "Cerebellum.nii.gz: grid differs from MRI - no overlay shipped"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Bottlenose_dolphin/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 18992219,
+     "volume_cm3_fullres": 515.4643,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Cerebellum",
+     "slug": "cerebellum",
+     "file": "Cerebellum.nii.gz",
+     "voxels_fullres": 87816,
+     "volume_cm3_fullres": 3.1558,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Corpus_callosum",
+     "slug": "corpus-callosum",
+     "file": "Corpus_callosum.nii.gz",
+     "voxels_fullres": 900,
+     "volume_cm3_fullres": 0.0323,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false,
+     "excluded_junk": "Project audit: placeholder-class file (nz=900), not a delineated corpus callosum"
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 3,
+   "assets": {
+    "brain.nii.gz": 1040200,
+    "atlas.nii.gz": 55702,
+    "brain.glb": 3435452
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 3435452,
+     "mc_step_size": 4,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 66961,
+     "faces": 129948
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "cat",
+   "directory": "Cat",
+   "common_name": "Cat",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Cat/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 67238,
+     "volume_cm3_fullres": 0.5379,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 2327776,
+     "volume_cm3_fullres": 18.6222,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 0.5379,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 0.538,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1189373,
+    "hippocampus.nii.gz": 11738,
+    "telencephalon.nii.gz": 49666,
+    "hippocampus.glb": 1692280,
+    "brain.glb": 711872
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 711872,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 19711,
+     "faces": 39544
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 1692280,
+     "mc_step_size": 1,
+     "vertices": 32519,
+     "faces": 65042
+    }
+   }
+  },
+  {
+   "slug": "cheetah",
+   "directory": "Cheetah",
+   "common_name": "Cheetah",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Cheetah/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 72248,
+     "volume_cm3_fullres": 0.8484,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 5633733,
+     "volume_cm3_fullres": 66.1596,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 0.8484,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 0.848,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1739623,
+    "hippocampus.nii.gz": 15436,
+    "telencephalon.nii.gz": 100501,
+    "hippocampus.glb": 1803452,
+    "brain.glb": 487424
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 487424,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 13513,
+     "faces": 27038
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 1803452,
+     "mc_step_size": 1,
+     "vertices": 34631,
+     "faces": 69378
+    }
+   }
+  },
+  {
+   "slug": "chimpanzee",
+   "directory": "Chimpanzee",
+   "common_name": "Chimpanzee",
+   "scientific_name": null,
+   "notes": [
+    "Cerebellum.nii.gz: grid differs from MRI - no overlay shipped"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Chimpanzee/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 1251703,
+     "volume_cm3_fullres": 274.1335,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Cerebellum",
+     "slug": "cerebellum",
+     "file": "Cerebellum.nii.gz",
+     "voxels_fullres": 4361,
+     "volume_cm3_fullres": 0.1567,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 7977,
+     "volume_cm3_fullres": 1.747,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 1.48,
+    "v3_data_class": "model_estimated_propagation",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 367157,
+    "atlas.nii.gz": 21865,
+    "striatum.nii.gz": 3393,
+    "brain.glb": 1956628
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 1956628,
+     "mc_step_size": 2,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 37716,
+     "faces": 74944
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "crab-eating-macaque",
+   "directory": "Crab-eating_macaque",
+   "common_name": "Crab-eating macaque",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Crab-eating_macaque/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 10827333,
+     "volume_cm3_fullres": 58.0277,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 2485654,
+    "telencephalon.nii.gz": 172736
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "demidoffs-dwarf-galago",
+   "directory": "Demidoff's_dwarf_Galago",
+   "common_name": "Demidoff's dwarf Galago",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Demidoff's_dwarf_Galago/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 117095,
+     "volume_cm3_fullres": 1.8296,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 63870,
+    "cerebrum.nii.gz": 3674
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "ferret",
+   "directory": "Ferret",
+   "common_name": "Ferret",
+   "scientific_name": "Mustela putorius",
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Ferret/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebellum",
+     "slug": "cerebellum",
+     "file": "Cerebellum.nii.gz",
+     "voxels_fullres": 92446,
+     "volume_cm3_fullres": 0.1597,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 100257,
+     "volume_cm3_fullres": 0.1732,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Neocortex",
+     "slug": "neocortex",
+     "file": "Neocortex.nii.gz",
+     "voxels_fullres": 1080694,
+     "volume_cm3_fullres": 1.8674,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 0.1732,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 0.173,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 629606,
+    "cerebellum.nii.gz": 9484,
+    "hippocampus.nii.gz": 12983,
+    "neocortex.nii.gz": 65011,
+    "hippocampus.glb": 1993720,
+    "brain.glb": 360700
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 360700,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 9991,
+     "faces": 20000
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 1993720,
+     "mc_step_size": 1,
+     "vertices": 38312,
+     "faces": 76652
+    }
+   }
+  },
+  {
+   "slug": "giant-panda",
+   "directory": "Giant_panda",
+   "common_name": "Giant panda",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Giant_panda/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 68145,
+     "volume_cm3_fullres": 1.0648,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 11568141,
+     "volume_cm3_fullres": 180.7522,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 1.0648,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 1.065,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 3,
+   "assets": {
+    "brain.nii.gz": 1013118,
+    "hippocampus.nii.gz": 9258,
+    "telencephalon.nii.gz": 70619,
+    "hippocampus.glb": 4128756
+   },
+   "mesh": {
+    "type": "hippocampus-only",
+    "brain_glb": null,
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 4128756,
+     "mc_step_size": 1,
+     "vertices": 78942,
+     "faces": 159768
+    }
+   }
+  },
+  {
+   "slug": "gibbon",
+   "directory": "Gibbon",
+   "common_name": "Gibbon",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Gibbon/gibbon_buddy_reoriented_N4_max.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 344025,
+     "volume_cm3_fullres": 61.733,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 165972,
+    "cerebrum.nii.gz": 9914
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "giraffe",
+   "directory": "Giraffe",
+   "common_name": "Giraffe",
+   "scientific_name": null,
+   "notes": [
+    "Paper p1 forensic QC: hippocampus label is unilateral (second component 1.3% of the first); excluded from the paper's fit - shipped here flagged, as-is"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Giraffe/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 68035,
+     "volume_cm3_fullres": 2.917,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 15592963,
+     "volume_cm3_fullres": 668.5484,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 2.917,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 2.917,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 3,
+   "assets": {
+    "brain.nii.gz": 952676,
+    "hippocampus.nii.gz": 8800,
+    "telencephalon.nii.gz": 64792,
+    "hippocampus.glb": 1100656
+   },
+   "mesh": {
+    "type": "hippocampus-only",
+    "brain_glb": null,
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 1100656,
+     "mc_step_size": 1,
+     "vertices": 21144,
+     "faces": 42284
+    }
+   }
+  },
+  {
+   "slug": "gorilla",
+   "directory": "Gorilla",
+   "common_name": "Gorilla",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Gorilla/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 2157848,
+     "volume_cm3_fullres": 347.2133,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 1797335,
+     "volume_cm3_fullres": 289.2041,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 1.76,
+    "v3_data_class": "model_estimated_propagation",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 557659,
+    "atlas.nii.gz": 38214,
+    "cerebrum.nii.gz": 34089,
+    "brain.glb": 4810592
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 4810592,
+     "mc_step_size": 2,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 91680,
+     "faces": 186858
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "gray-wolf",
+   "directory": "Gray_wolf",
+   "common_name": "Gray wolf",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Gray_wolf/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 3717214,
+     "volume_cm3_fullres": 58.0815,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 0.69,
+    "v3_data_class": "model_estimated_propagation",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 899500,
+    "telencephalon.nii.gz": 68015
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "grey-cheeked-mangabey",
+   "directory": "Grey-cheeked_mangabey",
+   "common_name": "Grey-cheeked mangabey",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Grey-cheeked_mangabey/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 1858252,
+     "volume_cm3_fullres": 50.1728,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 512683,
+    "telencephalon.nii.gz": 34866
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "house-mouse",
+   "directory": "House_mouse",
+   "common_name": "House mouse",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/House_mouse/Mouse.nii.gz",
+   "structures": [
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 20223329,
+     "volume_cm3_fullres": 0.546,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 3,
+   "assets": {
+    "brain.nii.gz": 1563779,
+    "telencephalon.nii.gz": 117368
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "human",
+   "directory": "Human",
+   "common_name": "Human",
+   "scientific_name": "Homo sapiens",
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Human/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 1303731,
+     "volume_cm3_fullres": 1303.7309,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 6.85,
+    "v3_data_class": "model_estimated_propagation",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 518481,
+    "atlas.nii.gz": 31922,
+    "brain.glb": 900856
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 900856,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 25004,
+     "faces": 50000
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "la-plata-dolphin",
+   "directory": "La_Plata_dolphin",
+   "common_name": "La Plata dolphin",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/La_Plata_dolphin/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 5842750,
+     "volume_cm3_fullres": 91.293,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1485196,
+    "telencephalon.nii.gz": 85655
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "leopard",
+   "directory": "Leopard",
+   "common_name": "Leopard",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Leopard/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 2746462,
+     "volume_cm3_fullres": 99.1363,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 32644,
+     "volume_cm3_fullres": 1.1783,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 1.1783,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 1.178,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": {
+    "value_cm3": 3.121,
+    "source": "Reep et al. 2007, histological planimetry (paper p1 section 3.3)"
+   },
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 697208,
+    "atlas.nii.gz": 42696,
+    "hippocampus.nii.gz": 8180,
+    "hippocampus.glb": 967764,
+    "brain.glb": 251928
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 251928,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 6949,
+     "faces": 13978
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 967764,
+     "mc_step_size": 1,
+     "vertices": 18597,
+     "faces": 37158
+    }
+   }
+  },
+  {
+   "slug": "lion",
+   "directory": "Lion",
+   "common_name": "Lion",
+   "scientific_name": "Panthera leo",
+   "notes": [
+    "MRI fallback: brain_catalogue_full/Lion/MRI-n4.nii.gz is a 0-byte website copy; used the MD5-verified Zenodo 44855 original in data/lion/ instead"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/lion/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 74899,
+     "volume_cm3_fullres": 2.0223,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 5392604,
+     "volume_cm3_fullres": 145.6003,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 2.0223,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 2.022,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": {
+    "value_cm3": 4.496,
+    "source": "Reep et al. 2007, histological planimetry (paper p1 section 3.3; specimen 62-79, 4,496.16 mm3 ~ 4.50 cm3)"
+   },
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1622619,
+    "hippocampus.nii.gz": 17810,
+    "telencephalon.nii.gz": 89635,
+    "hippocampus.glb": 2362232,
+    "brain.glb": 537340
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 537340,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 14905,
+     "faces": 29806
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 2362232,
+     "mc_step_size": 1,
+     "vertices": 45393,
+     "faces": 90834
+    }
+   }
+  },
+  {
+   "slug": "night-monkey",
+   "directory": "Night_monkey",
+   "common_name": "Night monkey",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)",
+    "Cerebrum.nii.gz: grid differs from MRI - no overlay shipped",
+    "Telencephalon.nii.gz: grid differs from MRI - no overlay shipped"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Night_monkey/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 750008,
+     "volume_cm3_fullres": 11.7189,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 1,
+     "volume_cm3_fullres": 0.0,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false,
+     "excluded_junk": "EXCLUDED in project audit: 1 nonzero voxel - junk placeholder"
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 921535,
+     "volume_cm3_fullres": 14.399,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": 0.0,
+   "hippocampus_excluded_junk": "EXCLUDED in project audit: 1 nonzero voxel - junk placeholder",
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 537497
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "nile-crocodile",
+   "directory": "Nile_crocodile",
+   "common_name": "Nile crocodile",
+   "scientific_name": null,
+   "notes": [
+    "reptile (crocodilian) - in the catalogue, not a mammal",
+    "MRI source file lacks NIfTI magic bytes; loaded via an in-memory magic repair - voxel data unchanged",
+    "Telencephalon.nii.gz: grid differs from MRI - no overlay shipped"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Nile_crocodile/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 452291,
+     "volume_cm3_fullres": 12.2119,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 105130,
+    "brain.glb": 180936
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 180936,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 5011,
+     "faces": 10000
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "nursehound",
+   "directory": "Nursehound",
+   "common_name": "Nursehound",
+   "scientific_name": null,
+   "notes": [
+    "cartilaginous fish (shark) - in the catalogue, not a mammal"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Nursehound/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 472085,
+     "volume_cm3_fullres": 20.2406,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 915958,
+    "telencephalon.nii.gz": 43067
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "okapi",
+   "directory": "Okapi",
+   "common_name": "Okapi",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Okapi/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 272,
+     "volume_cm3_fullres": 0.0073,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": false,
+     "excluded_junk": "EXCLUDED in project audit: 272 nonzero voxels - sliver, not a structure"
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 9999781,
+     "volume_cm3_fullres": 269.9941,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 0.0073,
+   "hippocampus_excluded_junk": "EXCLUDED in project audit: 272 nonzero voxels - sliver, not a structure",
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 2439674,
+    "telencephalon.nii.gz": 160972
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "orangutan",
+   "directory": "Orangutan",
+   "common_name": "Orangutan",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Orangutan/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 2902769,
+     "volume_cm3_fullres": 185.7774,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1020789,
+    "atlas.nii.gz": 61501,
+    "brain.glb": 1767152
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 1767152,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 47399,
+     "faces": 99796
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "ostrich",
+   "directory": "Ostrich",
+   "common_name": "Ostrich",
+   "scientific_name": null,
+   "notes": [
+    "bird - in the catalogue, not a mammal"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Ostrich/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 1987974,
+     "volume_cm3_fullres": 29.9626,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 804712,
+    "telencephalon.nii.gz": 63337
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "plains-zebra",
+   "directory": "Plains_zebra",
+   "common_name": "Plains zebra",
+   "scientific_name": null,
+   "notes": [
+    "MRI fallback: brain_catalogue_full/Plains_zebra/MRI.nii.gz is a 0-byte website copy; used the Zenodo-subset scan in data/brain_catalogue/zebra.nii.gz (grid verified identical to the species' Telencephalon label)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue/zebra.nii.gz",
+   "structures": [
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 6335534,
+     "volume_cm3_fullres": 405.4742,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1392189,
+    "telencephalon.nii.gz": 95513
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "platypus",
+   "directory": "Platypus",
+   "common_name": "Platypus",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Platypus/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 856139,
+     "volume_cm3_fullres": 13.3772,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1496446,
+    "telencephalon.nii.gz": 34835
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "red-necked-wallaby",
+   "directory": "Red-necked_wallaby",
+   "common_name": "Red-necked wallaby",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Red-necked_wallaby/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 301372,
+     "volume_cm3_fullres": 14.7154,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 107031,
+    "atlas.nii.gz": 8110,
+    "brain.glb": 4463320
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 4463320,
+     "mc_step_size": 1,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 85447,
+     "faces": 172462
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "red-kangaroo",
+   "directory": "Red_kangaroo",
+   "common_name": "Red kangaroo",
+   "scientific_name": null,
+   "notes": [
+    "Hippocampus.nii.gz: grid differs from MRI - no overlay shipped",
+    "Hippocampus.nii.gz: header/grid does not match the MRI (generic template header - identical affine in several species' label files); no overlay shipped, mesh built in the label file's own coordinates"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Red_kangaroo/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 557649,
+     "volume_cm3_fullres": 27.229,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 5569,
+     "volume_cm3_fullres": 0.2001,
+     "empty": false,
+     "grid_matches_mri": false,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": 0.2001,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 0.2,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": true,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 273287,
+    "atlas.nii.gz": 17920,
+    "brain.glb": 1805440,
+    "hippocampus.glb": 973912
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 1805440,
+     "mc_step_size": 2,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 34491,
+     "faces": 69870
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 973912,
+     "mc_step_size": 1,
+     "vertices": 18049,
+     "faces": 38946
+    }
+   }
+  },
+  {
+   "slug": "red-squirrel",
+   "directory": "Red_squirrel",
+   "common_name": "Red squirrel",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Red_squirrel/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 761608,
+     "volume_cm3_fullres": 761.608,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 757493,
+     "volume_cm3_fullres": 757.493,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": false,
+     "excluded_junk": "EXCLUDED in project audit: file duplicates the whole-brain Atlas mask - mislabeled"
+    }
+   ],
+   "hippocampus_cm3_mri": 757.493,
+   "hippocampus_excluded_junk": "EXCLUDED in project audit: file duplicates the whole-brain Atlas mask - mislabeled",
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 204122,
+    "atlas.nii.gz": 12849,
+    "brain.glb": 1172216
+   },
+   "mesh": {
+    "type": "derived",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 1172216,
+     "mc_step_size": 2,
+     "source": "derived by the lab from the catalogue Atlas whole-brain mask label (marching cubes + Taubin smoothing)",
+     "vertices": 22500,
+     "faces": 45088
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "rhesus-macaque",
+   "directory": "Rhesus_macaque",
+   "common_name": "Rhesus macaque",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Rhesus_macaque/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebellum",
+     "slug": "cerebellum",
+     "file": "Cerebellum.nii.gz",
+     "voxels_fullres": 2266189,
+     "volume_cm3_fullres": 35.4092,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 1819106,
+     "volume_cm3_fullres": 28.4235,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Striatum",
+     "slug": "striatum",
+     "file": "Striatum.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 2196963,
+     "volume_cm3_fullres": 34.3275,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 576496,
+    "cerebellum.nii.gz": 36112,
+    "cerebrum.nii.gz": 35570,
+    "telencephalon.nii.gz": 38120
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "sloth-bear",
+   "directory": "Sloth_bear",
+   "common_name": "Sloth bear",
+   "scientific_name": null,
+   "notes": [
+    "Paper p1 forensic QC: hippocampus label is an artifact (both main components on the same side of the midline); excluded from the paper's fit - shipped here flagged, as-is"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Sloth_bear/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 4099197,
+     "volume_cm3_fullres": 147.3129,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 111237,
+     "volume_cm3_fullres": 3.9975,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": 3.9975,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": 3.998,
+    "v3_data_class": "catalogue_label",
+    "match": true
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": true,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 1556777,
+    "atlas.nii.gz": 84176,
+    "hippocampus.nii.gz": 32592,
+    "hippocampus.glb": 2208872,
+    "brain.glb": 360756
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 360756,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 9996,
+     "faces": 20000
+    },
+    "hippocampus_glb": {
+     "file": "hippocampus.glb",
+     "bytes": 2208872,
+     "mc_step_size": 2,
+     "vertices": 42720,
+     "faces": 84296
+    }
+   }
+  },
+  {
+   "slug": "slow-loris",
+   "directory": "Slow_loris",
+   "common_name": "Slow loris",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Slow_loris/MRI-n4.nii.gz",
+   "structures": [
+    {
+     "name": "Atlas",
+     "slug": "atlas",
+     "file": "Atlas.nii.gz",
+     "voxels_fullres": 515604,
+     "volume_cm3_fullres": 515.604,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 160424,
+    "atlas.nii.gz": 11554,
+    "brain.glb": 180612
+   },
+   "mesh": {
+    "type": "catalogue",
+    "brain_glb": {
+     "file": "brain.glb",
+     "bytes": 180612,
+     "source": "catalogue mesh.ply (Brain Catalogue website file)",
+     "vertices": 4984,
+     "faces": 10000
+    },
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "thylacine",
+   "directory": "Thylacine",
+   "common_name": "Thylacine",
+   "scientific_name": null,
+   "notes": [],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/Thylacine/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 39084283,
+     "volume_cm3_fullres": 16.4887,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 3,
+   "assets": {
+    "brain.nii.gz": 2964092,
+    "cerebrum.nii.gz": 160284
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  },
+  {
+   "slug": "white-headed-capuchin",
+   "directory": "White-headed_capuchin",
+   "common_name": "White-headed capuchin",
+   "scientific_name": null,
+   "notes": [
+    "MRI intensities rescaled to uint8 by 99.9th-percentile normalisation (source is not uint8-range)"
+   ],
+   "has_mri": true,
+   "mri_source_file": "/home/hatch/workspace/brain-scan-comparison/data/brain_catalogue_full/White-headed_capuchin/MRI.nii.gz",
+   "structures": [
+    {
+     "name": "Cerebrum",
+     "slug": "cerebrum",
+     "file": "Cerebrum.nii.gz",
+     "voxels_fullres": 1811438,
+     "volume_cm3_fullres": 40.7171,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Hippocampus",
+     "slug": "hippocampus",
+     "file": "Hippocampus.nii.gz",
+     "voxels_fullres": 0,
+     "volume_cm3_fullres": 0.0,
+     "empty": true,
+     "grid_matches_mri": true,
+     "shipped_overlay": false
+    },
+    {
+     "name": "Neocortex",
+     "slug": "neocortex",
+     "file": "Neocortex.nii.gz",
+     "voxels_fullres": 1215954,
+     "volume_cm3_fullres": 27.3319,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    },
+    {
+     "name": "Telencephalon",
+     "slug": "telencephalon",
+     "file": "Telencephalon.nii.gz",
+     "voxels_fullres": 2160368,
+     "volume_cm3_fullres": 48.5603,
+     "empty": false,
+     "grid_matches_mri": true,
+     "shipped_overlay": true
+    }
+   ],
+   "hippocampus_cm3_mri": null,
+   "hippocampus_v3_crosscheck": {
+    "v3_hippocampus_cm3": null,
+    "v3_data_class": "none",
+    "match": null
+   },
+   "hippocampus_cm3_histology": null,
+   "audited": false,
+   "in_paper_qc_fit_set": false,
+   "downsample_factor": 2,
+   "assets": {
+    "brain.nii.gz": 465566,
+    "cerebrum.nii.gz": 35435,
+    "neocortex.nii.gz": 50847,
+    "telencephalon.nii.gz": 33225
+   },
+   "mesh": {
+    "type": "none",
+    "brain_glb": null,
+    "hippocampus_glb": null
+   }
+  }
+ ]
+}
