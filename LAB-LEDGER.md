@@ -1,6 +1,6 @@
 # Lab Ledger — Atharva Chourey Lab
 
-*Generated 2026-11-17 by the consolidation build; updated 2026-11-17 (evening) for the marmoset-two-rulers and occupancy-audit manuscripts and the dog-genomics dashboard entry. Machine-readable version: `lab-ledger.json` (same directory). All counts computed from the live GitHub org (`gh repo list atharva-chourey-lab`) and the source files — nothing estimated.*
+*Generated 2026-11-17 by the consolidation build; updated 2026-11-17 (evening) for the marmoset-two-rulers and occupancy-audit manuscripts and the dog-genomics dashboard entry; updated again 2026-11-18 (later) for the photocopy-chain, fonozoo-reidentification and manatee-scar-sheets manuscripts (org now 24 repos / 16 manuscripts, verified against the live org) and the Goldmine Hunter record extended through Campaign 12 — including the LAGS transcription audit, which is pre-registered only, not run, and is not a manuscript. Machine-readable version: `lab-ledger.json` (same directory). All counts computed from the live GitHub org (`gh repo list atharva-chourey-lab`) and the source files — nothing estimated.*
 
 *Presentation update 2026-11-18 (no content change; all counts below unchanged): the public page now opens with a "Twenty-four hours of talking" header — a two-node timeline of the 16–17 Nov 2026 discovery stretch (programme authorised Mon 16 Nov ≈23:00 PST; havoc-sweep results and publication Tue 17 Nov ≈20:49–22:08 PST, page verified live 22:08 PST; ≈ marks approximate windows from the session record) and the lab's method catchline: research by conversation — voice-first, chat-driven, no lab bench. The Brain Explorer now defaults to a Simple view: a grid of 37 illustrated animal buttons (generated artwork, labelled as such; the brain data is unchanged real data), one per Brain Catalogue species, with empty-placeholder species greyed and flagged "label empty". All previous explorer controls (species select, quick-select chips, label-overlay toggles, guided tour) remain available under an Advanced view toggle. Animal button art lives in `assets/animals/` (sliced from grid sheets in `assets/animals-src/`).*
 
@@ -17,20 +17,20 @@ The Atharva Chourey Lab is an independent research lab, and a human–AI collabo
 
 | Statistic | Count |
 |---|---|
-| Public manuscripts (GitHub) | **13** |
+| Public manuscripts (GitHub) | **16** |
 | — of which registered negatives | 1 |
 | Manuscripts in preparation (not yet public) | 0 |
-| Manuscripts awaiting peer review (public, none submitted to a venue) | **13** |
+| Manuscripts awaiting peer review (public, none submitted to a venue) | **16** |
 | Submission packages prepared (not submitted) | 3 |
 | Manuscripts actually submitted to a venue | **0** |
 | Public tool / code repos | **7** |
 | Profile / dashboard repo | 1 |
-| **Total repos in the org** | **21** |
+| **Total repos in the org** | **24** |
 | Correlation Web anchors | **133** (47 firm / 74 probable / 12 contested) |
 | Campaign cases graded under pre-registration | 37 (+1 skipped under its own pre-registered rule) |
 | Interactive 3D viewers | 1 (lion brain) |
 
-## Papers (13, all public, none peer-reviewed)
+## Papers (16, all public, none peer-reviewed)
 
 | # | Repo | Paper | Status | Venue submitted |
 |---|---|---|---|---|
@@ -47,6 +47,9 @@ The Atharva Chourey Lab is an independent research lab, and a human–AI collabo
 | 11 | upanishad-gates | Dating the Bṛhadāraṇyaka Upaniṣad by a linguistic clock: a pre-registered blind-gate failure | **registered-negative** (also public) | No |
 | 12 | marmoset-two-rulers | One Brain, Two Rulers: the hippocampal formation measures 21% smaller after perfusion fixation in the same marmoset brains | public (added 2026-11-17) | No |
 | 13 | occupancy-audit | The Brain Does Not Fill the Skull: a 42-species occupancy audit finds ruler chaos, not a constant | public (added 2026-11-17) | No |
+| 14 | photocopy-chain | The Photocopy Chain: the mammal brain-mass canon disagrees with itself on 30% of shared species, and three-quarters of its most-cited values cannot be traced to a measurement | public (added 2026-11-18) | No |
+| 15 | fonozoo-reidentification | Dead Names in a Frozen Archive: a name-by-name re-identification of the stranded Fonozoo frog-call pile, with a maintained-archive control | public (added 2026-11-18) | No |
+| 16 | manatee-scar-sheets | A Frozen Sketch Catalogue, Audited: persistence of hand-drawn scar identifications in the Blue Spring manatee aggregation, 2013–2026 (pre-registered coverage audit + case series) | public (added 2026-11-18) | No |
 
 ### Reconciliation note — Nalanda and the campaigns
 
@@ -78,6 +81,9 @@ There are deliberately **no** `nalanda-capacity` or `correction-campaign` repos.
 | Marmoset paired volumes | 30 in-vivo/ex-vivo pairs × 104 labels | behind marmoset-two-rulers; source build in the lab's brain-scan-comparison record |
 | Occupancy joined table | 42 species (brain volume × endocranial volume, with ruler pair) | behind occupancy-audit; source build in the lab's brain-scan-comparison record |
 | Dog-genomics replication + lifespan join | 1,873-dog breed GWAS set; 125-breed lifespan join | local build (~/workspace/dog-genomics/); dashboard/site entry only — no manuscript repo this pass |
+| Photocopy Chain joined diff + provenance trace | 1,467 shared species; 60-value trace | photocopy-chain project record (`brain-scan-comparison/projects/photocopy-chain/results/`) |
+| Fonozoo re-identification tables | 1,013 recovered files inventoried; 629 countable recordings classified | goldmine-hunter `spinoffs/fonozoo-reidentification` (`data/`, `results/`) |
+| Blue Spring scar-sheet transcription + public ruler | 210 entries (209 with BS IDs); ruler 165 rows / 91 individuals | goldmine-hunter `spinoffs/manatee-scar-sheets` |
 
 *(The spine's `exports/panel.csv` predates the Medicine merge and carries 117 rows; `anchors.json` at 133 is authoritative.)*
 

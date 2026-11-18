@@ -8,8 +8,12 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 
 ## The lab in numbers
 
-- **8 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, and historical statistics — each licensed CC BY 4.0, each with a complete map from every number to its source.
+- **16 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, historical statistics, bioacoustics, and conservation — each licensed CC BY 4.0, each with a complete map from every number to its source.
 - **343 species** compared across the two great brain archives; **53 of 71** archive labels recovered (the other 18 were empty placeholders).
+- **The brain-mass canon disagrees with itself** — across the **1,467 species** shared by the three standard compilations, **30.47%** differ by more than 5%, and only **25%** of sampled values from the most-cited canon trace to an actual measurement.
+
+- **A frozen frog-call archive is filed under dead names** — **146 of 629** species-named recordings (23.2%) in the stranded Fonoteca Zoológica pile no longer carry their filed name, against **1.1%** in a maintained archive run through the same audit; a frozen hand-drawn manatee catalogue of **210 entries** was transcribed and audited against the public record.
+
 - **30 marmoset brains measured twice** — alive and after perfusion fixation — disagree by 21% in the hippocampal formation; across **42 species** with both a skull and a brain measurement, the brain fills a median 92% of the skull, not the assumed 100%.
 - **First MRI hippocampus measurement for the lion** — 2.02 cm³, against the 4.50 cm³ value the field had cited since 2007.
 - **34 historical units** re-quantified for the 1899–1900 famine; **24 received numbers** audited bearer by bearer; **23 standard research questions** graded for whether they can be answered at all.
@@ -21,6 +25,11 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 An end-to-end audit of a public comparative-brain archive recovered 53 usable labels of 71 (the rest were empty placeholders) and produced the first MRI hippocampus measurement for the lion: 2.02 cm³, against the 4.50 cm³ histological value cited since 2007. Across 343 paired species, the shrinkage-corrected histological compilation runs ~1.6× above the MRI atlas — a property of the two archives.
 
 Manuscript: [github.com/atharva-chourey-lab/lost-atlas](https://github.com/atharva-chourey-lab/lost-atlas)
+
+**The brain-mass canon is a photocopy chain** — *Comparative neuroanatomy, 2026*
+The three compilations treated as the primary record of mammal brain mass — Burger et al. (2019), Smaers et al. (2021), Tsuboi et al. (2018) — were diffed against each other and traced to source under a pre-registration fixed before any download. Of the 1,467 species present in at least two canons, 30.47% disagree by more than 5% on brain mass; of 60 sampled Burger values, only 25.0% terminate in a work that measured a brain — the rest terminate in earlier compilations, five of which supply 82.6% of the canon. Its worst errors trace to mislabelled specimens weighed in 1908 and 1940.
+
+Manuscript: [github.com/atharva-chourey-lab/photocopy-chain](https://github.com/atharva-chourey-lab/photocopy-chain)
 
 **The same brain measures 21% smaller after fixation** — *Neuroanatomy, 2026*
 Thirty marmosets in the Brain/MINDS dataset were scanned in vivo and again ex vivo after perfusion fixation — the same brains, the same atlas, the same pipeline — under a test pre-registered before any download. The hippocampal formation reads a median 21.0% smaller in the fixed brain (all 30 pairs negative); total labelled gray matter reads 10.4% smaller (the shipped atlas labels gray matter only — a declared scope). The shift is structure-dependent, not a uniform scale factor.
@@ -57,6 +66,16 @@ A within-specimen size-allocation profile computed from Mallet et al. (2019)'s o
 
 Manuscript: [github.com/atharva-chourey-lab/rhino-forearm](https://github.com/atharva-chourey-lab/rhino-forearm)
 
+**Dead names in a frozen archive** — *Bioacoustics, 2026*
+The stranded Fonoteca Zoológica frog-call pile (1,013 audio files, in no formal archive) was re-identified name by name against the GBIF Backbone Taxonomy: 146 of 629 species-named recordings (23.2%) no longer carry their filed name. The maintained FNJV archive, run through the identical instrument, changed at 1.1% — the dead-name burden of an archive is a property of its filing state, not its era. The dataset was located by the lab's Goldmine Hunter tool.
+
+Manuscript: [github.com/atharva-chourey-lab/fonozoo-reidentification](https://github.com/atharva-chourey-lab/fonozoo-reidentification)
+
+**A frozen sketch catalogue, audited** — *Sirenian conservation, 2026*
+The Blue Spring manatee study's hand-drawn scar-sheet catalogue, frozen in April 2013 in a medium the photographic MIPS system does not ingest, was transcribed in full (210 entries) and joined under pre-registration to every public post-2013 record. Public records reach only 21.5% of the catalogue, so the registered fallback governs: a coverage audit and case series (scorecard 2 pass / 3 fail / 1 void), with identities persisting far past the sheet's own drop rules where records exist.
+
+Manuscript: [github.com/atharva-chourey-lab/manatee-scar-sheets](https://github.com/atharva-chourey-lab/manatee-scar-sheets)
+
 **Explore the lion brain interactively:** the [project site](https://atharva-chourey-lab.github.io/atharva-chourey-lab/#brain-atlas) includes a browser viewer for the lion MRI with the hippocampus label overlaid (2.02 cm³, against the 4.50 cm³ value cited since 2007), plus rotatable hippocampus and whole-brain surface meshes. Source atlas: Brain Catalogue — Santin, Herbin & Toro (2016), CC BY-NC 4.0.
 
 ## Code & tools
@@ -82,6 +101,6 @@ Pre-registration before extraction · novelty scrub before claiming · blind ben
 
 ## Status
 
-All eight manuscripts are published in this account's repositories, linked above. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
+All sixteen manuscripts are published in this account's repositories; the eleven studies above are the featured set. They are manuscripts — not yet peer-reviewed. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
 
 Site: https://atharva-chourey-lab.github.io/atharva-chourey-lab/
