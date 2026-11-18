@@ -2,6 +2,8 @@
 
 *Generated 2026-11-17 by the consolidation build; updated 2026-11-17 (evening) for the marmoset-two-rulers and occupancy-audit manuscripts and the dog-genomics dashboard entry. Machine-readable version: `lab-ledger.json` (same directory). All counts computed from the live GitHub org (`gh repo list atharva-chourey-lab`) and the source files — nothing estimated.*
 
+*Presentation update 2026-11-18 (no content change; all counts below unchanged): the public page now opens with a "Twenty-four hours of talking" header — a two-node timeline of the 16–17 Nov 2026 discovery stretch (programme authorised Mon 16 Nov ≈23:00 PST; havoc-sweep results and publication Tue 17 Nov ≈20:49–22:08 PST, page verified live 22:08 PST; ≈ marks approximate windows from the session record) and the lab's method catchline: research by conversation — voice-first, chat-driven, no lab bench. The Brain Explorer now defaults to a Simple view: a grid of 37 illustrated animal buttons (generated artwork, labelled as such; the brain data is unchanged real data), one per Brain Catalogue species, with empty-placeholder species greyed and flagged "label empty". All previous explorer controls (species select, quick-select chips, label-overlay toggles, guided tour) remain available under an Advanced view toggle. Animal button art lives in `assets/animals/` (sliced from grid sheets in `assets/animals-src/`).*
+
 The Atharva Chourey Lab is an independent research lab, and a human–AI collaboration: Atharva Chourey works with Lapis (Muse), an AI research partner. All results are framed as the collaboration's.
 
 ## Status vocabulary (fixed, honest)

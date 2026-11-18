@@ -75,6 +75,37 @@ table.mini th{color:var(--muted);font-weight:600}
 .tourcap{margin-top:14px;background:rgba(240,178,74,.12);border:1px solid rgba(240,178,74,.4);color:#f5dfae;border-radius:12px;padding:12px 16px;font-size:.95rem;display:none}
 .ecap{color:#8fa3c4;font-size:.85rem;line-height:1.6;margin-top:16px}
 .fallback-img{border-radius:14px;margin-top:14px;border:1px solid #22365a}
+/* 24-hours timeline */
+.dayline{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:30px 34px;margin-top:30px;box-shadow:0 6px 24px rgba(22,35,60,.06)}
+.dayline .eyebrow2{color:var(--amber);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 6px}
+.dayline h2{margin:0 0 8px;font-size:1.55rem;letter-spacing:-.02em}
+.catchline{font-size:1.22rem;line-height:1.5;font-weight:620;color:var(--ink);margin:10px 0 4px}
+.catchline em{color:var(--amber);font-style:normal}
+.tl{position:relative;margin:22px 0 4px;padding-left:26px}
+.tl:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tnode{position:relative;padding:0 0 20px}
+.tnode:last-child{padding-bottom:2px}
+.tnode:before{content:"";position:absolute;left:-25px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--amber);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--line)}
+.tnode .twhen{font-weight:720;font-size:1.02rem}
+.tnode .twhen span{color:var(--muted);font-weight:600;font-size:.88rem}
+.tnode p{margin:4px 0 0;color:var(--ink2);font-size:.96rem;max-width:780px}
+.heads{margin:8px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 26px}
+.heads li{color:var(--ink2);font-size:.95rem;padding-left:20px;position:relative}
+.heads li:before{content:"★";position:absolute;left:0;color:var(--amber);font-size:.8rem;top:2px}
+.heads li b{color:var(--ink)}
+.tlnote{color:var(--muted);font-size:.85rem;margin-top:14px}
+/* Explorer simple view */
+.viewtgl{display:inline-flex;background:var(--dark2);border:1px solid #2b4066;border-radius:99px;padding:4px;gap:4px;margin:2px 0 8px}
+.viewtgl button{background:transparent;border:none;color:#cfd9ec;font:inherit;font-size:.92rem;font-weight:650;padding:8px 18px;border-radius:99px;cursor:pointer}
+.viewtgl button.on{background:var(--glow);color:#23180a}
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(106px,1fr));gap:10px;margin:12px 0 2px}
+.abtn{background:#fdfaf2;border:2px solid #22365a;border-radius:16px;padding:8px 6px 7px;cursor:pointer;text-align:center;font:inherit;transition:transform .08s ease,border-color .08s ease}
+.abtn:hover{transform:translateY(-2px);border-color:var(--glow)}
+.abtn.on{border-color:var(--glow);background:#fdf3da;box-shadow:0 0 0 2px var(--glow) inset}
+.abtn img{width:100%;height:78px;object-fit:contain;display:block;border-radius:8px}
+.abtn .anm{display:block;font-size:.8rem;font-weight:650;line-height:1.25;margin-top:5px;color:#22365a}
+.abtn .aflag{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.05em;color:#8a5c08;background:#f7ead2;border-radius:99px;padding:1px 7px;margin-top:4px;text-transform:uppercase}
+.abtn.empty{opacity:.55} .abtn.empty img{filter:grayscale(.75)}
 /* Deeper sections (preserved) */
 .deep{max-width:820px;margin:0 auto}
 .deep h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:52px 0 10px;font-weight:600}
@@ -90,7 +121,7 @@ ul.code span{display:block;color:var(--ink2);font-size:.94rem;margin-top:2px}
 .licence{color:var(--muted);font-size:.88rem;margin-top:14px}
 footer{margin-top:52px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
 @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.strip{grid-template-columns:1fr 1fr}.viewers{grid-template-columns:1fr}.sync{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.grid,.strip{grid-template-columns:1fr}h1{font-size:2.05rem}.row{flex-direction:column;gap:6px}.side{flex:none}.explorer{padding:26px 18px}.vbox canvas,.vbox model-viewer{height:320px}.panel{padding:26px 22px}}
+@media(max-width:600px){.grid,.strip{grid-template-columns:1fr}h1{font-size:2.05rem}.row{flex-direction:column;gap:6px}.side{flex:none}.explorer{padding:26px 18px}.vbox canvas,.vbox model-viewer{height:320px}.panel{padding:26px 22px}.heads{grid-template-columns:1fr}.dayline{padding:24px 20px}.agrid{grid-template-columns:repeat(auto-fill,minmax(88px,1fr))}.abtn img{height:64px}}
 </style></head><body><div class="wrap">
 
 <div class="eyebrow">Atharva Chourey Lab · Research · November 2026</div>
@@ -100,6 +131,33 @@ footer{margin-top:52px;border-top:1px solid var(--line);padding-top:18px;color:v
 <p class="honesty">These are research findings — <b>not yet peer-reviewed</b> and not yet independently replicated.</p>
 <div class="hero-img"><img src="assets/clean_hero.jpg" alt="Editorial illustration: a lion, rhinoceroses, an eclipse, an ancient university, and archival records" width="2560" height="960"></div>
 <p class="figcap">Illustration (generated artwork, not data or photography).</p>
+
+<section class="dayline" id="dayline">
+<p class="eyebrow2">How this happened · 16–17 November 2026</p>
+<h2>Twenty-four hours of talking</h2>
+<p class="catchline">The lab's intellectual property is a way of working: a researcher thinking out loud — on drives, on walks, in ordinary chat — with an AI partner that pre-registers, measures, audits and publishes. <em>No lab bench. A conversation.</em></p>
+<p style="color:var(--ink2);margin:6px 0 0">Everything on this page was produced in one discovery stretch of casual chat sessions — mostly voice, much of it transcribed from drives and walks rather than typed at a bench. The sessions, from the lab's own record:</p>
+<div class="tl">
+  <div class="tnode">
+    <div class="twhen">Mon 16 Nov 2026, ≈23:00 PST <span>— the programme is authorised</span></div>
+    <p>In an ordinary chat session, the brain-comparison programme gets its go-ahead — “all except going public” — and the work runs through the night and all of Tuesday: the brain-archive audit, the eclipse re-reduction, the Gazetteers famine panel, the India historical-stats panel, Nalanda, and the correction campaigns.</p>
+  </div>
+  <div class="tnode">
+    <div class="twhen">Tue 17 Nov 2026, ≈20:49–22:08 PST <span>— results land, and the lab goes public</span></div>
+    <p>The six-target havoc sweep reports through the day; in the evening the manuscripts are written up, precedent-checked and published to this site — the updated page verified live at 22:08 PST.</p>
+  </div>
+</div>
+<p style="font-weight:650;margin:14px 0 0">Six headlines from that stretch:</p>
+<ul class="heads">
+  <li><b>First MRI measurement of the lion hippocampus</b> — 2.02 cm³, against the 4.50 cm³ cited since 2007.</li>
+  <li><b>A brain archive's empty files exposed</b> — 18 of 71 label files were empty placeholders that looked like data.</li>
+  <li><b>The same brain, two sizes</b> — a marmoset's hippocampal formation measures −21.0% after fixation, in 30 of 30 animals.</li>
+  <li><b>A probable sign error in the eclipse tables</b> — the famous 1715 point inverts the centuries-old shrinking-Sun claim.</li>
+  <li><b>The forearm splits the rhinos</b> — all five living species separated by a measurement nobody had computed.</li>
+  <li><b>Nalanda's 10,000 traced</b> — to Huili's biography, not to Xuanzang, where textbooks put it.</li>
+</ul>
+<p class="tlnote">Session times are from the lab's own session record; windows marked ≈ are approximate. The voice-first detail is part of the record, not a garnish: the questions were spoken, the AI did the measuring, and every claim below was checked before it was published.</p>
+</section>
 
 <h2 class="sec">The Eight Key Findings</h2>
 <p class="sec-dek">Each finding was checked against the archive it came from, with a complete map from every number to its source.</p>
@@ -217,16 +275,26 @@ footer{margin-top:52px;border-top:1px solid var(--line);padding-top:18px;color:v
 <section class="explorer" id="explorer">
 <h2>Brain Explorer — 37 species, real scans</h2>
 <p class="dek2">Every species in the Brain Catalogue, explorable in your browser. Pick a species to load its real MRI volume and recovered labels — loaded on selection only, never all at once. Species whose label files are <b>empty placeholders</b> are shown greyed and flagged, not hidden: that emptiness is itself one of the lab's findings. The lion — the headline specimen — loads at <b>full resolution</b>; other species load web copies downsampled ×2 (×3 for the largest scans), with all quoted volumes measured at full resolution.</p>
+<div class="viewtgl" role="group" aria-label="Explorer view">
+  <button type="button" id="vt-simple" class="on">🐾 Simple view — pick an animal</button>
+  <button type="button" id="vt-advanced">Advanced view</button>
+</div>
+<div id="animal-zone">
+  <div class="agrid" id="animal-grid" aria-label="Pick an animal"></div>
+  <p class="ecap" style="margin-top:8px">Tap an animal to load its real brain scan below. The animal portraits are illustrations (generated artwork) — the brains are real data. Animals marked <b>“label empty”</b> are greyed because their hippocampus label file in the archive is an empty placeholder: that emptiness is one of the lab's findings, and the explorer shows it rather than hiding it.</p>
+</div>
+<div class="advctl" id="adv-controls" style="display:none">
 <label for="species-select" style="color:#8fa3c4;font-size:.85rem;font-weight:700;letter-spacing:.08em">SPECIES</label><br>
 <select id="species-select" aria-label="Choose a species"></select>
 <div class="chips" id="species-chips" aria-label="Species quick select"></div>
 <div class="controls" id="overlay-toggles" aria-label="Label overlays"></div>
+</div>
 <div class="viewers">
   <div class="vbox"><span class="vlabel">Volume · MRI + labels</span><canvas id="nv-canvas" width="800" height="400" aria-label="Interactive brain MRI volume viewer"></canvas><div class="vstatus" id="nv-status">Loading the lion at full resolution…</div></div>
   <div class="vbox"><span class="vlabel">Surface · drag to rotate</span><model-viewer id="mesh-viewer" alt="Rotatable brain surface mesh" camera-controls auto-rotate loading="lazy" reveal="auto"></model-viewer><div class="vstatus" id="mesh-status">Loading surface…</div></div>
 </div>
 <img class="fallback-img" id="lion-fallback" src="assets/lion_hippocampus_slices.png" alt="Static fallback: sagittal, coronal and axial MRI slices through the lion hippocampus, label in red" loading="lazy" style="display:none;width:100%">
-<div class="controls">
+<div class="controls advctl" id="tour-controls" style="display:none">
   <button class="btn" id="tour-btn" type="button">▶ Play the tour</button>
   <button class="btn ghost" id="tour-stop" type="button" style="display:none">Stop tour</button>
   <span style="color:#8fa3c4;font-size:.88rem">Free orbit: drag the surface · scroll the volume to change slice · use + / − on the surface viewer to zoom.</span>
@@ -330,7 +398,7 @@ Attribution: Brain Catalogue — Santin, Herbin &amp; Toro (2016), Zenodo record
 <script>
 (function(){
 var MANIFEST=null, current=null, nv=null, nvReady=false, tourTimers=[];
-var sel=document.getElementById('species-select'), chips=document.getElementById('species-chips'),
+var sel=document.getElementById('species-select'), chips=document.getElementById('species-chips'), agrid=document.getElementById('animal-grid'),
     toggles=document.getElementById('overlay-toggles'), nvStatus=document.getElementById('nv-status'),
     meshViewer=document.getElementById('mesh-viewer'), meshStatus=document.getElementById('mesh-status'),
     fallback=document.getElementById('lion-fallback'), tourCap=document.getElementById('tour-cap');
@@ -389,6 +457,7 @@ function select(slug,skipHash){
   if(!MANIFEST) return; var s=MANIFEST.species.filter(function(x){return x.slug===slug;})[0]; if(!s) return;
   current=s; sel.value=slug;
   chips.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on',c.dataset.slug===slug); });
+  document.querySelectorAll('.abtn').forEach(function(b){ b.classList.toggle('on',b.dataset.slug===slug); });
   sync(s); loadMesh(s); loadVolume(s);
 }
 function buildUI(){
@@ -398,10 +467,24 @@ function buildUI(){
     c.textContent=s.common_name; c.title=isEmptyHipp(s)?'Label file empty — no data':(s.common_name+' — load');
     c.addEventListener('click',function(){ stopTour(); select(s.slug); document.getElementById('explorer').scrollIntoView({behavior:'smooth',block:'start'}); });
     chips.appendChild(c);
+    var b=document.createElement('button'); b.type='button'; b.className='abtn'+(isEmptyHipp(s)?' empty':''); b.dataset.slug=s.slug;
+    b.title=isEmptyHipp(s)?(s.common_name+' — hippocampus label file empty'):('Load the '+s.common_name+' brain');
+    b.innerHTML='<img src="assets/animals/'+s.slug+'.jpg" alt="Illustration of a '+s.common_name+'" loading="lazy"><span class="anm">'+s.common_name+'</span>'+(isEmptyHipp(s)?'<span class="aflag">Label empty</span>':'');
+    b.addEventListener('click',function(){ stopTour(); select(s.slug); document.querySelector('.viewers').scrollIntoView({behavior:'smooth',block:'start'}); });
+    agrid.appendChild(b);
   });
   sel.addEventListener('change',function(){ stopTour(); select(sel.value); });
   select('lion');
 }
+/* Simple / advanced view toggle */
+function setView(adv){
+  document.querySelectorAll('.advctl').forEach(function(el){ el.style.display=adv?'':'none'; });
+  document.getElementById('animal-zone').style.display=adv?'none':'';
+  document.getElementById('vt-simple').classList.toggle('on',!adv);
+  document.getElementById('vt-advanced').classList.toggle('on',adv);
+}
+document.getElementById('vt-simple').addEventListener('click',function(){ setView(false); });
+document.getElementById('vt-advanced').addEventListener('click',function(){ setView(true); });
 /* Tour */
 function cap(html){ tourCap.style.display='block'; tourCap.innerHTML=html; }
 function orbit(deg,radius){ try{ meshViewer.cameraOrbit=deg+'deg 70deg '+(radius||'105%'); }catch(e){} }
