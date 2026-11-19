@@ -74,11 +74,17 @@
    "name": "Blue Spring scar-sheet transcription + public ruler",
    "note": "210 transcribed entries (209 with BS IDs); public ruler of 165 sourced rows covering 91 individuals; join 45 of 209 (21.5%). Source sheet PDFs not redistributed.",
    "records": 210
+  },
+  {
+   "location": "occupancy-second-arm repo record (outputs/joined_independent.csv in the source build)",
+   "name": "Occupancy second-arm joined table (independent subset)",
+   "note": "129 shared Burger x Dembitzer species with exclusions flagged: 71 identical-value species excluded as registered, 58 independent species joined (brain mass x measured ECV, with ruler pair).",
+   "records": 129
   }
  ],
  "framing": "Independent research lab. A human–AI collaboration: Atharva Chourey works with Lapis (Muse), an AI research partner; all results are framed as the collaboration's.",
  "generated": "2026-11-18",
- "generated_by": "Site-update build, 2026-11-18 (later): photocopy-chain, fonozoo-reidentification and manatee-scar-sheets manuscripts published; Goldmine Hunter campaign record extended through Campaign 12 (LAGS GOLD minted as a pre-registered spin-off); all counts computed from the live GitHub org (gh repo list atharva-chourey-lab = 24 repos) and the source files, not estimated. Previous: consolidation build 2026-11-17 and the 2026-11-17 evening site-update build (marmoset-two-rulers, occupancy-audit).",
+ "generated_by": "Site-update build, 2026-11-18 (second update): occupancy-second-arm and gyushi-zombie-audit (registered negative) manuscripts published; research-tools code repo published; Goldmine Hunter campaign record extended through Campaign 16 (no new gold; mammal registry exhausted 50/50; tally 3 GOLD / 0 DIAMOND); all counts computed from the live GitHub org (gh repo list atharva-chourey-lab = 27 repos) and the source files, not estimated. Previous: the 2026-11-18 first site-update build (photocopy-chain, fonozoo-reidentification, manatee-scar-sheets; org 24 repos / 16 manuscripts), the consolidation build 2026-11-17 and the 2026-11-17 evening build.",
  "lab": "Atharva Chourey Lab",
  "org": "atharva-chourey-lab",
  "org_url": "https://github.com/atharva-chourey-lab",
@@ -260,7 +266,7 @@
   {
    "added": "2026-11-17 (site update build)",
    "category": "Neuroanatomy",
-   "headline": "Endocast occupancy joined for 42 species: median 0.919; only 40.5% within the 90–100% band fossil EQ assumes; 19.0% above 100% (ruler mismatch); Artiodactyla 0.79, Cetacea 0.79, Perissodactyla 0.84; Dembitzer supplement back-calculates ECV = brain × 1.108 for 149 species.",
+   "headline": "Endocast occupancy joined for 42 species: median 0.919; only 40.5% within the 90–100% band fossil EQ assumes; 19.0% above 100% (ruler mismatch); Artiodactyla 0.79, Cetacea 0.79, Perissodactyla 0.84; Dembitzer supplement back-calculates ECV = brain × 1.108 for 149 species. Second arm (occupancy-second-arm, 2026-11-18): on the 58 independent Burger x Dembitzer species, median 0.932, 65.5% outside the band; the other 71 shared species (55%) are identical-value photocopies (Ashwell / Isler on both sides) whose exclusion reverses a naive join's apparent confirmation of the identity.",
    "live_on_github": true,
    "peer_reviewed": false,
    "repo": "occupancy-audit",
@@ -308,6 +314,34 @@
    "status": "public",
    "submission_package": null,
    "title": "A Frozen Sketch Catalogue, Audited: Persistence of Hand-Drawn Scar Identifications in the Blue Spring Manatee Aggregation, 2013-2026",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-18 (second site update build)",
+   "category": "Neuroanatomy",
+   "headline": "Second arm of the occupancy audit, pre-registered before the join: Burger x Dembitzer share 129 extant species, of which 71 (55.0%) carry the identical number on both sides (54 marsupials, Ashwell 2008 both sides; 17 primates, Isler et al. 2008 both sides, hidden by print precision) and are excluded as registered. Independent arm n = 58: median occupancy 0.932 (IQR 0.882-1.006), 65.5% outside the 90-100% band; naive join of all 129 reports 70.5% inside the band - the identity's apparent support is manufactured by the back-filled block. Scorecard 5 pass / 1 fail (P1 size, n >= 60 missed at 58, above the K1 floor of 40). Centre is ruler-dependent: Waugh 0.920, first-arm combined 0.919, Burger-independent 0.932, Patzke bridge ~1.0.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "occupancy-second-arm",
+   "source_build": "~/workspace/occupancy-second-arm/ (PREREGISTRATION.md frozen commit 0353845, Amendment A1 commit 1b6d84e, RESULTS.md, outputs/joined_independent.csv, outputs/summary.json - headlines checked against summary.json during the publication build)",
+   "status": "public",
+   "submission_package": null,
+   "title": "Occupancy, Second Arm: On Independent Data the Brain Still Does Not Fill the Skull - and a Naive Join of the Same Data Appears to Prove That It Does",
+   "url": "https://github.com/atharva-chourey-lab/occupancy-second-arm",
+   "venue_submitted": false
+  },
+  {
+   "added": "2026-11-18 (second site update build)",
+   "category": "History of medicine / Methodology",
+   "headline": "REGISTERED NEGATIVE: the 30-chapter pilot (Explanatory Tantra, blind double-coded against the Ashtanga Hridaya, Huangdi Neijing as sham arm) died at its pre-registered reliability gate - Cohen's kappa 0.68 (0.6795) against a bar of 0.70. No correspondence percentage is claimed and the registered predictions were not scored; the zombie '~75% of the Gyushi comes from the Ashtanga Hridaya' figure remains untraced and unreplaced. The passes' arithmetic is published in the paper, explicitly labelled unclaimed.",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "gyushi-zombie-audit",
+   "source_build": "~/workspace/gyushi-zombie-audit/ (PREREGISTRATION.md frozen commit ebe2713, PILOT_RESULTS.md, coding/passA.csv, coding/passB.csv)",
+   "status": "registered-negative",
+   "submission_package": null,
+   "title": "The 75% That Nobody Measured: A Pre-Registered Pilot Audit of the Gyushi-Ashtanga Claim Dies at Its Own Reliability Gate",
+   "url": "https://github.com/atharva-chourey-lab/gyushi-zombie-audit",
    "venue_submitted": false
   }
  ],
@@ -366,6 +400,16 @@
    "location": "~/workspace/lags-transcription-audit/PREREGISTRATION.md (+ NOVELTY.md)",
    "name": "LAGS transcription audit pre-registration",
    "note": "Minted from Goldmine Hunter Campaign 10 GOLD (1,082 informant folders; formal products cover 64 of 914 informants). Novelty narrowed-but-open. Pre-registered only — NOT RUN; no manuscript."
+  },
+  {
+   "location": "~/workspace/occupancy-second-arm/PREREGISTRATION.md (frozen commit 0353845; Amendment A1 commit 1b6d84e)",
+   "name": "Occupancy second arm pre-registration",
+   "note": "Identical-value exclusion (71 species) registered before the join; scored 5 pass / 1 fail; published as occupancy-second-arm."
+  },
+  {
+   "location": "~/workspace/gyushi-zombie-audit/PREREGISTRATION.md (frozen commit ebe2713)",
+   "name": "Gyushi zombie audit pilot pre-registration",
+   "note": "30-chapter blind double-coding with a sham arm and a kappa >= 0.70 gate. The gate fired (kappa 0.68); published as the gyushi-zombie-audit registered negative, no percentage claimed."
   }
  ],
  "stats": {
@@ -383,15 +427,15 @@
    "firm": 47,
    "probable": 74
   },
-  "manuscripts_awaiting_peer_review": 16,
+  "manuscripts_awaiting_peer_review": 18,
   "manuscripts_in_preparation": 0,
-  "manuscripts_public": 16,
-  "manuscripts_registered_negative": 1,
-  "preprints_note": "All 16 manuscripts are public preprints in the lab's GitHub format. None has been submitted to a journal; none is peer-reviewed. Three submission packages are prepared (lost-atlas, eclipse-radius, testability-atlas), each explicitly PREP ONLY.",
+  "manuscripts_public": 18,
+  "manuscripts_registered_negative": 2,
+  "preprints_note": "All 18 manuscripts are public preprints in the lab's GitHub format. None has been submitted to a journal; none is peer-reviewed. Three submission packages are prepared (lost-atlas, eclipse-radius, testability-atlas), each explicitly PREP ONLY.",
   "profile_repo": 1,
   "submission_packages_prepared": 3,
-  "tools_public": 7,
-  "total_repos": 24,
+  "tools_public": 8,
+  "total_repos": 27,
   "venue_submitted_count": 0
  },
  "status_vocabulary": {
@@ -436,6 +480,11 @@
    "description": "Question-level testability grading of Indian historical statistics — spectral/power machinery for the Testability Atlas.",
    "repo": "testability-atlas-code",
    "url": "https://github.com/atharva-chourey-lab/testability-atlas-code"
+  },
+  {
+   "description": "Three relationship-hunting tools above Goldmine Hunter: Pair Hunter (scores never-joined dataset pairs on overlap, ruler independence, falsifiability, predicted join yield; version x version mode), Custody Mapper (medium/custody gate - a post-probe gate, per its own first campaign), Citation Tracer (walks cited numbers to primary sources; zombie / corrupt / misattributed verdicts). Calibrated before campaigning (Pair 4/4, Custody 3/3, Tracer 5/5); first campaigns PAIR-1 / CUSTODY-1 / TRACE-1 published in the repo. MIT (code).",
+   "repo": "research-tools",
+   "url": "https://github.com/atharva-chourey-lab/research-tools"
   }
  ]
 }

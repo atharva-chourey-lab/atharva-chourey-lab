@@ -8,7 +8,7 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 
 ## The lab in numbers
 
-- **16 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, historical statistics, bioacoustics, and conservation — each licensed CC BY 4.0, each with a complete map from every number to its source.
+- **18 manuscripts published openly** in a single programme — neuroanatomy, comparative morphology, astronomy, history of science, historical statistics, bioacoustics, and conservation — each licensed CC BY 4.0, each with a complete map from every number to its source.
 - **343 species** compared across the two great brain archives; **53 of 71** archive labels recovered (the other 18 were empty placeholders).
 - **The brain-mass canon disagrees with itself** — across the **1,467 species** shared by the three standard compilations, **30.47%** differ by more than 5%, and only **25%** of sampled values from the most-cited canon trace to an actual measurement.
 
@@ -39,7 +39,9 @@ Manuscript: [github.com/atharva-chourey-lab/marmoset-two-rulers](https://github.
 **The brain does not fill the skull** — *Neuroanatomy, 2026*
 Joining endocast volumes to brain volumes for 42 mammal species under a pre-registered protocol: median occupancy 0.919, only 40.5% of species inside the 90–100% band fossil quotients assume, and 19.0% above a physically impossible 100% — the field's two brain rulers disagree by more than the shortfall itself. The largest modern endocast dataset back-calculates skull volume from brain volume for 149 of its species, silently assuming the ~90% occupancy it appears to measure.
 
-Manuscript: [github.com/atharva-chourey-lab/occupancy-audit](https://github.com/atharva-chourey-lab/occupancy-audit)
+A pre-registered second arm joins the Burger canon to the same measured endocasts: of 129 shared species, 71 (55%) carry the identical number on both sides (Ashwell 2008 and Isler et al. 2008 cited by both datasets) and are excluded as registered; on the 58 independent species, median occupancy is 0.932 and 65.5% fall outside the band. A naive join of all 129 would have appeared to confirm the identity — the trap is the second arm's other finding.
+
+Manuscripts: [github.com/atharva-chourey-lab/occupancy-audit](https://github.com/atharva-chourey-lab/occupancy-audit) · [github.com/atharva-chourey-lab/occupancy-second-arm](https://github.com/atharva-chourey-lab/occupancy-second-arm)
 
 **Rainfall did not drive the famine of 1900** — *Historical statistics, 2026*
 A famine panel from the 1908 Imperial Gazetteers (34 units; first extracted as an economic panel by Roy, 2014) re-quantifies a contrast the 1901 Census itself reported — princely states −16.2%, British districts −7.5% — and adds the null: correlation with mean rainfall is −0.05. Political boundaries, not weather, carry the signal.
@@ -91,6 +93,7 @@ Code behind the papers:
 Discovery tooling:
 
 - [goldmine-hunter](https://github.com/atharva-chourey-lab/goldmine-hunter) — dataset-discovery tooling
+- [research-tools](https://github.com/atharva-chourey-lab/research-tools) — relationship-hunting tooling: Pair Hunter, Custody Mapper, Citation Tracer
 - [mound-hunter](https://github.com/atharva-chourey-lab/mound-hunter) — DEM mound-detection tooling
 
 Licences: code is MIT-licensed; the manuscripts are CC BY 4.0.
@@ -101,6 +104,6 @@ Pre-registration before extraction · novelty scrub before claiming · blind ben
 
 ## Status
 
-All sixteen manuscripts are published in this account's repositories; the eleven studies above are the featured set. They are manuscripts — not yet peer-reviewed. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
+All eighteen manuscripts are published in this account's repositories (two of them registered negatives, published in full); the eleven studies above are the featured set. They are manuscripts — not yet peer-reviewed. Public datasets and code will follow in the same repositories.
 
 Site: https://atharva-chourey-lab.github.io/atharva-chourey-lab/
