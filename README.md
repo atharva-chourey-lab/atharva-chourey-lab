@@ -14,7 +14,7 @@ Working in neuroanatomy, astronomy, and historical statistics. One programme: ta
 
 - **A frozen frog-call archive is filed under dead names** — **146 of 629** species-named recordings (23.2%) in the stranded Fonoteca Zoológica pile no longer carry their filed name, against **1.1%** in a maintained archive run through the same audit; a frozen hand-drawn manatee catalogue of **210 entries** was transcribed and audited against the public record.
 
-- **30 marmoset brains measured twice** — alive and after perfusion fixation — disagree by 21% in the hippocampal formation; across **42 species** with both a skull and a brain measurement, the brain fills a median 92% of the skull, not the assumed 100%.
+- **30 marmoset brains measured twice** — alive and after perfusion fixation — disagree by 21% in the hippocampal formation; across **42 species** with both a skull and a brain measurement, the brain fills a median 92% of the skull, not the assumed 100% (occupancy variation itself is Waugh & Thewissen's 2021 result; the cross-compilation medians and circularity audit are this lab's).
 - **First MRI hippocampus measurement for the lion** — 2.02 cm³, against the 4.50 cm³ value the field had cited since 2007.
 - **34 historical units** re-quantified for the 1899–1900 famine; **24 received numbers** audited bearer by bearer; **23 standard research questions** graded for whether they can be answered at all.
 - **11 headline claims precedent-checked before publication** — 4 held, 4 narrowed, 3 withdrawn. The withdrawals are part of the record, not an embarrassment: the audit applies to the lab first.
@@ -32,14 +32,14 @@ The three compilations treated as the primary record of mammal brain mass — Bu
 Manuscript: [github.com/atharva-chourey-lab/photocopy-chain](https://github.com/atharva-chourey-lab/photocopy-chain)
 
 **The same brain measures 21% smaller after fixation** — *Neuroanatomy, 2026*
-Thirty marmosets in the Brain/MINDS dataset were scanned in vivo and again ex vivo after perfusion fixation — the same brains, the same atlas, the same pipeline — under a test pre-registered before any download. The hippocampal formation reads a median 21.0% smaller in the fixed brain (all 30 pairs negative); total labelled gray matter reads 10.4% smaller (the shipped atlas labels gray matter only — a declared scope). The shift is structure-dependent, not a uniform scale factor.
+Thirty marmosets in the Brain/MINDS dataset were scanned in vivo and again ex vivo after perfusion fixation — the same brains, the same atlas, the same pipeline — under a test pre-registered before any download. The hippocampal formation reads a median 21.0% smaller in the fixed brain (all 30 pairs negative); total labelled gray matter reads 10.4% smaller (the shipped atlas labels gray matter only — a declared scope). The shift is structure-dependent, not a uniform scale factor. Yoshimaru et al. (2024) first ran this paired comparison at n = 12 and found significant shrinkage (≈ −12% for the hippocampal formation, read from their Fig. 3); this study re-measures it at n = 30 on the public dataset and finds a larger effect — the ~9-point gap between the estimates is an open question.
 
 Manuscript: [github.com/atharva-chourey-lab/marmoset-two-rulers](https://github.com/atharva-chourey-lab/marmoset-two-rulers)
 
-**The brain does not fill the skull** — *Neuroanatomy, 2026*
-Joining endocast volumes to brain volumes for 42 mammal species under a pre-registered protocol: median occupancy 0.919, only 40.5% of species inside the 90–100% band fossil quotients assume, and 19.0% above a physically impossible 100% — the field's two brain rulers disagree by more than the shortfall itself. The largest modern endocast dataset back-calculates skull volume from brain volume for 149 of its species, silently assuming the ~90% occupancy it appears to measure.
+**The brain does not fill the skull — and the rulers disagree by more than the shortfall** — *Neuroanatomy, 2026*
+The circularity leads, because it is this audit's own: the largest modern endocast dataset back-calculates skull volume from brain volume for 149 of its species, silently assuming the ~90% occupancy it appears to measure; and a pre-registered second arm joining the Burger canon to the same measured endocasts found that of 129 shared species, 71 (55%) carry the identical number on both sides (Ashwell 2008 and Isler et al. 2008 cited by both datasets) — a naive join of all 129 would have appeared to confirm the identity it was built to test. With those excluded as registered, the second arm gives 58 independent species at median occupancy 0.932, 65.5% outside the band. The first arm's cross-compilation join (42 species) gives median 0.919, only 40.5% inside the 90–100% band fossil quotients assume, and 19.0% above a physically impossible 100% — the field's two brain rulers disagree by more than the shortfall itself.
 
-A pre-registered second arm joins the Burger canon to the same measured endocasts: of 129 shared species, 71 (55%) carry the identical number on both sides (Ashwell 2008 and Isler et al. 2008 cited by both datasets) and are excluded as registered; on the 58 independent species, median occupancy is 0.932 and 65.5% fall outside the band. A naive join of all 129 would have appeared to confirm the identity — the trap is the second arm's other finding.
+Prior art, credited: that occupancy varies and is not 100% is Waugh & Thewissen's (2021) established result (33–98% on directly measured pairs; the bowhead their outlier), and this audit builds on their paired table. The cross-compilation statistics and both circularity measurements have no prior found.
 
 Manuscripts: [github.com/atharva-chourey-lab/occupancy-audit](https://github.com/atharva-chourey-lab/occupancy-audit) · [github.com/atharva-chourey-lab/occupancy-second-arm](https://github.com/atharva-chourey-lab/occupancy-second-arm)
 
@@ -53,8 +53,8 @@ Re-reducing historical eclipse observations with modern lunar topography: solar 
 
 Manuscript: [github.com/atharva-chourey-lab/eclipse-radius](https://github.com/atharva-chourey-lab/eclipse-radius)
 
-**Textbooks still credit Xuanzang with a number he never gave** — *History of science, 2026*
-The 10,000 figure sits in Huili's biography of Xuanzang (in print since Beal, 1884/1911), yet textbooks still credit it to Xuanzang himself. One of two dozen received numbers audited bearer by bearer; Nalanda's capacity ceiling is below 2,000, its defensible peak near 3,000–3,500.
+**Nalanda's excavated plant cannot hold its received number** — *History of science, 2026*
+The attribution itself is old scholarship (Beal, 1884/1911; Deeg, 2018): the 10,000 figure is Huili's, in his biography of Xuanzang, not Xuanzang's own. What this audit adds is the test — a plaque-counted capacity ceiling below 2,000 residents, an endowment cross-check that refutes Huili by his own numbers, and a graded peak of 2,500–4,500, centred near 3,000–3,500 — inside a bearer-by-bearer audit of two dozen received numbers. (The 10,000 is still routinely credited to Xuanzang in exam-prep and popular materials — a persistence documented anecdotally; no textbook survey has been run.)
 
 Manuscript: [github.com/atharva-chourey-lab/received-numbers](https://github.com/atharva-chourey-lab/received-numbers)
 

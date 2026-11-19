@@ -30,8 +30,8 @@
   {
    "location": "~/workspace/chinese-correlation-spine/nalanda/numbers.csv (dataset behind received-numbers §3)",
    "name": "Nalanda graded quantities",
-   "note": "14 firm / 22 probable / 12 rhetoric / 1 not-Nalanda-specific in the source grading; every quantity carries its bearer and date.",
-   "records": 49
+   "note": "14 firm / 22 probable / 12 rhetoric / 1 not-Nalanda-specific in the source grading, plus one restored row graded PROBABLE-to-RHETORIC (Daoxuan, Xu Gaoseng Zhuan: >4,000 residents) added 2026-11-18 as a correction of record — the original census omitted this fourth contemporary witness. Every quantity carries its bearer <redacted> date.",
+   "records": 50
   },
   {
    "location": "received-numbers (Campaigns 1–2); source files in the chinese-correlation-spine repo (campaign/, campaign2/)",
@@ -485,6 +485,38 @@
    "description": "Three relationship-hunting tools above Goldmine Hunter: Pair Hunter (scores never-joined dataset pairs on overlap, ruler independence, falsifiability, predicted join yield; version x version mode), Custody Mapper (medium/custody gate - a post-probe gate, per its own first campaign), Citation Tracer (walks cited numbers to primary sources; zombie / corrupt / misattributed verdicts). Calibrated before campaigning (Pair 4/4, Custody 3/3, Tracer 5/5); first campaigns PAIR-1 / CUSTODY-1 / TRACE-1 published in the repo. MIT (code).",
    "repo": "research-tools",
    "url": "https://github.com/atharva-chourey-lab/research-tools"
+  }
+ ],
+ "corrections_and_prior_art": [
+  {
+   "date": "2026-11-18",
+   "episode": "An OpenAI model argued with us (Wed 18 Nov 2026, ~17:00-17:04 PST): an external harsh-filter review of the portfolio — novelty, validity and significance only, zero credit for manuscript count, breadth, presentation or speed — pressed three prior-art citations. The lab pressed back; the model conceded on occupancy and marmoset, corrected its Nalanda table, and revised its shortlist of candidate contributions from three to five. The lab's own independent novelty scrubs then confirmed the corrections and found two further defects of the lab's own (a missing Yoshimaru citation; Daoxuan as a fourth Nalanda witness), fixed on the record the same day. No measured number, featured finding, or manuscript count changed.",
+   "addenda": [
+    {
+     "finding": "marmoset-two-rulers",
+     "commit": "6799dfe",
+     "correction": "Yoshimaru et al. (2024, Scientific Reports 14, 26901) ran the paired in-vivo/ex-vivo marmoset design first (n = 12) and was not cited; paper now cites it in §1, §4 and references. Claim stands at full strength as the largest paired, pre-registered re-measurement (n = 30, hippocampal formation -21.0%, 30/30 negative), ~9 points larger than Yoshimaru's figure-implied ~-12% — a discrepancy flagged as an open question.",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the marmoset-two-rulers repo"
+    },
+    {
+     "finding": "occupancy-audit + occupancy-second-arm",
+     "commits": [
+      "914f934",
+      "533f719"
+     ],
+     "correction": "Waugh & Thewissen (2021) — the project's own anchor — established occupancy variation itself (33-98%; bowhead their outlier). Presentation re-led with the audit's own results (cross-compilation ruler disagreement, >100% joins; Dembitzer x1.108 back-calculation over 149 species; the 71-species identical-value block) and Waugh & Thewissen credited wherever the variation is mentioned. Medians unchanged (0.919 at n=42; 0.932 at n=58).",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in both occupancy repos"
+    },
+    {
+     "finding": "received-numbers (Nalanda, §3)",
+     "commits": [
+      "7cf0c12",
+      "0c0ced0 (chinese-correlation-spine dataset)"
+     ],
+     "correction": "Daoxuan (d. 667), a fourth contemporary number-bearing witness (>4,000 residents, Xu Gaoseng Zhuan T 2060 juan 4), was absent from the census; restored in §3.1/§3.2 and in nalanda/numbers.csv (dataset 49 -> 50 graded quantities). Asher (2015) cited in §3.3 as prior for the qualitative capacity objection; Deeg (2018) added to references. Site/profile re-headlined from the attribution (Beal 1884/1911, never claimed by the paper) to the quantified capacity test; the textbooks-persistence line downgraded to an explicitly unsurveyed observation.",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the received-numbers repo"
+    }
+   ]
   }
  ]
 }

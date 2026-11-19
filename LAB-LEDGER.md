@@ -55,7 +55,19 @@ The Atharva Chourey Lab is an independent research lab, and a human–AI collabo
 
 ### Reconciliation note — Nalanda and the campaigns
 
-There are deliberately **no** `nalanda-capacity` or `correction-campaign` repos. The Nalanda statistical build (49 graded quantities) and both correction campaigns (15 + 22 cases) were already consolidated into **received-numbers** (paper #4) before this build; duplicating them as separate repos would double-count the same results. The five new repos (#7–#11) are the Correlation Web outputs that had no paper home.
+There are deliberately **no** `nalanda-capacity` or `correction-campaign` repos. The Nalanda statistical build (50 graded quantities — 49 in the original census, Daoxuan restored 2026-11-18; see Corrections & prior art below) and both correction campaigns (15 + 22 cases) were already consolidated into **received-numbers** (paper #4) before this build; duplicating them as separate repos would double-count the same results. The five new repos (#7–#11) are the Correlation Web outputs that had no paper home.
+
+## Corrections & prior art — 2026-11-18 (on the record, on purpose)
+
+*Self-correction on the record is part of this lab's method, and this section is that record. None of the corrections below changes a measured number, a featured finding, or a manuscript count. Each one makes a claim harder to attack, not smaller.*
+
+**The episode — an OpenAI model argued with us.** On Wed 18 Nov 2026, ≈17:00–17:04 PST, an external harsh-filter review of this portfolio — run by an OpenAI model, scoring novelty, validity and significance with zero credit for manuscript count, breadth, presentation or speed — pressed three prior-art citations against the lab. The lab pressed back on all three. The model conceded on two (occupancy and marmoset), corrected its Nalanda table, and revised its shortlist of candidate contributions from three to five. The lab then ran its own independent novelty scrubs on all three citations, which confirmed the corrections — and caught two further defects of the lab's own that the review had missed (the missing Yoshimaru citation; Daoxuan). Both are fixed below. Adversarial review, survived and used.
+
+**The three addenda** (each committed in its project record as `NOVELTY-ADDENDUM-2026-11-18.md` and included in the manuscript repo):
+
+1. **Marmoset** (`marmoset-two-rulers`, commit `6799dfe`) — Yoshimaru et al. (2024, *Scientific Reports* 14, 26901) ran the paired in-vivo/ex-vivo design first, at n = 12, and was not cited. The paper now cites it in §1, §4 and the references. The claim stands at full strength as what it is: the largest paired, pre-registered re-measurement (n = 30, hippocampal formation −21.0%, 30/30 negative) — ~9 points larger than Yoshimaru's figure-implied ≈ −12%, a discrepancy flagged in the paper as an open question.
+2. **Occupancy** (`occupancy-audit`, commit `914f934`; `occupancy-second-arm`, commit `533f719`) — Waugh & Thewissen (2021), the project's own anchor source, established occupancy variation itself (33–98%; the bowhead their outlier). The presentation now leads with what is the audit's own — cross-compilation ruler disagreement (physically impossible >100% joins) and the two circularity measurements (Dembitzer's ×1.108 back-calculation over 149 species; the 71-species identical-value block in the Burger × Dembitzer join) — and credits Waugh & Thewissen explicitly wherever the variation is mentioned. The cross-compilation medians (0.919 at n = 42; 0.932 at n = 58 independent) stand unchanged.
+3. **Nalanda** (`received-numbers`, commit `7cf0c12`; dataset in `chinese-correlation-spine`, commit `0c0ced0`) — the scrub found a defect in the lab's own build: Daoxuan (d. 667) is a fourth contemporary, number-bearing witness (>4,000 residents, *Xu Gaoseng Zhuan* T 2060 juan 4) who was absent from the census. §3.1's "exactly three men" is corrected to four witnesses with an explicit correction of record, §3.2 grades him, and the dataset goes from 49 to **50 graded quantities**. §3.3 now cites Asher (2015) as the prior for the qualitative capacity objection and the references add Deeg (2018); the quantified capacity reconstruction (205 plaque-counted cells → ceiling <2,000; endowment cross-check; graded peak 2,500–4,500) stands as this build's. The site and profile re-headline Nalanda from the attribution (old scholarship — Beal 1884/1911 — which the paper never claimed) to the capacity test, and the "textbooks still credit Xuanzang" line is downgraded to what it is: an anecdotal observation, no textbook survey run.
 
 ## Tools (8, all public)
 
@@ -77,7 +89,7 @@ There are deliberately **no** `nalanda-capacity` or `correction-campaign` repos.
 | Dataset | Records | Where |
 |---|---|---|
 | Correlation Web anchor database | 133 anchors (53 TAQ / 54 floruit / 25 synchronism / 1 TPQ) | chinese-correlation-spine, `data/anchors.json` |
-| Nalanda graded quantities | 49 | `nalanda/numbers.csv` (behind received-numbers §3) |
+| Nalanda graded quantities | 50 | `nalanda/numbers.csv` (behind received-numbers §3; 49 in the original census, Daoxuan restored 2026-11-18) |
 | Campaign verdict set | 37 graded (+1 skipped, reported) | received-numbers; sources in `campaign/`, `campaign2/` |
 | Gazetteers famine panel | 34 units (11 princely states, 23 British districts) | gazetteers-famine-1900 |
 | Testability grading grid | 23 questions (4 testable / 11 underpowered / 8 untestable) | testability-atlas |
