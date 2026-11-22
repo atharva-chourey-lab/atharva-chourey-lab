@@ -48,7 +48,7 @@ A famine panel from the 1908 Imperial Gazetteers (34 units; first extracted as a
 
 Manuscript: [github.com/atharva-chourey-lab/gazetteers-famine-1900](https://github.com/atharva-chourey-lab/gazetteers-famine-1900)
 
-**The shrinking-Sun claim rests on a probable sign error** — *Astronomy, 2026*
+**Two published estimates for the 1715 eclipse differ by 0.98″** — *Astronomy, 2026*
 Re-reducing historical eclipse observations with modern lunar topography: solar radius 959.494 ± 0.044″, consistent with neither Auwers nor the IAU standard. The two canonical reductions disagree on 7 of 9 overlapping eclipses, with five sign flips.
 
 Manuscript: [github.com/atharva-chourey-lab/eclipse-radius](https://github.com/atharva-chourey-lab/eclipse-radius)

@@ -20,6 +20,38 @@
   "viewer_subject": "Interactive lion-brain viewer on the lab dashboard (NiiVue volume + three.js surfaces)",
   "viewers": 1
  },
+ "corrections_and_prior_art": [
+  {
+   "addenda": [
+    {
+     "commit": "6799dfe",
+     "correction": "Yoshimaru et al. (2024, Scientific Reports 14, 26901) ran the paired in-vivo/ex-vivo marmoset design first (n = 12) and was not cited; paper now cites it in §1, §4 and references. Claim stands at full strength as the largest paired, pre-registered re-measurement (n = 30, hippocampal formation -21.0%, 30/30 negative), ~9 points larger than Yoshimaru's figure-implied ~-12% — a discrepancy flagged as an open question.",
+     "finding": "marmoset-two-rulers",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the marmoset-two-rulers repo"
+    },
+    {
+     "commits": [
+      "914f934",
+      "533f719"
+     ],
+     "correction": "Waugh & Thewissen (2021) — the project's own anchor — established occupancy variation itself (33-98%; bowhead their outlier). Presentation re-led with the audit's own results (cross-compilation ruler disagreement, >100% joins; Dembitzer x1.108 back-calculation over 149 species; the 71-species identical-value block) and Waugh & Thewissen credited wherever the variation is mentioned. Medians unchanged (0.919 at n=42; 0.932 at n=58).",
+     "finding": "occupancy-audit + occupancy-second-arm",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in both occupancy repos"
+    },
+    {
+     "commits": [
+      "7cf0c12",
+      "0c0ced0 (chinese-correlation-spine dataset)"
+     ],
+     "correction": "Daoxuan (d. 667), a fourth contemporary number-bearing witness (>4,000 residents, Xu Gaoseng Zhuan T 2060 juan 4), was absent from the census; restored in §3.1/§3.2 and in nalanda/numbers.csv (dataset 49 -> 50 graded quantities). Asher (2015) cited in §3.3 as prior for the qualitative capacity objection; Deeg (2018) added to references. Site/profile re-headlined from the attribution (Beal 1884/1911, never claimed by the paper) to the quantified capacity test; the textbooks-persistence line downgraded to an explicitly unsurveyed observation.",
+     "finding": "received-numbers (Nalanda, §3)",
+     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the received-numbers repo"
+    }
+   ],
+   "date": "2026-11-18",
+   "episode": "An OpenAI model argued with us (Wed 18 Nov 2026, ~17:00-17:04 PST): an external harsh-filter review of the portfolio — novelty, validity and significance only, zero credit for manuscript count, breadth, presentation or speed — pressed three prior-art citations. The lab pressed back; the model conceded on occupancy and marmoset, corrected its Nalanda table, and revised its shortlist of candidate contributions from three to five. The lab's own independent novelty scrubs then confirmed the corrections and found two further defects of the lab's own (a missing Yoshimaru citation; Daoxuan as a fourth Nalanda witness), fixed on the record the same day. No measured number, featured finding, or manuscript count changed."
+  }
+ ],
  "datasets": [
   {
    "location": "chinese-correlation-spine repo, data/anchors.json (+ anchors.csv, eras.json)",
@@ -91,6 +123,8 @@
  "papers": [
   {
    "category": "Neuroanatomy",
+   "concept_doi": "10.5281/zenodo.24409193",
+   "doi": "10.5281/zenodo.24409194",
    "headline": "Histological compilation values average ~1.6× MRI-atlas values across the audited archive; the lion hippocampus measures 2.02 cm³ on MRI against a 4.50 cm³ histological compilation value.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -103,10 +137,13 @@
    },
    "title": "Shrinkage-corrected histological compilation values average ~1.6× MRI-atlas values: an audit of a comparative neuroanatomy archive",
    "url": "https://github.com/atharva-chourey-lab/lost-atlas",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409194"
   },
   {
    "category": "Historical statistics",
+   "concept_doi": "10.5281/zenodo.24409300",
+   "doi": "10.5281/zenodo.24409301",
    "headline": "34 units (11 princely states, 23 British districts): gazetteer mean rainfall is uncorrelated with 1891–1901 population change (r = −0.05); princely states lost −16.2% against −7.5% for British districts.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -115,31 +152,37 @@
    "submission_package": null,
    "title": "Not rainfall: mean rainfall and population loss in the 1899–1900 famine — a famine-focused re-extraction of the Imperial Gazetteers for central India",
    "url": "https://github.com/atharva-chourey-lab/gazetteers-famine-1900",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409301"
   },
   {
    "category": "Astronomy",
-   "headline": "Re-reduced solar radius 959.494 ± 0.044″, inconsistent with the canonical value; the canonical archive's 1715 entry is a probable sign error.",
+   "concept_doi": "10.5281/zenodo.24409145",
+   "doi": "10.5281/zenodo.24409146",
+   "headline": "Re-reduced solar radius 959.494 ± 0.044″, inconsistent with the canonical value; two published estimates for the 1715 eclipse differ by 0.98″.",
    "live_on_github": true,
    "peer_reviewed": false,
    "repo": "eclipse-radius",
    "status": "public",
    "submission_package": {
     "location": "~/workspace/papers/submissions/p3-solar-physics/",
-    "status": "Package prepared 2026-11-17 — PREP ONLY, not submitted",
+    "status": "Submitted 2026-11-20 via SNAPP (Springer) — Submission ID 55f699e8-9985-46c8-a197-414bb13d022d; at technical-check stage",
     "venue": "Solar Physics (Springer)"
    },
-   "title": "A re-reduction of historical eclipse observations: solar radius 959.494 ± 0.044″ and a probable sign error in the canonical archive",
+   "title": "A re-reduction of historical eclipse observations: solar radius 959.494 ± 0.044″ and a 0.98″ disagreement between published estimates for the 1715 eclipse",
    "url": "https://github.com/atharva-chourey-lab/eclipse-radius",
-   "venue_submitted": false
+   "venue_submitted": true,
+   "zenodo_record": "https://zenodo.org/records/24409146"
   },
   {
    "category": "History of science",
+   "concept_doi": "10.5281/zenodo.24409306",
    "contains": [
     "Nalanda statistical audit (source build: ~/workspace/chinese-correlation-spine/nalanda/)",
     "Correction Campaign 1, 15 cases (source build: ~/workspace/chinese-correlation-spine/campaign/)",
     "Correction Campaign 2, 22 cases: Buddha chronology, Krishna control, Vikramaditya, major kings, Mahavira addendum (source build: ~/workspace/chinese-correlation-spine/campaign2/)"
    ],
+   "doi": "10.5281/zenodo.24409307",
    "headline": "The Correlation Web's consolidated paper: the Nalanda flagship case (49 graded quantities; the 10,000 is Huili's, not Xuanzang's; excavated capacity 450–650 residents, ceiling below 2,000; defensible peak c. 2,500–4,500) plus two pre-registered campaigns grading 37 cases (Campaign 1: 5 corrected / 3 corroborated / 5 bounded / 2 no bite; Campaign 2: 2 / 4 / 8 / 8; one further case skipped under its pre-registered rule).",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -149,10 +192,13 @@
    "submission_package": null,
    "title": "Received numbers: a bearer-by-bearer audit of famous figures in Indian history",
    "url": "https://github.com/atharva-chourey-lab/received-numbers",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409307"
   },
   {
    "category": "Methodology",
+   "concept_doi": "10.5281/zenodo.24409216",
+   "doi": "10.5281/zenodo.24409217",
    "headline": "Of 23 graded questions on clean Indian official data: 4 testable, 11 underpowered, 8 untestable — graded under a pre-registered rubric.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -165,10 +211,13 @@
    },
    "title": "The Testability Atlas: Which Questions in Indian Historical Statistics Can Surviving Data Decide?",
    "url": "https://github.com/atharva-chourey-lab/testability-atlas",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409217"
   },
   {
    "category": "Morphology",
+   "concept_doi": "10.5281/zenodo.24409315",
+   "doi": "10.5281/zenodo.24409316",
    "headline": "Within-specimen centroid-size profiles of the six long bones separate all five living rhinoceros species.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -177,11 +226,14 @@
    "submission_package": null,
    "title": "The Forearm Splits the Rhinos: Within-Specimen Centroid-Size Profiles of the Six Long Bones Separate All Five Living Rhinoceros Species",
    "url": "https://github.com/atharva-chourey-lab/rhino-forearm",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409316"
   },
   {
    "added": "2026-11-17 (consolidation build)",
    "category": "History",
+   "concept_doi": "10.5281/zenodo.24409326",
+   "doi": "10.5281/zenodo.24409327",
    "headline": "Floruit c. 480–530 (Luoyang 516–526, dead before 534); the famous 527 arrival fails three independent tests; his teacher Prajñātāra is first attested in 801, a lineage seam insertion; no Indian source attests the name Bodhidharma at all.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -191,11 +243,14 @@
    "submission_package": null,
    "title": "Who was Bodhidharma? A dated-witness stratigraphy and lineage-chart forensics",
    "url": "https://github.com/atharva-chourey-lab/bodhidharma-dossier",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409327"
   },
   {
    "added": "2026-11-17 (consolidation build)",
    "category": "History of medicine",
+   "concept_doi": "10.5281/zenodo.24409337",
+   "doi": "10.5281/zenodo.24409338",
    "headline": "Caraka and Suśruta were translated in Baghdad (Suśruta 786–803; Caraka quoted by c. 850) and never in China; Vāgbhaṭa corroborated at c. 550–650 by Yijing's 691 report; the '5,000-year-old Ayurveda' claim conflates three layers and overshoots the canon by ~2,800 years.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -205,11 +260,14 @@
    "submission_package": null,
    "title": "The canon travelled west: dating the Ayurvedic saṃhitās against the Baghdad, Chinese and Tibetan records",
    "url": "https://github.com/atharva-chourey-lab/medicine-file",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409338"
   },
   {
    "added": "2026-11-17 (consolidation build)",
    "category": "History",
+   "concept_doi": "10.5281/zenodo.24409346",
+   "doi": "10.5281/zenodo.24409347",
    "headline": "The 629 CE foundation date is the youngest layer of the tradition, contradicted by its own earliest texts (which land in the 9th century); the attestation ladder runs 782/783 (tombstone, AH 166) → 849 (Quilon plates, firm) → 1124 (first dated mosque foundation in Kerala).",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -219,11 +277,14 @@
    "submission_package": null,
    "title": "An attestation ladder for India's first mosque: the Cheraman tradition against the dated record",
    "url": "https://github.com/atharva-chourey-lab/malabar-mosque",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409347"
   },
   {
    "added": "2026-11-17 (consolidation build)",
    "category": "History",
+   "concept_doi": "10.5281/zenodo.24409356",
+   "doi": "10.5281/zenodo.24409357",
    "headline": "Gospel of Thomas composed c. 70–140 (forced by the papyri); the Northwest/Gondophares strand is plausible–unproven (the Acts names the king and his brother, attested nowhere in Greek or Roman literature); the Malabar itinerary is first written in the 16th century; the Chinese record attests the carrier (635/638/781) and never names Thomas — no bite on the man.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -233,11 +294,14 @@
    "submission_package": null,
    "title": "Thomas in the East: the Gospel of Thomas, the Gondophares strand, and the limits of the Chinese record",
    "url": "https://github.com/atharva-chourey-lab/thomas-file",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409357"
   },
   {
    "added": "2026-11-17 (consolidation build)",
    "category": "Methodology",
+   "concept_doi": "10.5281/zenodo.24409364",
+   "doi": "10.5281/zenodo.24409365",
    "headline": "REGISTERED NEGATIVE: the pre-registered blind gates failed — absolute gate 0/17 against a bar of ≥15, ordering gate Kendall τ = 0.000 with 15 inversions. No date for the Bṛhadāraṇyaka was produced; the sampler was exonerated and the single-branch model class falsified (register impersonates date). A successor requires a background/register branch under a NEW registration.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -247,11 +311,14 @@
    "submission_package": null,
    "title": "Dating the Bṛhadāraṇyaka Upaniṣad by a linguistic clock: a pre-registered blind-gate failure",
    "url": "https://github.com/atharva-chourey-lab/upanishad-gates",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409365"
   },
   {
    "added": "2026-11-17 (site update build)",
    "category": "Neuroanatomy",
+   "concept_doi": "10.5281/zenodo.24409373",
+   "doi": "10.5281/zenodo.24409374",
    "headline": "Same brains scanned in vivo and ex vivo (Brain/MINDS, n = 30 pairs): hippocampal formation −21.0% after perfusion fixation (30/30 pairs negative); total labelled gray matter −10.4%; both pre-registered thresholds crossed.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -261,11 +328,14 @@
    "submission_package": null,
    "title": "One Brain, Two Rulers: The Hippocampal Formation Measures 21% Smaller After Perfusion Fixation in the Same Marmoset Brains",
    "url": "https://github.com/atharva-chourey-lab/marmoset-two-rulers",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409374"
   },
   {
    "added": "2026-11-17 (site update build)",
    "category": "Neuroanatomy",
+   "concept_doi": "10.5281/zenodo.24409378",
+   "doi": "10.5281/zenodo.24409379",
    "headline": "Endocast occupancy joined for 42 species: median 0.919; only 40.5% within the 90–100% band fossil EQ assumes; 19.0% above 100% (ruler mismatch); Artiodactyla 0.79, Cetacea 0.79, Perissodactyla 0.84; Dembitzer supplement back-calculates ECV = brain × 1.108 for 149 species. Second arm (occupancy-second-arm, 2026-11-18): on the 58 independent Burger x Dembitzer species, median 0.932, 65.5% outside the band; the other 71 shared species (55%) are identical-value photocopies (Ashwell / Isler on both sides) whose exclusion reverses a naive join's apparent confirmation of the identity.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -275,11 +345,14 @@
    "submission_package": null,
    "title": "The Brain Does Not Fill the Skull: A 42-Species Occupancy Audit Finds Ruler Chaos, Not a Constant",
    "url": "https://github.com/atharva-chourey-lab/occupancy-audit",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409379"
   },
   {
    "added": "2026-11-18 (site update build)",
    "category": "Comparative neuroanatomy",
+   "concept_doi": "10.5281/zenodo.24409386",
+   "doi": "10.5281/zenodo.24409387",
    "headline": "Pre-registered two-leg audit of Burger 2019 / Smaers 2021 / Tsuboi 2018: 447 of 1,467 shared species (30.47%) disagree >5% on brain mass (kill <3%); 15 of 60 sampled Burger values (25.0%) primary-traceable (kill >=85%). Burger cites 30 first sources; five compilations supply 82.6%. Headlines recomputed from joined_diff.csv and provenance_trace.csv during the publication build and matched.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -288,11 +361,14 @@
    "status": "public",
    "submission_package": null,
    "title": "The Photocopy Chain: The Mammal Brain-Mass Canon Disagrees With Itself on 30% of Shared Species, and Three-Quarters of Its Most-Cited Values Cannot Be Traced to a Measurement",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409387"
   },
   {
    "added": "2026-11-18 (site update build)",
    "category": "Bioacoustics",
+   "concept_doi": "10.5281/zenodo.24409229",
+   "doi": "10.5281/zenodo.24409230",
    "headline": "1,013 stranded frog-call files recovered; 146 of 629 countable species-named recordings (23.2%) no longer carry their filed name vs GBIF Backbone (129 moved / 15 synonym / 2 split-elevated); maintained FNJV control 61 of 5,793 (1.1%). Headlines recomputed from results/summary.json and fnjv_summary.json during the publication build and matched.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -301,11 +377,14 @@
    "status": "public",
    "submission_package": null,
    "title": "Dead Names in a Frozen Archive: A Name-by-Name Re-identification of the Stranded Fonozoo Frog-Call Pile, With a Maintained-Archive Control",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409230"
   },
   {
    "added": "2026-11-18 (site update build)",
    "category": "Sirenian conservation",
+   "concept_doi": "10.5281/zenodo.24409241",
+   "doi": "10.5281/zenodo.24409242",
    "headline": "Frozen April-2013 hand-drawn scar catalogue transcribed in full (210 entries, 209 with BS IDs, verified against transcription.csv during the publication build); public ruler joined 45 of 209 (21.5%), so the pre-registered fallback governs: coverage audit + case series, scorecard 2 pass / 3 fail / 1 void; median last record 2025 within the joined subset.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -314,11 +393,14 @@
    "status": "public",
    "submission_package": null,
    "title": "A Frozen Sketch Catalogue, Audited: Persistence of Hand-Drawn Scar Identifications in the Blue Spring Manatee Aggregation, 2013-2026",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409242"
   },
   {
    "added": "2026-11-18 (second site update build)",
    "category": "Neuroanatomy",
+   "concept_doi": "10.5281/zenodo.24409391",
+   "doi": "10.5281/zenodo.24409392",
    "headline": "Second arm of the occupancy audit, pre-registered before the join: Burger x Dembitzer share 129 extant species, of which 71 (55.0%) carry the identical number on both sides (54 marsupials, Ashwell 2008 both sides; 17 primates, Isler et al. 2008 both sides, hidden by print precision) and are excluded as registered. Independent arm n = 58: median occupancy 0.932 (IQR 0.882-1.006), 65.5% outside the 90-100% band; naive join of all 129 reports 70.5% inside the band - the identity's apparent support is manufactured by the back-filled block. Scorecard 5 pass / 1 fail (P1 size, n >= 60 missed at 58, above the K1 floor of 40). Centre is ruler-dependent: Waugh 0.920, first-arm combined 0.919, Burger-independent 0.932, Patzke bridge ~1.0.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -328,11 +410,14 @@
    "submission_package": null,
    "title": "Occupancy, Second Arm: On Independent Data the Brain Still Does Not Fill the Skull - and a Naive Join of the Same Data Appears to Prove That It Does",
    "url": "https://github.com/atharva-chourey-lab/occupancy-second-arm",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409392"
   },
   {
    "added": "2026-11-18 (second site update build)",
    "category": "History of medicine / Methodology",
+   "concept_doi": "10.5281/zenodo.24409401",
+   "doi": "10.5281/zenodo.24409402",
    "headline": "REGISTERED NEGATIVE: the 30-chapter pilot (Explanatory Tantra, blind double-coded against the Ashtanga Hridaya, Huangdi Neijing as sham arm) died at its pre-registered reliability gate - Cohen's kappa 0.68 (0.6795) against a bar of 0.70. No correspondence percentage is claimed and the registered predictions were not scored; the zombie '~75% of the Gyushi comes from the Ashtanga Hridaya' figure remains untraced and unreplaced. The passes' arithmetic is published in the paper, explicitly labelled unclaimed.",
    "live_on_github": true,
    "peer_reviewed": false,
@@ -342,7 +427,25 @@
    "submission_package": null,
    "title": "The 75% That Nobody Measured: A Pre-Registered Pilot Audit of the Gyushi-Ashtanga Claim Dies at Its Own Reliability Gate",
    "url": "https://github.com/atharva-chourey-lab/gyushi-zombie-audit",
-   "venue_submitted": false
+   "venue_submitted": false,
+   "zenodo_record": "https://zenodo.org/records/24409402"
+  },
+  {
+   "added": "2026-11-20",
+   "category": "Linguistics / Archive audit",
+   "concept_doi": "10.5281/zenodo.24409284",
+   "doi": "10.5281/zenodo.24409285",
+   "headline": "Full-pile audit of the LAGS web archive: the folders hold no transcripts to audit (the .xml is a segment index), so the standing result is a census (983/1,082 folders hold audio + index; 70,542 MP3s) plus an index-integrity audit (939 indexed segments absent on disk, 962 files unindexed) and a FAILED pre-registered ASR calibration (Whisper large-v3 pooled 61.9% vs the 85% bar; no fidelity claim for the ~850 never-audited informants).",
+   "live_on_github": true,
+   "peer_reviewed": false,
+   "repo": "lags-transcription-audit",
+   "source_build": "~/workspace/lags-transcription-audit/ (PREREGISTRATION.md + 5 amendments, RESULTS-EXHAUSTED.md, MANUSCRIPT.md)",
+   "status": "Submitted 2026-11-20 via SNAPP (Springer) — Submission ID 3a3c564c-a76a-4551-962b-1f4823095e19; at technical-check stage",
+   "submission_package": "~/workspace/submission-packages/lags/",
+   "title": "The Transcripts Were Never There: A Full-Pile Audit of the Linguistic Atlas of the Gulf States Web Archive, and a Failed Calibration for ASR Re-Transcription",
+   "url": "https://github.com/atharva-chourey-lab/lags-transcription-audit",
+   "venue_submitted": true,
+   "zenodo_record": "https://zenodo.org/records/24409285"
   }
  ],
  "pre_registrations": [
@@ -429,13 +532,13 @@
   },
   "manuscripts_awaiting_peer_review": 18,
   "manuscripts_in_preparation": 0,
-  "manuscripts_public": 18,
+  "manuscripts_public": 19,
   "manuscripts_registered_negative": 2,
   "preprints_note": "All 18 manuscripts are public preprints in the lab's GitHub format. None has been submitted to a journal; none is peer-reviewed. Three submission packages are prepared (lost-atlas, eclipse-radius, testability-atlas), each explicitly PREP ONLY.",
   "profile_repo": 1,
   "submission_packages_prepared": 3,
   "tools_public": 8,
-  "total_repos": 27,
+  "total_repos": 28,
   "venue_submitted_count": 0
  },
  "status_vocabulary": {
@@ -485,38 +588,6 @@
    "description": "Three relationship-hunting tools above Goldmine Hunter: Pair Hunter (scores never-joined dataset pairs on overlap, ruler independence, falsifiability, predicted join yield; version x version mode), Custody Mapper (medium/custody gate - a post-probe gate, per its own first campaign), Citation Tracer (walks cited numbers to primary sources; zombie / corrupt / misattributed verdicts). Calibrated before campaigning (Pair 4/4, Custody 3/3, Tracer 5/5); first campaigns PAIR-1 / CUSTODY-1 / TRACE-1 published in the repo. MIT (code).",
    "repo": "research-tools",
    "url": "https://github.com/atharva-chourey-lab/research-tools"
-  }
- ],
- "corrections_and_prior_art": [
-  {
-   "date": "2026-11-18",
-   "episode": "An OpenAI model argued with us (Wed 18 Nov 2026, ~17:00-17:04 PST): an external harsh-filter review of the portfolio — novelty, validity and significance only, zero credit for manuscript count, breadth, presentation or speed — pressed three prior-art citations. The lab pressed back; the model conceded on occupancy and marmoset, corrected its Nalanda table, and revised its shortlist of candidate contributions from three to five. The lab's own independent novelty scrubs then confirmed the corrections and found two further defects of the lab's own (a missing Yoshimaru citation; Daoxuan as a fourth Nalanda witness), fixed on the record the same day. No measured number, featured finding, or manuscript count changed.",
-   "addenda": [
-    {
-     "finding": "marmoset-two-rulers",
-     "commit": "6799dfe",
-     "correction": "Yoshimaru et al. (2024, Scientific Reports 14, 26901) ran the paired in-vivo/ex-vivo marmoset design first (n = 12) and was not cited; paper now cites it in §1, §4 and references. Claim stands at full strength as the largest paired, pre-registered re-measurement (n = 30, hippocampal formation -21.0%, 30/30 negative), ~9 points larger than Yoshimaru's figure-implied ~-12% — a discrepancy flagged as an open question.",
-     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the marmoset-two-rulers repo"
-    },
-    {
-     "finding": "occupancy-audit + occupancy-second-arm",
-     "commits": [
-      "914f934",
-      "533f719"
-     ],
-     "correction": "Waugh & Thewissen (2021) — the project's own anchor — established occupancy variation itself (33-98%; bowhead their outlier). Presentation re-led with the audit's own results (cross-compilation ruler disagreement, >100% joins; Dembitzer x1.108 back-calculation over 149 species; the 71-species identical-value block) and Waugh & Thewissen credited wherever the variation is mentioned. Medians unchanged (0.919 at n=42; 0.932 at n=58).",
-     "record": "NOVELTY-ADDENDUM-2026-11-18.md in both occupancy repos"
-    },
-    {
-     "finding": "received-numbers (Nalanda, §3)",
-     "commits": [
-      "7cf0c12",
-      "0c0ced0 (chinese-correlation-spine dataset)"
-     ],
-     "correction": "Daoxuan (d. 667), a fourth contemporary number-bearing witness (>4,000 residents, Xu Gaoseng Zhuan T 2060 juan 4), was absent from the census; restored in §3.1/§3.2 and in nalanda/numbers.csv (dataset 49 -> 50 graded quantities). Asher (2015) cited in §3.3 as prior for the qualitative capacity objection; Deeg (2018) added to references. Site/profile re-headlined from the attribution (Beal 1884/1911, never claimed by the paper) to the quantified capacity test; the textbooks-persistence line downgraded to an explicitly unsurveyed observation.",
-     "record": "NOVELTY-ADDENDUM-2026-11-18.md in the received-numbers repo"
-    }
-   ]
   }
  ]
 }

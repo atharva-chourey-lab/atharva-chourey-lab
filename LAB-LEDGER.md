@@ -11,47 +11,48 @@ The Atharva Chourey Lab is an independent research lab, and a human–AI collabo
 - **public** — live on GitHub in the lab's publication format (README publication page, paper.md, SOURCES.md, paper.pdf, CC BY 4.0). **Self-publication is not peer review.**
 - **manuscript-in-preparation** — a completed or near-completed manuscript not yet public. Count today: **0** — every completed manuscript is public.
 - **registered-negative** — a pre-registered study whose registered success criterion failed, published in full as a negative result.
-- **venue_submitted** — true only if a manuscript has actually been submitted to a journal. **It is false for every paper in this ledger.** Three submission packages have been prepared; every one is marked *PREP ONLY — nothing has been submitted, no account created, nothing uploaded.*
+- **venue_submitted** — true only if a manuscript has actually been submitted to a journal. **As of 2026-11-20 it is true for exactly two papers:** eclipse-radius, submitted to *Solar Physics*, and lags-transcription-audit, submitted to *Language Resources and Evaluation* (see their rows). Six submission packages have been prepared in total; the other four remain *PREP ONLY — nothing has been submitted from them.*
 
 ## Headline stats
 
 | Statistic | Count |
 |---|---|
-| Public manuscripts (GitHub) | **18** |
+| Public manuscripts (GitHub) | **19** |
 | — of which registered negatives | 2 |
 | Manuscripts in preparation (not yet public) | 0 |
-| Manuscripts awaiting peer review (public, none submitted to a venue) | **18** |
-| Submission packages prepared (not submitted) | 3 |
-| Manuscripts actually submitted to a venue | **0** |
+| Manuscripts awaiting peer review (public, none submitted to a venue) | **17** |
+| Submission packages prepared (not submitted) | 4 |
+| Manuscripts actually submitted to a venue | **2** |
 | Public tool / code repos | **8** |
 | Profile / dashboard repo | 1 |
-| **Total repos in the org** | **27** |
+| **Total repos in the org** | **28** |
 | Correlation Web anchors | **133** (47 firm / 74 probable / 12 contested) |
 | Campaign cases graded under pre-registration | 37 (+1 skipped under its own pre-registered rule) |
 | Interactive 3D viewers | 1 (lion brain) |
 
-## Papers (18, all public, none peer-reviewed)
+## Papers (19, all public, none peer-reviewed)
 
 | # | Repo | Paper | Status | Venue submitted |
 |---|---|---|---|---|
-| 1 | lost-atlas | Shrinkage-corrected histological compilation values average ~1.6× MRI-atlas values: an audit of a comparative neuroanatomy archive | public | No — package prepared for *Brain, Behavior and Evolution*, PREP ONLY |
-| 2 | gazetteers-famine-1900 | Not rainfall: mean rainfall and population loss in the 1899–1900 famine | public | No |
-| 3 | eclipse-radius | A re-reduction of historical eclipse observations: solar radius 959.494 ± 0.044″ and a probable sign error in the canonical archive | public | No — package prepared for *Solar Physics*, PREP ONLY |
-| 4 | received-numbers | Received numbers: a bearer-by-bearer audit of famous figures in Indian history | public | No |
-| 5 | testability-atlas | The Testability Atlas: Which Questions in Indian Historical Statistics Can Surviving Data Decide? | public | No — package prepared for *Historical Methods*, PREP ONLY |
-| 6 | rhino-forearm | The Forearm Splits the Rhinos: within-specimen centroid-size profiles separate all five living species | public | No |
-| 7 | bodhidharma-dossier | Who was Bodhidharma? A dated-witness stratigraphy and lineage-chart forensics | public (added 2026-11-17) | No |
-| 8 | medicine-file | The canon travelled west: dating the Ayurvedic saṃhitās against the Baghdad, Chinese and Tibetan records | public (added 2026-11-17) | No |
-| 9 | malabar-mosque | An attestation ladder for India's first mosque: the Cheraman tradition against the dated record | public (added 2026-11-17) | No |
-| 10 | thomas-file | Thomas in the East: the Gospel of Thomas, the Gondophares strand, and the limits of the Chinese record | public (added 2026-11-17) | No |
-| 11 | upanishad-gates | Dating the Bṛhadāraṇyaka Upaniṣad by a linguistic clock: a pre-registered blind-gate failure | **registered-negative** (also public) | No |
-| 12 | marmoset-two-rulers | One Brain, Two Rulers: the hippocampal formation measures 21% smaller after perfusion fixation in the same marmoset brains | public (added 2026-11-17) | No |
-| 13 | occupancy-audit | The Brain Does Not Fill the Skull: a 42-species occupancy audit finds ruler chaos, not a constant | public (added 2026-11-17) | No |
-| 14 | photocopy-chain | The Photocopy Chain: the mammal brain-mass canon disagrees with itself on 30% of shared species, and three-quarters of its most-cited values cannot be traced to a measurement | public (added 2026-11-18) | No |
-| 15 | fonozoo-reidentification | Dead Names in a Frozen Archive: a name-by-name re-identification of the stranded Fonozoo frog-call pile, with a maintained-archive control | public (added 2026-11-18) | No |
-| 16 | manatee-scar-sheets | A Frozen Sketch Catalogue, Audited: persistence of hand-drawn scar identifications in the Blue Spring manatee aggregation, 2013–2026 (pre-registered coverage audit + case series) | public (added 2026-11-18) | No |
-| 17 | occupancy-second-arm | Occupancy, Second Arm: on independent data the brain still does not fill the skull — and a naive join of the same data appears to prove that it does (Burger × Dembitzer, 58 independent species, median 0.932; 71 identical-value species excluded as registered) | public (added 2026-11-18) | No |
-| 18 | gyushi-zombie-audit | The 75% That Nobody Measured: a pre-registered pilot audit of the Gyushi–Ashtanga claim dies at its own reliability gate (κ = 0.68 vs the registered 0.70 bar; no percentage claimed) | **registered-negative** (also public) | No |
+| 1 | lost-atlas | Shrinkage-corrected histological compilation values average ~1.6× MRI-atlas values: an audit of a comparative neuroanatomy archive (DOI: [10.5281/zenodo.24409194](https://doi.org/10.5281/zenodo.24409194)) | public | No — package prepared for *Brain, Behavior and Evolution*, PREP ONLY |
+| 2 | gazetteers-famine-1900 | Not rainfall: mean rainfall and population loss in the 1899–1900 famine (DOI: [10.5281/zenodo.24409301](https://doi.org/10.5281/zenodo.24409301)) | public | No |
+| 3 | eclipse-radius | A re-reduction of historical eclipse observations: solar radius 959.494 ± 0.044″ and a 0.98″ disagreement between published estimates for the 1715 eclipse (DOI: [10.5281/zenodo.24409146](https://doi.org/10.5281/zenodo.24409146)) | public | **Yes — submitted 2026-11-20** to *Solar Physics* via SNAPP (Submission ID 55f699e8-9985-46c8-a197-414bb13d022d); at technical-check stage |
+| 4 | received-numbers | Received numbers: a bearer-by-bearer audit of famous figures in Indian history (DOI: [10.5281/zenodo.24409307](https://doi.org/10.5281/zenodo.24409307)) | public | No |
+| 5 | testability-atlas | The Testability Atlas: Which Questions in Indian Historical Statistics Can Surviving Data Decide? (DOI: [10.5281/zenodo.24409217](https://doi.org/10.5281/zenodo.24409217)) | public | No — package prepared for *Historical Methods*, PREP ONLY |
+| 6 | rhino-forearm | The Forearm Splits the Rhinos: within-specimen centroid-size profiles separate all five living species (DOI: [10.5281/zenodo.24409316](https://doi.org/10.5281/zenodo.24409316)) | public | No |
+| 7 | bodhidharma-dossier | Who was Bodhidharma? A dated-witness stratigraphy and lineage-chart forensics (DOI: [10.5281/zenodo.24409327](https://doi.org/10.5281/zenodo.24409327)) | public (added 2026-11-17) | No |
+| 8 | medicine-file | The canon travelled west: dating the Ayurvedic saṃhitās against the Baghdad, Chinese and Tibetan records (DOI: [10.5281/zenodo.24409338](https://doi.org/10.5281/zenodo.24409338)) | public (added 2026-11-17) | No |
+| 9 | malabar-mosque | An attestation ladder for India's first mosque: the Cheraman tradition against the dated record (DOI: [10.5281/zenodo.24409347](https://doi.org/10.5281/zenodo.24409347)) | public (added 2026-11-17) | No |
+| 10 | thomas-file | Thomas in the East: the Gospel of Thomas, the Gondophares strand, and the limits of the Chinese record (DOI: [10.5281/zenodo.24409357](https://doi.org/10.5281/zenodo.24409357)) | public (added 2026-11-17) | No |
+| 11 | upanishad-gates | Dating the Bṛhadāraṇyaka Upaniṣad by a linguistic clock: a pre-registered blind-gate failure (DOI: [10.5281/zenodo.24409365](https://doi.org/10.5281/zenodo.24409365)) | **registered-negative** (also public) | No |
+| 12 | marmoset-two-rulers | One Brain, Two Rulers: the hippocampal formation measures 21% smaller after perfusion fixation in the same marmoset brains (DOI: [10.5281/zenodo.24409374](https://doi.org/10.5281/zenodo.24409374)) | public (added 2026-11-17) | No |
+| 13 | occupancy-audit | The Brain Does Not Fill the Skull: a 42-species occupancy audit finds ruler chaos, not a constant (DOI: [10.5281/zenodo.24409379](https://doi.org/10.5281/zenodo.24409379)) | public (added 2026-11-17) | No |
+| 14 | photocopy-chain | The Photocopy Chain: the mammal brain-mass canon disagrees with itself on 30% of shared species, and three-quarters of its most-cited values cannot be traced to a measurement (DOI: [10.5281/zenodo.24409387](https://doi.org/10.5281/zenodo.24409387)) | public (added 2026-11-18) | No |
+| 15 | fonozoo-reidentification | Dead Names in a Frozen Archive: a name-by-name re-identification of the stranded Fonozoo frog-call pile, with a maintained-archive control (DOI: [10.5281/zenodo.24409230](https://doi.org/10.5281/zenodo.24409230)) | public (added 2026-11-18) | No |
+| 16 | manatee-scar-sheets | A Frozen Sketch Catalogue, Audited: persistence of hand-drawn scar identifications in the Blue Spring manatee aggregation, 2013–2026 (pre-registered coverage audit + case series) (DOI: [10.5281/zenodo.24409242](https://doi.org/10.5281/zenodo.24409242)) | public (added 2026-11-18) | No |
+| 17 | occupancy-second-arm | Occupancy, Second Arm: on independent data the brain still does not fill the skull — and a naive join of the same data appears to prove that it does (Burger × Dembitzer, 58 independent species, median 0.932; 71 identical-value species excluded as registered) (DOI: [10.5281/zenodo.24409392](https://doi.org/10.5281/zenodo.24409392)) | public (added 2026-11-18) | No |
+| 18 | gyushi-zombie-audit | The 75% That Nobody Measured: a pre-registered pilot audit of the Gyushi–Ashtanga claim dies at its own reliability gate (κ = 0.68 vs the registered 0.70 bar; no percentage claimed) (DOI: [10.5281/zenodo.24409402](https://doi.org/10.5281/zenodo.24409402)) | **registered-negative** (also public) | No |
+| 19 | lags-transcription-audit | The Transcripts Were Never There: a full-pile audit of the Linguistic Atlas of the Gulf States web archive (census 983/1,082; 939 indexed segments absent on disk, 962 files unindexed), and a failed calibration for ASR re-transcription (Whisper large-v3 pooled 61.9% vs the registered 85% bar; no fidelity claim) (DOI: [10.5281/zenodo.24409285](https://doi.org/10.5281/zenodo.24409285)) | Submitted 2026-11-20 via SNAPP (Springer) — Submission ID 3a3c564c-a76a-4551-962b-1f4823095e19; at technical-check stage | Yes — *Language Resources and Evaluation* |
 
 ### Reconciliation note — Nalanda and the campaigns
 
